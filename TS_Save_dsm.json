@@ -1,7 +1,7 @@
 {
   "SaveName": "Dominant Species Marine",
   "GameMode": "Dominant Species Marine",
-  "Date": "3/12/2021 2:25:34 PM",
+  "Date": "3/21/2021 12:09:28 PM",
   "VersionNumber": "v13.0.5",
   "GameType": "Game",
   "GameComplexity": "Medium Complexity",
@@ -314,41 +314,10 @@
       "Size": 1.0
     }
   ],
-  "LuaScript": "RESEED_BUTTON = \"15f5b0\"\n\nEVOLUTION_DECK_ZONE = \"771647\"\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\nASTEROID_CARD = \"9fe901\"\nTRAIT_DECK = \"c5d0ec\"\n\nABUNDANCE_ZONE = \"c982e7\"\nAUTOTROPHS_ZONE = \"c4e77b\"\nDEPLETION_ZONE = \"e23076\"\nADAPTION_ZONE = \"b70e29\"\nREGRESSION_ZONE = \"91fe74\"\nSPECIATION_ZONE = \"075fb0\"\nWANDERLUST_ZONE = \"def2ff\"\nCOMPETITION_ZONE = \"90e44c\"\nEVOLUTION_ZONE = \"91934c\"\n\nELEMENT_TAG = \"element\"\nWANDERLUST_TAG = \"wanderlust\"\nTERRAIN_TAG = \"terrain\"\nSPECIES_TAG = \"species\"\nACTION_PAWN_TAG = \"action_pawn\"\n\nCRUSTACEANS_TAG = \"crustaceans\"\nFISHES_TAG = \"fishes\"\nCEPHALOPODS_TAG = \"cephalopods\"\nREPTILES_TAG = \"reptiles\"\n\nCOMMON_COMPONENTS = {\n    wander_lust_bag = \"7d9337\",\n    element_bag = \"e81219\",\n    terrain_bag = \"ed6578\",\n    box_bag = \"6d9eef\",\n    special_pawn_plankton = \"bd25f7\",\n    special_pawn_worms = \"7a63a2\",\n    special_pawn_sponges = \"5172a7\",\n    special_pawn_gastropods = \"bf11a4\",\n    special_pawn_algae = \"c12749\",\n    special_pawn_sun = \"c046bd\",\n    control_marker_plankton = \"dce92f\",\n    control_marker_worms = \"557086\",\n    control_marker_sponges = \"e92662\",\n    control_marker_gastropods = \"54bb45\",\n    control_marker_algae = \"0f9861\",\n    control_marker_sun = \"32bf2b\",\n    food_chain_start_zone = \"9ba132\",\n}\n\nPLAYER_COMPONENTS = {\n    [Player.Brown.color] = {\n        tag = CRUSTACEANS_TAG,\n        vp = \"17f953\",\n        boards = {\"85e368\", \"b5c87e\"},\n        food_chain_zone = \"d9b5af\",\n        food_chain_start_position = {-11.32, 1.35, 8.67},\n        food_chain_end_position = {-9.41, 1.29, 8.68},\n        gene_pool_bag = \"cd7b0d\",\n        action_pawn_position_first = vector(-25.21, 1.26, -8.36),\n        control_marker_zone = \"fb935b\",\n    },\n    [Player.Blue.color] = {\n        tag = FISHES_TAG,\n        vp = \"3f075f\",\n        boards = {\"bf4314\", \"578c29\"},\n        food_chain_zone = \"01090b\",\n        food_chain_start_position = {-11.31, 1.35, 9.74},\n        food_chain_end_position = {-9.41, 1.29, 9.74},\n        gene_pool_bag = \"ea715b\",\n        action_pawn_position_first = vector(-10.93, 1.26, -8.47),\n        control_marker_zone = \"6d7f31\",\n    },\n    [Player.Orange.color] = {\n        tag = CEPHALOPODS_TAG,\n        vp = \"bbb44d\",\n        boards = {\"c01aba\", \"24c905\"},\n        food_chain_zone = \"8aaf18\",\n        food_chain_start_position = {-11.32, 1.35, 10.74},\n        food_chain_end_position = {-9.40, 1.29, 10.74},\n        gene_pool_bag = \"93c7b1\",\n        action_pawn_position_first = vector(4.00, 1.26, -8.39),\n        control_marker_zone = \"de4c5c\",\n    },\n    [Player.Purple.color] = {\n        tag = REPTILES_TAG,\n        vp = \"e40bf9\",\n        boards = {\"76a1b4\", \"7c5462\"},\n        food_chain_zone = \"93093b\",\n        food_chain_start_position = {-11.30, 1.35, 11.76},\n        food_chain_end_position = {-9.39, 1.29, 11.78},\n        gene_pool_bag = \"253bcb\",\n        action_pawn_position_first = vector(17.44, 1.26, -8.38),\n        control_marker_zone = \"bb6f78\",\n    },\n}\n\nELEMENT_TYPE_ALGAE = \"algae\"\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\nELEMENT_TYPE_WORMS = \"worms\"\nELEMENT_TYPE_PLANKTON = \"plankton\"\nELEMENT_TYPE_SPONGES = \"sponges\"\nELEMENT_TYPE_SUN = \"sun\"\n\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\n\n\nELEMENT_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\n}\n\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\n}\n\nWANDERLUST_TILE_SCORES = {\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\n}\n\nfunction getElementType(obj)\n    if obj.hasTag(ELEMENT_TAG) then\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getWanderlustType(obj)\n    if obj.hasTag(WANDERLUST_TAG) then\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getValidSeatedPlayers()\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\n    local seatedPlayers = {}\n    for _,player in ipairs(players) do\n        if player.seated then\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\n        end\n    end\n    return seatedPlayers\nend\n\nfunction getDeckOrCardFromZone(zone_guid)\n    local zone = getObjectFromGUID(zone_guid)\n    if zone == nil then return nil end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Deck\" then\n            return obj\n        end\n    end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Card\" then\n            return obj\n        end\n    end\n    return nil\n\nend\n\nfunction getEvolutionDeck()\n    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\nend\n\nfunction getEvolutionReserveDeck()\n    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\nend\n\nfunction onScriptingButtonDown(index, player_color)\n    if index == 1 then\n        local player = Player[player_color]\n        local pointerPosition = player.getPointerPosition()\n        local playerComponents = PLAYER_COMPONENTS[player_color]\n        if playerComponents ~= nil then\n            local speciesBag = getObjectFromGUID(playerComponents.gene_pool_bag)\n            if #speciesBag.getObjects() > 0 then\n                speciesBag.takeObject({position=pointerPosition, rotation={0,0,0}})                \n            end\n        end\n    end\nend",
+  "LuaScript": "RESEED_BUTTON = \"15f5b0\"\n\nEVOLUTION_DECK_ZONE = \"771647\"\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\nASTEROID_CARD = \"9fe901\"\nTRAIT_DECK = \"c5d0ec\"\n\nABUNDANCE_ZONE = \"c982e7\"\nAUTOTROPHS_ZONE = \"c4e77b\"\nDEPLETION_ZONE = \"e23076\"\nADAPTION_ZONE = \"b70e29\"\nREGRESSION_ZONE = \"91fe74\"\nSPECIATION_ZONE = \"075fb0\"\nWANDERLUST_ZONE = \"def2ff\"\nCOMPETITION_ZONE = \"90e44c\"\nEVOLUTION_ZONE = \"91934c\"\n\nELEMENT_TAG = \"element\"\nWANDERLUST_TAG = \"wanderlust\"\nTERRAIN_TAG = \"terrain\"\nSPECIES_TAG = \"species\"\nACTION_PAWN_TAG = \"action_pawn\"\n\nCRUSTACEANS_TAG = \"crustaceans\"\nFISHES_TAG = \"fishes\"\nCEPHALOPODS_TAG = \"cephalopods\"\nREPTILES_TAG = \"reptiles\"\n\nCOMMON_COMPONENTS = {\n    wander_lust_bag = \"7d9337\",\n    element_bag = \"e81219\",\n    terrain_bag = \"ed6578\",\n    box_bag = \"6d9eef\",\n    special_pawn_plankton = \"bd25f7\",\n    special_pawn_worms = \"7a63a2\",\n    special_pawn_sponges = \"5172a7\",\n    special_pawn_gastropods = \"bf11a4\",\n    special_pawn_algae = \"c12749\",\n    special_pawn_sun = \"c046bd\",\n    control_marker_plankton = \"dce92f\",\n    control_marker_worms = \"557086\",\n    control_marker_sponges = \"e92662\",\n    control_marker_gastropods = \"54bb45\",\n    control_marker_algae = \"0f9861\",\n    control_marker_sun = \"32bf2b\",\n    food_chain_start_zone = \"9ba132\",\n}\n\nPLAYER_COMPONENTS = {\n    [Player.Brown.color] = {\n        tag = CRUSTACEANS_TAG,\n        vp = \"17f953\",\n        boards = {\"85e368\", \"b5c87e\"},\n        food_chain_zone = \"d9b5af\",\n        food_chain_start_position = {-11.32, 1.35, 8.67},\n        food_chain_end_position = {-9.41, 1.29, 8.68},\n        gene_pool_bag = \"cd7b0d\",\n        action_pawn_position_first = vector(-25.21, 1.26, -8.36),\n        control_marker_zone = \"fb935b\",\n    },\n    [Player.Blue.color] = {\n        tag = FISHES_TAG,\n        vp = \"3f075f\",\n        boards = {\"bf4314\", \"578c29\"},\n        food_chain_zone = \"01090b\",\n        food_chain_start_position = {-11.31, 1.35, 9.74},\n        food_chain_end_position = {-9.41, 1.29, 9.74},\n        gene_pool_bag = \"ea715b\",\n        action_pawn_position_first = vector(-10.93, 1.26, -8.47),\n        control_marker_zone = \"6d7f31\",\n    },\n    [Player.Orange.color] = {\n        tag = CEPHALOPODS_TAG,\n        vp = \"bbb44d\",\n        boards = {\"c01aba\", \"24c905\"},\n        food_chain_zone = \"8aaf18\",\n        food_chain_start_position = {-11.32, 1.35, 10.74},\n        food_chain_end_position = {-9.40, 1.29, 10.74},\n        gene_pool_bag = \"93c7b1\",\n        action_pawn_position_first = vector(4.00, 1.26, -8.39),\n        control_marker_zone = \"de4c5c\",\n    },\n    [Player.Purple.color] = {\n        tag = REPTILES_TAG,\n        vp = \"e40bf9\",\n        boards = {\"76a1b4\", \"7c5462\"},\n        food_chain_zone = \"93093b\",\n        food_chain_start_position = {-11.30, 1.35, 11.76},\n        food_chain_end_position = {-9.39, 1.29, 11.78},\n        gene_pool_bag = \"253bcb\",\n        action_pawn_position_first = vector(17.44, 1.26, -8.38),\n        control_marker_zone = \"bb6f78\",\n    },\n}\n\nELEMENT_TYPE_ALGAE = \"algae\"\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\nELEMENT_TYPE_WORMS = \"worms\"\nELEMENT_TYPE_PLANKTON = \"plankton\"\nELEMENT_TYPE_SPONGES = \"sponges\"\nELEMENT_TYPE_SUN = \"sun\"\n\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\n\nELEMENT_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\n}\n\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\n}\n\nWANDERLUST_TILE_SCORES = {\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\n}\n\nTERRAIN_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download\"] = WANDERLUST_TILE_VENT,\n    [\"https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download\"] = WANDERLUST_TILE_OCEAN,\n    [\"https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download\"] = WANDERLUST_TILE_SAND,\n    [\"https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download\"] = WANDERLUST_TILE_SEAGRASS,\n    [\"https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\n    [\"https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download\"] = WANDERLUST_TILE_CORAL,\n    [\"https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download\"] = WANDERLUST_TILE_KELP,\n    [\"https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download\"] = WANDERLUST_TILE_LAND,\n}\n\nfunction getElementType(obj)\n    if obj.hasTag(ELEMENT_TAG) then\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getWanderlustType(obj)\n    if obj.hasTag(WANDERLUST_TAG) then\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getTerrainMarkerType(obj)\n    if obj.hasTag(TERRAIN_TAG) then\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getValidSeatedPlayers()\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\n    local seatedPlayers = {}\n    for _,player in ipairs(players) do\n        if player.seated then\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\n        end\n    end\n    return seatedPlayers\nend\n\nfunction getDeckOrCardFromZone(zone_guid)\n    local zone = getObjectFromGUID(zone_guid)\n    if zone == nil then return nil end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Deck\" then\n            return obj\n        end\n    end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Card\" then\n            return obj\n        end\n    end\n    return nil\n\nend\n\nfunction getEvolutionDeck()\n    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\nend\n\nfunction getEvolutionReserveDeck()\n    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\nend\n\nfunction onScriptingButtonDown(index, player_color)\n    if index == 1 then\n        local player = Player[player_color]\n        local pointerPosition = player.getPointerPosition()\n        pointerPosition[2] = pointerPosition[2] + 2\n        local playerComponents = PLAYER_COMPONENTS[player_color]\n        if playerComponents ~= nil then\n            local speciesBag = getObjectFromGUID(playerComponents.gene_pool_bag)\n            if #speciesBag.getObjects() > 0 then\n                speciesBag.takeObject({position=pointerPosition, rotation={0,0,0}})\n            end\n        end\n    end\nend",
   "LuaScriptState": "",
   "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
   "VectorLines": [
-    {
-      "points3": [
-        {
-          "x": -20.7000618,
-          "y": 0.971137047,
-          "z": 14.3827906
-        },
-        {
-          "x": -17.9876118,
-          "y": 0.971137047,
-          "z": 14.3636074
-        },
-        {
-          "x": -17.9613152,
-          "y": 0.9711361,
-          "z": 18.0818653
-        },
-        {
-          "x": -20.6737652,
-          "y": 0.9711361,
-          "z": 18.1010475
-        }
-      ],
-      "color": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "thickness": 0.1,
-      "loop": true
-    },
     {
       "points3": [
         {
@@ -407,37 +376,6 @@
         "r": 0.9529412,
         "g": 0.109803967,
         "b": 0.109803967
-      },
-      "thickness": 0.1,
-      "loop": true
-    },
-    {
-      "points3": [
-        {
-          "x": -20.921423,
-          "y": 0.9711361,
-          "z": 10.0066824
-        },
-        {
-          "x": -17.91454,
-          "y": 0.9711361,
-          "z": 9.985417
-        },
-        {
-          "x": -17.8869457,
-          "y": 0.971137047,
-          "z": 13.8870325
-        },
-        {
-          "x": -20.89383,
-          "y": 0.971137047,
-          "z": 13.9082975
-        }
-      ],
-      "color": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
       },
       "thickness": 0.1,
       "loop": true
@@ -711,6 +649,99 @@
           "x": 21.7367954,
           "y": 0.9711342,
           "z": -8.985852
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -28.6315022,
+          "y": 3.63151741,
+          "z": 18.923296
+        },
+        {
+          "x": -25.4001,
+          "y": 3.63151741,
+          "z": 18.9004421
+        },
+        {
+          "x": -25.3813725,
+          "y": 3.63151741,
+          "z": 21.5485249
+        },
+        {
+          "x": -28.6127739,
+          "y": 3.63151741,
+          "z": 21.5713787
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -20.7115536,
+          "y": 0.971137047,
+          "z": 13.5886412
+        },
+        {
+          "x": -17.9073658,
+          "y": 0.971137047,
+          "z": 13.5688095
+        },
+        {
+          "x": -17.8803043,
+          "y": 0.9711361,
+          "z": 17.3953552
+        },
+        {
+          "x": -20.6844921,
+          "y": 1.0625248,
+          "z": 17.4151859
+        }
+      ],
+      "color": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "thickness": 0.1,
+      "loop": true
+    },
+    {
+      "points3": [
+        {
+          "x": -20.8239841,
+          "y": 0.9711361,
+          "z": 8.829268
+        },
+        {
+          "x": -17.8725967,
+          "y": 0.9711361,
+          "z": 8.808395
+        },
+        {
+          "x": -17.8452435,
+          "y": 0.971137047,
+          "z": 12.6762657
+        },
+        {
+          "x": -20.79663,
+          "y": 0.978239059,
+          "z": 12.6971388
         }
       ],
       "color": {
@@ -1372,7 +1403,7 @@
         "posX": -26.7824268,
         "posY": 1.06758332,
         "posZ": 12.2915106,
-        "rotX": 5.85101532E-08,
+        "rotX": -2.327746E-07,
         "rotY": 180.012314,
         "rotZ": 180.0,
         "scaleX": 1.1214658,
@@ -6272,7 +6303,7 @@
         "posX": -26.758934,
         "posY": 1.14460778,
         "posZ": 16.2567425,
-        "rotX": -1.12559668E-07,
+        "rotX": -1.16334121E-07,
         "rotY": 179.992874,
         "rotZ": 180.0,
         "scaleX": 1.1516844,
@@ -7799,9 +7830,9 @@
         "posX": -19.4722252,
         "posY": 0.9736048,
         "posZ": 0.185467377,
-        "rotX": -3.871614E-08,
+        "rotX": -4.76368029E-08,
         "rotY": 180.000031,
-        "rotZ": -1.62788638E-07,
+        "rotZ": -1.54482422E-07,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -7851,9 +7882,9 @@
         "posX": 19.3148689,
         "posY": 1.1600008,
         "posZ": -5.916854,
-        "rotX": -1.69313466E-07,
+        "rotX": 1.51639156E-07,
         "rotY": 180.012283,
-        "rotZ": -4.58729261E-07,
+        "rotZ": -9.480339E-08,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7874,7 +7905,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -7902,9 +7933,9 @@
         "posX": 20.1857052,
         "posY": 1.1600008,
         "posZ": -5.944249,
-        "rotX": 3.62517568E-07,
+        "rotX": 1.706924E-07,
         "rotY": 179.997726,
-        "rotZ": -4.23629274E-07,
+        "rotZ": -3.548709E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7925,7 +7956,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -7953,9 +7984,9 @@
         "posX": 19.3440628,
         "posY": 1.1600008,
         "posZ": -6.82605171,
-        "rotX": 1.447772E-07,
+        "rotX": -1.99451975E-07,
         "rotY": 179.980225,
-        "rotZ": -7.86743E-07,
+        "rotZ": -4.61214285E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7976,7 +8007,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -8004,9 +8035,9 @@
         "posX": 20.1794624,
         "posY": 1.1600008,
         "posZ": -6.830599,
-        "rotX": 6.4341566E-07,
+        "rotX": -1.94174021E-07,
         "rotY": 180.002136,
-        "rotZ": -2.50572E-07,
+        "rotZ": -2.27219232E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -8027,7 +8058,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -8053,7 +8084,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2358,
-        "posY": 0.7736817,
+        "posY": 0.7735749,
         "posZ": 3.59527946,
         "rotX": 8.649523E-06,
         "rotY": -0.000370237569,
@@ -8962,12 +8993,12 @@
       "GUID": "bb92f9",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.202174,
-        "posY": 1.35090208,
-        "posZ": 14.1118774,
-        "rotX": 0.374982446,
-        "rotY": 179.87912,
-        "rotZ": 0.006474401,
+        "posX": 9.204538,
+        "posY": 1.34800375,
+        "posZ": 14.1075878,
+        "rotX": 0.150947586,
+        "rotY": 179.8813,
+        "rotZ": 0.195622936,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9016,12 +9047,12 @@
       "GUID": "14785c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.23029,
-        "posY": 1.54227674,
-        "posZ": 14.096056,
-        "rotX": 0.7589985,
-        "rotY": 179.435928,
-        "rotZ": 359.731,
+        "posX": 9.233874,
+        "posY": 1.5395093,
+        "posZ": 14.0877352,
+        "rotX": 0.391658247,
+        "rotY": 179.433533,
+        "rotZ": 359.928925,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9070,12 +9101,12 @@
       "GUID": "710da1",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.22038651,
-        "posY": 1.44485271,
-        "posZ": 14.1052132,
-        "rotX": 0.588935137,
-        "rotY": 179.786621,
-        "rotZ": 359.852,
+        "posX": 9.224015,
+        "posY": 1.44633591,
+        "posZ": 14.0995274,
+        "rotX": 0.163137227,
+        "rotY": 179.80304,
+        "rotZ": 0.0217516,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9124,12 +9155,12 @@
       "GUID": "fd20dd",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.227039,
-        "posY": 1.63684142,
-        "posZ": 14.0604134,
-        "rotX": 0.721641243,
-        "rotY": 179.202438,
-        "rotZ": 359.72348,
+        "posX": 9.229861,
+        "posY": 1.6380862,
+        "posZ": 14.0512218,
+        "rotX": 0.291363984,
+        "rotY": 179.178482,
+        "rotZ": 359.864471,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9178,12 +9209,12 @@
       "GUID": "208e6f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.228965,
-        "posY": 1.73567486,
-        "posZ": 14.0488749,
-        "rotX": 0.7250034,
-        "rotY": 179.256943,
-        "rotZ": 359.6222,
+        "posX": 9.231345,
+        "posY": 1.73504138,
+        "posZ": 14.038394,
+        "rotX": 0.3019972,
+        "rotY": 179.224442,
+        "rotZ": 359.7634,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9232,12 +9263,12 @@
       "GUID": "ac7bdf",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.234539,
-        "posY": 1.8317827,
-        "posZ": 14.0310774,
-        "rotX": 0.7271479,
-        "rotY": 179.146729,
-        "rotZ": 359.7004,
+        "posX": 9.237789,
+        "posY": 1.83134806,
+        "posZ": 14.0193434,
+        "rotX": 0.302782029,
+        "rotY": 179.136276,
+        "rotZ": 359.684265,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9286,12 +9317,12 @@
       "GUID": "535b2a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.1967,
-        "posY": 1.25231993,
-        "posZ": 14.1174793,
-        "rotX": 0.274021655,
-        "rotY": 179.919861,
-        "rotZ": 0.0573658459,
+        "posX": 9.198756,
+        "posY": 1.25489306,
+        "posZ": 14.1145039,
+        "rotX": 0.242031947,
+        "rotY": 179.92041,
+        "rotZ": 0.05303039,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9340,12 +9371,12 @@
       "GUID": "7944c3",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.212041,
-        "posY": 2.22650838,
-        "posZ": 14.0369644,
-        "rotX": 0.7194312,
-        "rotY": 179.700333,
-        "rotZ": 359.8379,
+        "posX": 9.21672249,
+        "posY": 2.225939,
+        "posZ": 14.02602,
+        "rotX": 0.250743,
+        "rotY": 179.7126,
+        "rotZ": 359.8065,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9394,12 +9425,12 @@
       "GUID": "00d34d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.210652,
-        "posY": 2.12728286,
-        "posZ": 14.04105,
-        "rotX": 0.703663945,
-        "rotY": 179.713333,
-        "rotZ": 359.822235,
+        "posX": 9.215354,
+        "posY": 2.12675118,
+        "posZ": 14.0296392,
+        "rotX": 0.275318831,
+        "rotY": 179.7242,
+        "rotZ": 359.815582,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9448,12 +9479,12 @@
       "GUID": "5fea34",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.244854,
-        "posY": 2.02792716,
-        "posZ": 14.0341673,
-        "rotX": 0.6558414,
-        "rotY": 178.862427,
-        "rotZ": 359.842346,
+        "posX": 9.249823,
+        "posY": 2.02746677,
+        "posZ": 14.0227594,
+        "rotX": 0.224864289,
+        "rotY": 178.877014,
+        "rotZ": 359.836884,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9502,12 +9533,12 @@
       "GUID": "e504c5",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.179054,
-        "posY": 1.15912628,
-        "posZ": 14.1115665,
-        "rotX": 0.00579820154,
-        "rotY": 180.037659,
-        "rotZ": 0.09351078,
+        "posX": 9.180201,
+        "posY": 1.1591239,
+        "posZ": 14.1117125,
+        "rotX": 0.007862255,
+        "rotY": 180.032867,
+        "rotZ": 0.09573692,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9556,12 +9587,12 @@
       "GUID": "df689f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.240496,
-        "posY": 1.93058085,
-        "posZ": 14.037591,
-        "rotX": 0.7316072,
-        "rotY": 178.756668,
-        "rotZ": 359.806915,
+        "posX": 9.24509048,
+        "posY": 1.93011272,
+        "posZ": 14.0254583,
+        "rotX": 0.2952216,
+        "rotY": 178.76416,
+        "rotZ": 359.7941,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9613,9 +9644,9 @@
         "posX": -25.21,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -3.477081E-06,
-        "rotY": 4.21350023E-06,
-        "rotZ": 1.548987E-06,
+        "rotX": -3.29563113E-06,
+        "rotY": 9.313208E-06,
+        "rotZ": 1.92619814E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9626,7 +9657,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -9666,9 +9697,9 @@
         "posX": -10.93,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -2.25044619E-06,
-        "rotY": 3.7131515E-06,
-        "rotZ": 1.25928068E-06,
+        "rotX": -2.20459265E-06,
+        "rotY": 8.813568E-06,
+        "rotZ": 9.120405E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9677,8 +9708,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -9719,9 +9750,9 @@
         "posX": 17.4371967,
         "posY": 1.25684667,
         "posZ": -8.95404148,
-        "rotX": -3.46125944E-06,
-        "rotY": 3.545514E-06,
-        "rotZ": 1.60865136E-06,
+        "rotX": -3.2194157E-06,
+        "rotY": 9.506882E-06,
+        "rotZ": 1.99778174E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9731,7 +9762,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -9772,9 +9803,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -5.56100258E-06,
-        "rotY": 4.696483E-06,
-        "rotZ": -5.004047E-07,
+        "rotX": -2.16214039E-06,
+        "rotY": 1.06879052E-05,
+        "rotZ": 1.17465208E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9822,12 +9853,12 @@
       "GUID": "bd25f7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -11.2181234,
+        "posX": -11.2183914,
         "posY": 1.556845,
-        "posZ": -2.11921978,
-        "rotX": -0.0001339453,
-        "rotY": -7.37828959E-05,
-        "rotZ": -0.000745368947,
+        "posZ": -2.119174,
+        "rotX": -0.000142903489,
+        "rotY": -0.0003997621,
+        "rotZ": -0.0007043376,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9897,9 +9928,9 @@
         "posX": -25.21,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -3.06855713E-06,
-        "rotY": 3.73005923E-06,
-        "rotZ": 1.65953327E-06,
+        "rotX": -3.345458E-06,
+        "rotY": 8.521433E-06,
+        "rotZ": 2.05830884E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9910,7 +9941,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -9950,9 +9981,9 @@
         "posX": -24.64,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -3.06943116E-06,
-        "rotY": 2.0054938E-06,
-        "rotZ": 1.78061578E-06,
+        "rotX": -3.4992363E-06,
+        "rotY": 7.1712816E-06,
+        "rotZ": 1.964331E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9963,7 +9994,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -10016,7 +10047,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254887342
+        "b": 0.254885584
       },
       "LayoutGroupSortIndex": 0,
       "Locked": true,
@@ -11575,8 +11606,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.156848878,
-        "g": 0.396063834,
+        "r": 0.156847209,
+        "g": 0.396062076,
         "b": 0.572549045
       },
       "LayoutGroupSortIndex": 0,
@@ -13137,7 +13168,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802618,
+        "g": 0.0980246,
         "b": 0.619607747
       },
       "LayoutGroupSortIndex": 0,
@@ -16247,9 +16278,9 @@
         "posX": -24.64,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -2.854908E-06,
-        "rotY": 3.084447E-06,
-        "rotZ": 1.55242742E-06,
+        "rotX": -3.238668E-06,
+        "rotY": 7.893672E-06,
+        "rotZ": 1.725803E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16260,7 +16291,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -16300,9 +16331,9 @@
         "posX": -24.07,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -3.139668E-06,
-        "rotY": 1.70598639E-06,
-        "rotZ": 1.62247147E-06,
+        "rotX": -2.35453149E-06,
+        "rotY": 6.859556E-06,
+        "rotZ": 2.00143654E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16313,7 +16344,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -16353,9 +16384,9 @@
         "posX": -24.07,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -3.30396529E-06,
-        "rotY": 3.33739649E-06,
-        "rotZ": 1.7374274E-06,
+        "rotX": -2.81727557E-06,
+        "rotY": 8.771438E-06,
+        "rotZ": 1.87074045E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16366,7 +16397,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -16406,9 +16437,9 @@
         "posX": -23.5,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -3.093815E-06,
-        "rotY": 3.68951441E-06,
-        "rotZ": 1.56737576E-06,
+        "rotX": -3.44714726E-06,
+        "rotY": 8.414823E-06,
+        "rotZ": 1.87827868E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16419,7 +16450,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -16459,9 +16490,9 @@
         "posX": -23.5,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -2.99748945E-06,
-        "rotY": 3.39844019E-06,
-        "rotZ": 1.46093566E-06,
+        "rotX": -3.04082027E-06,
+        "rotY": 7.58484839E-06,
+        "rotZ": 1.93616529E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16472,7 +16503,7 @@
       "ColorDiffuse": {
         "r": 0.5333333,
         "g": 0.5254902,
-        "b": 0.254881561
+        "b": 0.2548798
       },
       "Tags": [
         "action_pawn",
@@ -16512,9 +16543,9 @@
         "posX": -10.93,
         "posY": 1.25684667,
         "posZ": -8.47,
-        "rotX": -2.09373775E-06,
-        "rotY": 2.20525362E-06,
-        "rotZ": 1.11154134E-06,
+        "rotX": -1.17110869E-06,
+        "rotY": 7.83682E-06,
+        "rotZ": 1.20528159E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16523,8 +16554,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16565,9 +16596,9 @@
         "posX": -10.3600006,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -2.23280676E-06,
-        "rotY": 4.07252855E-06,
-        "rotZ": 1.094891E-06,
+        "rotX": -2.12704686E-06,
+        "rotY": 9.324049E-06,
+        "rotZ": 1.212506E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16576,8 +16607,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16616,11 +16647,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.3600006,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.47,
-        "rotX": 4.156317E-06,
-        "rotY": 3.01766727E-06,
-        "rotZ": -4.66882148E-06,
+        "rotX": -2.10758276E-06,
+        "rotY": 8.726815E-06,
+        "rotZ": 1.32787216E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16629,8 +16660,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16671,9 +16702,9 @@
         "posX": -9.781352,
         "posY": 1.25684667,
         "posZ": -9.049998,
-        "rotX": -2.2563172E-06,
-        "rotY": 3.07079222E-06,
-        "rotZ": 1.28427E-06,
+        "rotX": -2.302457E-06,
+        "rotY": 8.202947E-06,
+        "rotZ": 1.232507E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16682,8 +16713,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16724,9 +16755,9 @@
         "posX": -9.781352,
         "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -2.026813E-06,
-        "rotY": 3.48116623E-06,
-        "rotZ": 1.06610787E-06,
+        "rotX": 1.99483543E-06,
+        "rotY": 9.369787E-06,
+        "rotZ": 1.36610424E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16735,8 +16766,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16775,11 +16806,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -9.206351,
-        "posY": 1.25684679,
+        "posY": 1.25684667,
         "posZ": -9.049998,
-        "rotX": 8.776947E-07,
-        "rotY": 3.98276961E-06,
-        "rotZ": -5.749014E-06,
+        "rotX": -2.139506E-06,
+        "rotY": 1.00519646E-05,
+        "rotZ": 1.18520086E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16788,8 +16819,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16830,9 +16861,9 @@
         "posX": -9.206351,
         "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -2.204897E-06,
-        "rotY": 3.61174716E-06,
-        "rotZ": 1.08592974E-06,
+        "rotX": -1.98746488E-06,
+        "rotY": 8.520452E-06,
+        "rotZ": 1.3153292E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16841,8 +16872,8 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.1568434,
-        "g": 0.396058053,
+        "r": 0.156841725,
+        "g": 0.396056265,
         "b": 0.572549045
       },
       "Tags": [
@@ -16883,9 +16914,9 @@
         "posX": 17.44,
         "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": -3.27770772E-06,
-        "rotY": 2.59255626E-06,
-        "rotZ": 1.70498811E-06,
+        "rotX": -3.13977512E-06,
+        "rotY": 5.622423E-06,
+        "rotZ": 1.68775057E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16895,7 +16926,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -16936,9 +16967,9 @@
         "posX": 18.01,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -3.13420833E-06,
-        "rotY": 3.29730233E-06,
-        "rotZ": 1.53547569E-06,
+        "rotX": -2.06883669E-06,
+        "rotY": 8.077164E-06,
+        "rotZ": 1.31696891E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16948,7 +16979,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -16989,9 +17020,9 @@
         "posX": 18.0080776,
         "posY": 1.25684667,
         "posZ": -8.36294,
-        "rotX": -2.97603447E-06,
-        "rotY": 3.21875768E-06,
-        "rotZ": 1.71203817E-06,
+        "rotX": -3.277029E-06,
+        "rotY": 8.53921847E-06,
+        "rotZ": 1.6633079E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17001,7 +17032,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -17042,9 +17073,9 @@
         "posX": 18.58,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -3.127872E-06,
-        "rotY": 3.28533679E-06,
-        "rotZ": 1.60589718E-06,
+        "rotX": -2.93468747E-06,
+        "rotY": 8.289628E-06,
+        "rotZ": 1.52752341E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17054,7 +17085,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -17095,9 +17126,9 @@
         "posX": 18.58162,
         "posY": 1.25684667,
         "posZ": -8.38058949,
-        "rotX": -3.37370739E-06,
-        "rotY": 2.757751E-06,
-        "rotZ": 1.76771914E-06,
+        "rotX": -3.32757963E-06,
+        "rotY": 6.32921865E-06,
+        "rotZ": 1.67932888E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17107,7 +17138,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -17148,9 +17179,9 @@
         "posX": 19.15,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -3.03035586E-06,
-        "rotY": 2.49994059E-06,
-        "rotZ": 1.533599E-06,
+        "rotX": -3.36506264E-06,
+        "rotY": 6.734529E-06,
+        "rotZ": 1.69405371E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17160,7 +17191,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -17201,9 +17232,9 @@
         "posX": 19.15,
         "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": -3.15754778E-06,
-        "rotY": 3.868812E-06,
-        "rotZ": 1.61272851E-06,
+        "rotX": -3.1769323E-06,
+        "rotY": 7.989597E-06,
+        "rotZ": 1.51857364E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17213,7 +17244,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802104,
+        "g": 0.09801946,
         "b": 0.619607747
       },
       "Tags": [
@@ -17252,11 +17283,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 4.0,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.39,
-        "rotX": -3.45528019E-06,
-        "rotY": 3.80855636E-06,
-        "rotZ": 1.52456983E-06,
+        "rotX": -2.235739E-06,
+        "rotY": 8.238625E-06,
+        "rotZ": 1.3264787E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17307,9 +17338,9 @@
         "posX": 4.57,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -2.34335516E-06,
-        "rotY": 3.953454E-06,
-        "rotZ": 1.30024785E-06,
+        "rotX": -2.18389141E-06,
+        "rotY": 8.93292E-06,
+        "rotZ": 1.35605853E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17360,9 +17391,9 @@
         "posX": 4.57,
         "posY": 1.25684667,
         "posZ": -8.39,
-        "rotX": -2.35969378E-06,
-        "rotY": 3.72639443E-06,
-        "rotZ": 1.11304519E-06,
+        "rotX": -2.24410928E-06,
+        "rotY": 8.564774E-06,
+        "rotZ": 1.02202546E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17413,9 +17444,9 @@
         "posX": 5.14,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -2.10946837E-06,
-        "rotY": 3.567309E-06,
-        "rotZ": 1.17613672E-06,
+        "rotX": -2.324557E-06,
+        "rotY": 8.577072E-06,
+        "rotZ": 1.12881014E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17466,9 +17497,9 @@
         "posX": 5.14,
         "posY": 1.25684667,
         "posZ": -8.39,
-        "rotX": -2.28501062E-06,
-        "rotY": 2.98153054E-06,
-        "rotZ": 8.80560037E-07,
+        "rotX": -2.31699187E-06,
+        "rotY": 7.826716E-06,
+        "rotZ": 1.20355685E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17519,9 +17550,9 @@
         "posX": 5.71,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -2.24412315E-06,
-        "rotY": 2.76498486E-06,
-        "rotZ": 1.06995788E-06,
+        "rotX": -2.04191224E-06,
+        "rotY": 8.167467E-06,
+        "rotZ": 1.26940131E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17572,9 +17603,9 @@
         "posX": 5.721608,
         "posY": 1.25684667,
         "posZ": -8.387002,
-        "rotX": -2.499911E-06,
-        "rotY": 3.07372E-06,
-        "rotZ": 1.14233342E-06,
+        "rotX": -2.191133E-06,
+        "rotY": 7.50489744E-06,
+        "rotZ": 1.25738075E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17622,12 +17653,12 @@
       "GUID": "bf11a4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.519142,
+        "posX": -8.519349,
         "posY": 1.55684483,
-        "posZ": -2.13831353,
-        "rotX": -0.0001311426,
-        "rotY": -0.000296029873,
-        "rotZ": -0.0007482232,
+        "posZ": -2.13827133,
+        "rotX": -0.000130125671,
+        "rotY": -0.0005797055,
+        "rotZ": -0.000747921,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17694,12 +17725,12 @@
       "GUID": "c12749",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.586585,
+        "posX": -7.586828,
         "posY": 1.55684483,
-        "posZ": -2.14490175,
-        "rotX": -0.000137757,
-        "rotY": 0.000249615259,
-        "rotZ": -0.0007462927,
+        "posZ": -2.14485645,
+        "rotX": -0.000138167627,
+        "rotY": 0.0009429328,
+        "rotZ": -0.000752793,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17766,12 +17797,12 @@
       "GUID": "7a63a2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -10.3093805,
+        "posX": -10.3096533,
         "posY": 1.55684483,
-        "posZ": -2.12565255,
-        "rotX": -0.0001357854,
-        "rotY": -0.000237463173,
-        "rotZ": -0.0007466273,
+        "posZ": -2.12560368,
+        "rotX": -0.000129123815,
+        "rotY": -0.000451087079,
+        "rotZ": -0.000736754737,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17838,12 +17869,12 @@
       "GUID": "c046bd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -6.687711,
-        "posY": 1.55684483,
-        "posZ": -2.15126824,
-        "rotX": -0.000134796908,
-        "rotY": 0.000131983339,
-        "rotZ": -0.00074413314,
+        "posX": -6.687954,
+        "posY": 1.556845,
+        "posZ": -2.15122271,
+        "rotX": -0.000132661677,
+        "rotY": 0.000293154648,
+        "rotZ": -0.000773639069,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17910,12 +17941,12 @@
       "GUID": "5172a7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -9.39215851,
-        "posY": 1.55684483,
-        "posZ": -2.13213634,
-        "rotX": -0.0001331819,
-        "rotY": -0.000166879952,
-        "rotZ": -0.0007478297,
+        "posX": -9.392391,
+        "posY": 1.556845,
+        "posZ": -2.13208818,
+        "rotX": -0.0001337011,
+        "rotY": -8.12637954E-05,
+        "rotZ": -0.0007435502,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17983,7 +18014,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2579765,
-        "posY": 0.774735749,
+        "posY": 0.7747224,
         "posZ": -3.35825038,
         "rotX": -2.5846723E-06,
         "rotY": -2.503291E-05,
@@ -20137,7 +20168,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.30614,
-        "posY": 0.774173439,
+        "posY": 0.7741067,
         "posZ": 12.7843075,
         "rotX": -5.350759E-05,
         "rotY": 1.79692634E-05,
@@ -26370,7 +26401,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "CustomPDF": {
-        "PDFUrl": "https://gmtwebsiteassets.s3-us-west-2.amazonaws.com/DominantSpecies_Marine/DSM_Rules-FINAL.pdf",
+        "PDFUrl": "https://drive.google.com/u/0/uc?id=1zQRYiy2BGRcRyRz8OIE59Nghqy9Av8IL&export=download",
         "PDFPassword": "",
         "PDFPage": 0,
         "PDFPageOffset": 0
@@ -26383,12 +26414,12 @@
       "GUID": "ea8ac8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.387989,
-        "posY": 1.6527102,
-        "posZ": -6.78446341,
-        "rotX": 0.139325276,
-        "rotY": 180.393768,
-        "rotZ": 0.6024649,
+        "posX": 18.3745155,
+        "posY": 1.65257561,
+        "posZ": -6.762643,
+        "rotX": 0.358361959,
+        "rotY": 178.981613,
+        "rotZ": 359.545837,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26409,7 +26440,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26434,12 +26465,12 @@
       "GUID": "06945e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.39281,
-        "posY": 1.259614,
-        "posZ": -6.78599739,
-        "rotX": 0.0169203356,
-        "rotY": 179.946457,
-        "rotZ": 180.077271,
+        "posX": 18.3885136,
+        "posY": 1.45599151,
+        "posZ": -6.747317,
+        "rotX": 0.0322703235,
+        "rotY": 179.36795,
+        "rotZ": 179.613251,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26460,7 +26491,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26485,12 +26516,12 @@
       "GUID": "f93bf2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3859768,
-        "posY": 1.45388007,
-        "posZ": -6.78391933,
-        "rotX": 0.181131408,
-        "rotY": 180.257156,
-        "rotZ": 0.4437019,
+        "posX": 18.38189,
+        "posY": 1.45382285,
+        "posZ": -6.755479,
+        "rotX": 0.210361943,
+        "rotY": 179.881317,
+        "rotZ": 359.5155,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26511,7 +26542,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26536,12 +26567,12 @@
       "GUID": "cbc9ad",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3871574,
-        "posY": 1.55346513,
-        "posZ": -6.78360176,
-        "rotX": 0.150530383,
-        "rotY": 180.323959,
-        "rotZ": 0.537468255,
+        "posX": 18.380352,
+        "posY": 1.553353,
+        "posZ": -6.766581,
+        "rotX": 0.302860826,
+        "rotY": 179.248322,
+        "rotZ": 359.5453,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26562,7 +26593,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26587,12 +26618,12 @@
       "GUID": "d2bfb7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38774,
-        "posY": 1.35509872,
-        "posZ": -6.783222,
-        "rotX": 0.326213121,
-        "rotY": 179.9942,
-        "rotZ": 0.384360582,
+        "posX": 18.3831253,
+        "posY": 1.25677311,
+        "posZ": -6.80294371,
+        "rotX": 359.860168,
+        "rotY": 179.942078,
+        "rotZ": 359.6559,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26613,7 +26644,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26638,12 +26669,12 @@
       "GUID": "81e2e6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38771,
-        "posY": 1.257703,
-        "posZ": -6.782684,
-        "rotX": 0.232731387,
-        "rotY": 180.037079,
-        "rotZ": 0.160557166,
+        "posX": 18.3860111,
+        "posY": 1.15965724,
+        "posZ": -6.805706,
+        "rotX": 0.0146121094,
+        "rotY": 179.917358,
+        "rotZ": 359.930542,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26664,7 +26695,7 @@
       "MeasureMovement": false,
       "DragSelectable": true,
       "Autoraise": true,
-      "Sticky": true,
+      "Sticky": false,
       "Tooltip": true,
       "GridProjection": false,
       "HideWhenFaceDown": false,
@@ -26689,11 +26720,11 @@
       "GUID": "dce92f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -11.2180624,
+        "posX": -11.2180548,
         "posY": 1.26000047,
-        "posZ": -2.11923671,
-        "rotX": 1.811746E-05,
-        "rotY": 180.030121,
+        "posZ": -2.11923838,
+        "rotX": 1.90930623E-05,
+        "rotY": 180.0289,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26740,11 +26771,11 @@
       "GUID": "557086",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -10.30932,
+        "posX": -10.3093166,
         "posY": 1.26000023,
         "posZ": -2.125668,
-        "rotX": 1.88060749E-05,
-        "rotY": 179.9733,
+        "rotX": 1.84005221E-05,
+        "rotY": 179.9722,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26791,11 +26822,11 @@
       "GUID": "e92662",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -9.392073,
+        "posX": -9.392071,
         "posY": 1.26000023,
-        "posZ": -2.132155,
-        "rotX": 1.86276829E-05,
-        "rotY": 180.021439,
+        "posZ": -2.13215351,
+        "rotX": 1.85747649E-05,
+        "rotY": 180.020325,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26842,11 +26873,11 @@
       "GUID": "54bb45",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -8.519084,
+        "posX": -8.519083,
         "posY": 1.26000023,
-        "posZ": -2.13833022,
-        "rotX": 1.8728133E-05,
-        "rotY": 179.99852,
+        "posZ": -2.13832831,
+        "rotX": 1.84970413E-05,
+        "rotY": 179.997086,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26893,11 +26924,11 @@
       "GUID": "0f9861",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -7.58650255,
+        "posX": -7.58649731,
         "posY": 1.26000023,
-        "posZ": -2.144922,
-        "rotX": 1.89905149E-05,
-        "rotY": 179.977478,
+        "posZ": -2.144925,
+        "rotX": 2.04743883E-05,
+        "rotY": 179.97731,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26944,11 +26975,11 @@
       "GUID": "32bf2b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -6.68767834,
+        "posX": -6.68767357,
         "posY": 1.26000023,
-        "posZ": -2.1512804,
-        "rotX": 2.081313E-05,
-        "rotY": 180.01593,
+        "posZ": -2.15128374,
+        "rotX": 1.70648182E-05,
+        "rotY": 180.0152,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26997,7 +27028,7 @@
       "Transform": {
         "posX": -23.07,
         "posY": 0.0,
-        "posZ": 6.63,
+        "posZ": 5.63,
         "rotX": 1.24146268E-07,
         "rotY": -4.73847876E-06,
         "rotZ": -2.82299652E-07,
@@ -27026,9 +27057,9 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "RESEED_BUTTON = Global.getVar(\"RESEED_BUTTON\")\r\n\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nEVOLUTION_DECK_ZONE = Global.getVar(\"EVOLUTION_DECK_ZONE\")\r\nEVOLUTION_DECK = Global.getVar(\"EVOLUTION_DECK\")\r\nASTEROID_CARD = Global.getVar(\"ASTEROID_CARD\")\r\nTRAIT_DECK = Global.getVar(\"TRAIT_DECK\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TYPE_ALGAE = Global.getVar(\"ELEMENT_TYPE_ALGAE\")\r\nELEMENT_TYPE_GASTROPODS = Global.getVar(\"ELEMENT_TYPE_GASTROPODS\")\r\nELEMENT_TYPE_WORMS = Global.getVar(\"ELEMENT_TYPE_WORMS\")\r\nELEMENT_TYPE_PLANKTON = Global.getVar(\"ELEMENT_TYPE_PLANKTON\")\r\nELEMENT_TYPE_SPONGES = Global.getVar(\"ELEMENT_TYPE_SPONGES\")\r\nELEMENT_TYPE_SUN = Global.getVar(\"ELEMENT_TYPE_SUN\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nWANDERLUST_TILE_SCORES = Global.getTable(\"WANDERLUST_TILE_SCORES\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 6.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return Global.call(\"getEvolutionDeck\")\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return Global.call(\"getEvolutionReserveDeck\")\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    return Global.call(\"getValidSeatedPlayers\")\r\nend\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    return Global.call(\"getWanderlustType\", obj)\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.5, 0, 0)\r\n    local shiftDown = vector(0, 0, -.5)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local count = 0\r\n    local playerList = getValidSeatedPlayers()\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            local current = first + (shiftRight * ii) + (count * shiftDown)\r\n            bag.takeObject({position=current})\r\n        end\r\n        count = count + 1\r\n    end\r\nend\r\n\r\nfunction positionToVector(position)\r\n    return vector(float, float, float)\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend",
+      "LuaScript": "RESEED_BUTTON = Global.getVar(\"RESEED_BUTTON\")\r\n\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nEVOLUTION_DECK_ZONE = Global.getVar(\"EVOLUTION_DECK_ZONE\")\r\nEVOLUTION_DECK = Global.getVar(\"EVOLUTION_DECK\")\r\nASTEROID_CARD = Global.getVar(\"ASTEROID_CARD\")\r\nTRAIT_DECK = Global.getVar(\"TRAIT_DECK\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TYPE_ALGAE = Global.getVar(\"ELEMENT_TYPE_ALGAE\")\r\nELEMENT_TYPE_GASTROPODS = Global.getVar(\"ELEMENT_TYPE_GASTROPODS\")\r\nELEMENT_TYPE_WORMS = Global.getVar(\"ELEMENT_TYPE_WORMS\")\r\nELEMENT_TYPE_PLANKTON = Global.getVar(\"ELEMENT_TYPE_PLANKTON\")\r\nELEMENT_TYPE_SPONGES = Global.getVar(\"ELEMENT_TYPE_SPONGES\")\r\nELEMENT_TYPE_SUN = Global.getVar(\"ELEMENT_TYPE_SUN\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nWANDERLUST_TILE_SCORES = Global.getTable(\"WANDERLUST_TILE_SCORES\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 5.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return Global.call(\"getEvolutionDeck\")\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return Global.call(\"getEvolutionReserveDeck\")\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    return Global.call(\"getValidSeatedPlayers\")\r\nend\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    return Global.call(\"getWanderlustType\", obj)\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.5, 0, 0)\r\n    local shiftDown = vector(0, 0, -.5)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local count = 0\r\n    local playerList = getValidSeatedPlayers()\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            local current = first + (shiftRight * ii) + (count * shiftDown)\r\n            bag.takeObject({position=current})\r\n        end\r\n        count = count + 1\r\n    end\r\nend\r\n\r\nfunction positionToVector(position)\r\n    return vector(float, float, float)\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend",
       "LuaScriptState": "",
-      "XmlUI": "<Defaults>\r\n    <Option fontSize=\"30\"/>\r\n    <Dropdown\r\n        fontSize=\"30\"\r\n        itemHeight=\"35\"\r\n        minHeight=\"50\"\r\n        minWidth=\"100\"\r\n        preferredWidth=\"200\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"0\"\r\n        />\r\n    <Text\r\n        fontSize=\"30\"\r\n        horizontalOverflow=\"Wrap\"\r\n        verticalOverflow=\"Wrap\"\r\n        color=\"White\"\r\n        minHeight=\"50\"\r\n        minWidth=\"50\"\r\n        preferredWidth=\"50\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"1\"\r\n        />\r\n    <Button fontSize=\"30\" minHeight=\"50\" minWidth=\"100\"/>\r\n    <HorizontalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <VerticalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <Cell outline=\"rgb(1,0,0)\"/>\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutSetup\" height=\"600\" width=\"800\" position=\"0 0 -100\">\r\n    <Text>Step 1: Each player chooses one of the 4 colors.</Text>\r\n    <HorizontalLayout>\r\n        <Text>Step 2: Choose setup options.</Text>\r\n        <VerticalLayout id=\"layoutStart\" minWidth=\"300\" preferredWidth=\"300\" flexibleWidth=\"1\">\r\n            <Text>Setup Options</Text>\r\n            <HorizontalLayout>\r\n                <Text>Game Length</Text>\r\n                <Dropdown id=\"dropdownGameLength\" onValueChanged=\"onGameLengthSelected\">\r\n                    <Option>Short</Option>\r\n                    <Option selected=\"true\">Standard</Option>\r\n                    <Option>Long</Option>\r\n                    <Option>Epic</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Earth Setup</Text>\r\n                <Dropdown id=\"dropDownRandomEarth\" onValueChanged=\"onRandomEarthSelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Animal Display</Text>\r\n                <Dropdown id=\"dropDownAnimalDisplay\" onValueChanged=\"onAnimalDisplaySelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <Button onClick=\"onClickStandard\">Setup</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n    <HorizontalLayout>\r\n        <Text>Step 3: Confirm Traits.</Text>\r\n        <VerticalLayout id=\"layoutTrait\" visibility=\"Black\" minWidth=\"200\" preferredWidth=\"200\">\r\n            <Button id=\"btnConfirmTraits\" minWidth=\"200\" preferredWidth=\"200\" interactable=\"false\" onClick=\"onClickConfirmTraits\">Confirm Traits</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n</VerticalLayout>"
+      "XmlUI": "<Defaults>\r\n    <Option fontSize=\"30\"/>\r\n    <Dropdown\r\n        fontSize=\"30\"\r\n        itemHeight=\"35\"\r\n        minHeight=\"50\"\r\n        minWidth=\"100\"\r\n        preferredWidth=\"200\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"0\"\r\n        />\r\n    <Text\r\n        fontSize=\"30\"\r\n        horizontalOverflow=\"Wrap\"\r\n        verticalOverflow=\"Wrap\"\r\n        color=\"White\"\r\n        minHeight=\"50\"\r\n        minWidth=\"50\"\r\n        preferredWidth=\"50\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"1\"\r\n        />\r\n    <Button fontSize=\"30\" minHeight=\"50\" minWidth=\"100\"/>\r\n    <HorizontalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <VerticalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <Cell outline=\"rgb(1,0,0)\"/>\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutSetup\" height=\"600\" width=\"800\" position=\"0 0 -100\">\r\n    <Text>Step 1: Each player chooses one of the 4 colors.</Text>\r\n    <HorizontalLayout>\r\n        <Text>Step 2: Choose setup options and click setup.</Text>\r\n        <VerticalLayout id=\"layoutStart\" minWidth=\"300\" preferredWidth=\"300\" flexibleWidth=\"1\">\r\n            <Text>Setup Options</Text>\r\n            <HorizontalLayout>\r\n                <Text>Game Length</Text>\r\n                <Dropdown id=\"dropdownGameLength\" onValueChanged=\"onGameLengthSelected\">\r\n                    <Option>Short</Option>\r\n                    <Option selected=\"true\">Standard</Option>\r\n                    <Option>Long</Option>\r\n                    <Option>Epic</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Earth Setup</Text>\r\n                <Dropdown id=\"dropDownRandomEarth\" onValueChanged=\"onRandomEarthSelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Animal Display</Text>\r\n                <Dropdown id=\"dropDownAnimalDisplay\" onValueChanged=\"onAnimalDisplaySelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <Button onClick=\"onClickStandard\">Setup</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n    <HorizontalLayout>\r\n        <Text preferredHeight=\"150\">Step 3: Move selected trait to player board. Then click confirm traits.  If playing with superhero variant take two traits instead of one.</Text>\r\n        <VerticalLayout id=\"layoutTrait\" visibility=\"Black\" minWidth=\"200\" preferredWidth=\"200\">\r\n            <Button id=\"btnConfirmTraits\" minWidth=\"200\" preferredWidth=\"200\" interactable=\"false\" onClick=\"onClickConfirmTraits\">Confirm Traits</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n</VerticalLayout>"
     },
     {
       "GUID": "15f5b0",
@@ -27065,7 +27096,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ABUNDANCE_ZONE =  Global.getVar(\"ABUNDANCE_ZONE\")\r\nAUTOTROPHS_ZONE =  Global.getVar(\"AUTOTROPHS_ZONE\")\r\nDEPLETION_ZONE =  Global.getVar(\"DEPLETION_ZONE\")\r\nADAPTION_ZONE =  Global.getVar(\"ADAPTION_ZONE\")\r\nREGRESSION_ZONE =  Global.getVar(\"REGRESSION_ZONE\")\r\nSPECIATION_ZONE = Global.getVar(\"SPECIATION_ZONE\")\r\nWANDERLUST_ZONE =  Global.getVar(\"WANDERLUST_ZONE\")\r\nCOMPETITION_ZONE =  Global.getVar(\"COMPETITION_ZONE\")\r\nEVOLUTION_ZONE =  Global.getVar(\"EVOLUTION_ZONE\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TAG =  Global.getVar(\"ELEMENT_TAG\")\r\nTERRAIN_TAG =  Global.getVar(\"TERRAIN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nABUNDANCE_POSITIONS = {\r\n    {14.55, 1.26, 15.01},\r\n    {15.26, 1.16, 15.01},\r\n    {16.00, 1.16, 15.01},\r\n    {16.72, 1.16, 15.00}\r\n}\r\nAUTOTROPHS_POSITIONS = {\r\n    {14.61, 1.26, 13.80},\r\n    {15.24, 1.16, 13.84},\r\n    {16.00, 1.16, 13.86},\r\n    {16.71, 1.26, 13.85}\r\n}\r\nDEPLETION_POSITIONS = {\r\n    {14.52, 1.26, 12.49},\r\n    {15.17, 1.16, 12.49},\r\n    {15.96, 1.16, 12.47},\r\n    {16.73, 1.26, 12.48}\r\n}\r\nADAPTION_POSITIONS = {\r\n    {14.54, 1.26, 11.33},\r\n    {15.27, 1.16, 11.34},\r\n    {16.00, 1.16, 11.33},\r\n    {16.68, 1.26, 11.32}\r\n}\r\nREGRESSION_POSITIONS = {\r\n    {14.59, 1.26, 10.10},\r\n    {15.27, 1.16, 10.10},\r\n    {16.05, 1.16, 10.12},\r\n    {16.76, 1.26, 10.12}\r\n}\r\nSPECIATION_POSITIONS = {\r\n    {13.16, 1.26, 7.95},\r\n    {14.46, 1.16, 7.97},\r\n    {15.74, 1.26, 7.97},\r\n    {17.05, 1.16, 7.97},\r\n}\r\nWANDERLUST_POSITIONS = {\r\n    {14.54, 1.26, 6.78},\r\n    {15.24, 1.16, 6.77},\r\n    {15.98, 1.26, 6.78},\r\n    {16.69, 1.16, 6.78},\r\n}\r\nCOMPETITION_POSITIONS = {\r\n    {15.13, 1.26, 2.86},\r\n    {16.38, 1.16, 2.88},\r\n    {17.67, 1.16, 2.87}\r\n}\r\nEVOLUTION_POSITIONS = {\r\n    {15.10, 1.26, 1.39},\r\n    {16.09, 1.16, 1.41},\r\n    {17.14, 1.26, 1.40},\r\n    {18.09, 1.26, 1.37},\r\n    {19.10, 1.26, 1.39},\r\n}\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction onLoad()\r\n    self.setPosition({-7.50, .9, 12.63})\r\n    self.setLock(true)\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClick()\r\n    startLuaCoroutine(self, \"reseedCoroutine\")\r\nend\r\n\r\nfunction reseedCoroutine()\r\n    reseed(true)\r\n    return 1\r\nend\r\n\r\nfunction reseed(notify)\r\n    if notify then notifyRegression() end\r\n    removeElements(DEPLETION_ZONE)\r\n    removeElements(REGRESSION_ZONE)\r\n    removeElements(SPECIATION_ZONE)\r\n    removeElements(WANDERLUST_ZONE)\r\n    removeTerrain(COMPETITION_ZONE)\r\n    removeTerrain(EVOLUTION_ZONE)\r\n    addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, COMPETITION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, EVOLUTION_POSITIONS)\r\n    shiftElements(ADAPTION_ZONE, REGRESSION_POSITIONS)\r\n    shiftElements(AUTOTROPHS_ZONE, DEPLETION_POSITIONS)\r\n    shiftElements(ABUNDANCE_ZONE, AUTOTROPHS_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ABUNDANCE_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ADAPTION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, SPECIATION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, WANDERLUST_POSITIONS)\r\n    resetFoodChainCubes()\r\nend\r\n\r\nfunction notifyRegression()\r\n    local regression = getObjectFromGUID(REGRESSION_ZONE)\r\n    local regressionElementsSet = {}\r\n    for _,obj in ipairs(regression.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            local url = obj.getCustomObject().image\r\n            regressionElementsSet[getElementType(obj)] = true\r\n        end\r\n    end\r\n    local regressionElementList = {}\r\n    for k,v in pairs(regressionElementsSet) do\r\n        table.insert(regressionElementList, #regressionElementList + 1, k)\r\n    end\r\n\r\n    local rgb = {r=1, g=0, b=0}\r\n    local msg = \"Remove all elements from earth that are surrounded by exactly 3 Vent tiles.\"\r\n    if #regressionElementList > 0 then\r\n        local msgRegression = \"Regression action: \"\r\n        for ii, value in ipairs(regressionElementList) do\r\n            if ii ~= 1 then\r\n                msgRegression = msgRegression .. \", \"\r\n            end\r\n            msgRegression = msgRegression .. value\r\n        end\r\n        broadcastToAll(msg .. \"\\n\" .. msgRegression, rgb)\r\n    else\r\n        broadcastToAll(msg, rgb)\r\n    end\r\nend\r\n\r\nfunction removeElements(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction removeTerrain(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(TERRAIN_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction addFromBagToPosition(bag_guid, dest_positions)\r\n    local bag = getObjectFromGUID(bag_guid)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction shiftElements(src_zone_guid, dest_positions)\r\n    local zoneSrc = getObjectFromGUID(src_zone_guid)\r\n    local positionIndex = 1\r\n    for ii, element in ipairs(zoneSrc.getObjects()) do\r\n        if element.hasTag(ELEMENT_TAG) and positionIndex <= #dest_positions then\r\n            element.setPositionSmooth(dest_positions[positionIndex], false, false)\r\n            element.setRotation({0, 180, 0})\r\n            positionIndex = positionIndex + 1\r\n        end\r\n    end\r\nend\r\n\r\nfunction addElementsFromBag(dest_positions)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction resetFoodChainCubes()\r\n    for color, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        local zoneRef = getObjectFromGUID(playerComponents.food_chain_zone)\r\n        if zoneRef ~= nil then\r\n            for _, obj in ipairs(zoneRef.getObjects()) do\r\n                if obj.hasTag(SPECIES_TAG) then\r\n                    obj.setPositionSmooth(playerComponents.food_chain_start_position, false, false)\r\n                end\r\n            end\r\n        end\r\n    end\r\nend",
+      "LuaScript": "ABUNDANCE_ZONE =  Global.getVar(\"ABUNDANCE_ZONE\")\r\nAUTOTROPHS_ZONE =  Global.getVar(\"AUTOTROPHS_ZONE\")\r\nDEPLETION_ZONE =  Global.getVar(\"DEPLETION_ZONE\")\r\nADAPTION_ZONE =  Global.getVar(\"ADAPTION_ZONE\")\r\nREGRESSION_ZONE =  Global.getVar(\"REGRESSION_ZONE\")\r\nSPECIATION_ZONE = Global.getVar(\"SPECIATION_ZONE\")\r\nWANDERLUST_ZONE =  Global.getVar(\"WANDERLUST_ZONE\")\r\nCOMPETITION_ZONE =  Global.getVar(\"COMPETITION_ZONE\")\r\nEVOLUTION_ZONE =  Global.getVar(\"EVOLUTION_ZONE\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TAG =  Global.getVar(\"ELEMENT_TAG\")\r\nTERRAIN_TAG =  Global.getVar(\"TERRAIN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nABUNDANCE_POSITIONS = {\r\n    {14.55, 1.26, 15.01},\r\n    {15.26, 1.16, 15.01},\r\n    {16.00, 1.16, 15.01},\r\n    {16.72, 1.16, 15.00}\r\n}\r\nAUTOTROPHS_POSITIONS = {\r\n    {14.61, 1.26, 13.80},\r\n    {15.24, 1.16, 13.84},\r\n    {16.00, 1.16, 13.86},\r\n    {16.71, 1.26, 13.85}\r\n}\r\nDEPLETION_POSITIONS = {\r\n    {14.52, 1.26, 12.49},\r\n    {15.17, 1.16, 12.49},\r\n    {15.96, 1.16, 12.47},\r\n    {16.73, 1.26, 12.48}\r\n}\r\nADAPTION_POSITIONS = {\r\n    {14.54, 1.26, 11.33},\r\n    {15.27, 1.16, 11.34},\r\n    {16.00, 1.16, 11.33},\r\n    {16.68, 1.26, 11.32}\r\n}\r\nREGRESSION_POSITIONS = {\r\n    {14.59, 1.26, 10.10},\r\n    {15.27, 1.16, 10.10},\r\n    {16.05, 1.16, 10.12},\r\n    {16.76, 1.26, 10.12}\r\n}\r\nSPECIATION_POSITIONS = {\r\n    {13.16, 1.26, 7.95},\r\n    {14.46, 1.16, 7.97},\r\n    {15.74, 1.26, 7.97},\r\n    {17.05, 1.16, 7.97},\r\n}\r\nWANDERLUST_POSITIONS = {\r\n    {14.54, 1.26, 6.78},\r\n    {15.24, 1.16, 6.77},\r\n    {15.98, 1.26, 6.78},\r\n    {16.69, 1.16, 6.78},\r\n}\r\nCOMPETITION_POSITIONS = {\r\n    {15.13, 1.26, 2.86},\r\n    {16.38, 1.16, 2.88},\r\n    {17.67, 1.16, 2.87}\r\n}\r\nEVOLUTION_POSITIONS = {\r\n    {15.10, 1.26, 1.39},\r\n    {16.09, 1.16, 1.41},\r\n    {17.14, 1.26, 1.40},\r\n    {18.09, 1.26, 1.37},\r\n    {19.10, 1.26, 1.39},\r\n}\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    return Global.call(\"getTerrainMarkerType\", obj)\r\nend\r\n\r\nfunction onLoad()\r\n    self.setPosition({-7.50, .9, 12.63})\r\n    self.setLock(true)\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClick()\r\n    startLuaCoroutine(self, \"reseedCoroutine\")\r\nend\r\n\r\nfunction reseedCoroutine()\r\n    reseed(true)\r\n    return 1\r\nend\r\n\r\nfunction reseed(notify)\r\n    if notify then notifyRegression() end\r\n    removeElements(DEPLETION_ZONE)\r\n    removeElements(REGRESSION_ZONE)\r\n    removeElements(SPECIATION_ZONE)\r\n    removeElements(WANDERLUST_ZONE)\r\n    removeTerrain(COMPETITION_ZONE)\r\n    removeTerrain(EVOLUTION_ZONE)\r\n    addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, COMPETITION_POSITIONS)\r\n    -- addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, EVOLUTION_POSITIONS)\r\n    addTerrainEvolution()\r\n    shiftElements(ADAPTION_ZONE, REGRESSION_POSITIONS)\r\n    shiftElements(AUTOTROPHS_ZONE, DEPLETION_POSITIONS)\r\n    shiftElements(ABUNDANCE_ZONE, AUTOTROPHS_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ABUNDANCE_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ADAPTION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, SPECIATION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, WANDERLUST_POSITIONS)\r\n    resetFoodChainCubes()\r\nend\r\n\r\nfunction notifyRegression()\r\n    local regression = getObjectFromGUID(REGRESSION_ZONE)\r\n    local regressionElementsSet = {}\r\n    for _,obj in ipairs(regression.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            local url = obj.getCustomObject().image\r\n            regressionElementsSet[getElementType(obj)] = true\r\n        end\r\n    end\r\n    local regressionElementList = {}\r\n    for k,v in pairs(regressionElementsSet) do\r\n        table.insert(regressionElementList, #regressionElementList + 1, k)\r\n    end\r\n\r\n    local rgb = {r=1, g=0, b=0}\r\n    local msg = \"Remove all elements from earth that are surrounded by exactly 3 Vent tiles.\"\r\n    if #regressionElementList > 0 then\r\n        local msgRegression = \"Regression action: \"\r\n        for ii, value in ipairs(regressionElementList) do\r\n            if ii ~= 1 then\r\n                msgRegression = msgRegression .. \", \"\r\n            end\r\n            msgRegression = msgRegression .. value\r\n        end\r\n        broadcastToAll(msg .. \"\\n\" .. msgRegression, rgb)\r\n    else\r\n        broadcastToAll(msg, rgb)\r\n    end\r\nend\r\n\r\nfunction removeElements(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction removeTerrain(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(TERRAIN_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction addFromBagToPosition(bag_guid, dest_positions)\r\n    local bag = getObjectFromGUID(bag_guid)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction shiftElements(src_zone_guid, dest_positions)\r\n    local zoneSrc = getObjectFromGUID(src_zone_guid)\r\n    local positionIndex = 1\r\n    for ii, element in ipairs(zoneSrc.getObjects()) do\r\n        if element.hasTag(ELEMENT_TAG) and positionIndex <= #dest_positions then\r\n            element.setPositionSmooth(dest_positions[positionIndex], false, false)\r\n            element.setRotation({0, 180, 0})\r\n            positionIndex = positionIndex + 1\r\n        end\r\n    end\r\nend\r\n\r\nfunction addElementsFromBag(dest_positions)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction resetFoodChainCubes()\r\n    for color, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        local zoneRef = getObjectFromGUID(playerComponents.food_chain_zone)\r\n        if zoneRef ~= nil then\r\n            for _, obj in ipairs(zoneRef.getObjects()) do\r\n                if obj.hasTag(SPECIES_TAG) then\r\n                    obj.setPositionSmooth(playerComponents.food_chain_start_position, false, false)\r\n                end\r\n            end\r\n        end\r\n    end\r\nend\r\n\r\nfunction addTerrainEvolution()\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local terrains = {}\r\n    for ii=1,#EVOLUTION_POSITIONS do\r\n        local obj = bag.takeObject()\r\n        table.insert(terrains, obj)\r\n    end\r\n    local terrain_index = {\r\n        [WANDERLUST_TILE_LAND] = 1,\r\n        [WANDERLUST_TILE_KELP] = 2,\r\n        [WANDERLUST_TILE_CORAL] = 3,\r\n        [WANDERLUST_TILE_SEAMOUNT] = 4,\r\n        [WANDERLUST_TILE_SEAGRASS] = 5,\r\n        [WANDERLUST_TILE_SAND] = 6,\r\n        [WANDERLUST_TILE_OCEAN] = 7,\r\n        [WANDERLUST_TILE_VENT] = 8,\r\n    }\r\n    table.sort(terrains, function(a,b)\r\n        return terrain_index[getTerrainMarkerType(a)] < terrain_index[getTerrainMarkerType(b)]\r\n    end)\r\n    for ii, position in ipairs(EVOLUTION_POSITIONS) do\r\n        terrains[ii].setPosition(position)\r\n        terrains[ii].setRotation({0,180,0})\r\n    end\r\nend",
       "LuaScriptState": "",
       "XmlUI": "<Defaults>\r\n    <Text fontSize=\"20\" />\r\n    <Button fontSize=\"30\" />\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutStart\" width=\"200\" height=\"80\" position=\"0 0 -30\">\r\n<Button onClick=\"onClick\">Reseed</Button>\r\n</VerticalLayout>"
     },
@@ -27433,9 +27464,9 @@
       "GUID": "771647",
       "Name": "ScriptingTrigger",
       "Transform": {
-        "posX": -19.3185635,
+        "posX": -19.3236217,
         "posY": 3.51113486,
-        "posZ": 16.1891956,
+        "posZ": 15.4735985,
         "rotX": 0.0,
         "rotY": 0.4051986,
         "rotZ": 0.0,
@@ -27513,12 +27544,12 @@
       "GUID": "9fe901",
       "Name": "Card",
       "Transform": {
-        "posX": -23.785181,
+        "posX": -23.5071449,
         "posY": 0.9736048,
-        "posZ": 16.3551216,
-        "rotX": 1.754248E-08,
+        "posZ": 16.2446232,
+        "rotX": 1.83565128E-08,
         "rotY": 180.0,
-        "rotZ": -1.68722352E-07,
+        "rotZ": 8.05129048E-08,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -27565,9 +27596,9 @@
       "GUID": "30c745",
       "Name": "3DText",
       "Transform": {
-        "posX": -26.7694359,
-        "posY": 3.62128186,
-        "posZ": 19.3066311,
+        "posX": -23.0025921,
+        "posY": 3.62125039,
+        "posZ": 20.8929157,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27597,7 +27628,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "Text": {
-        "Text": "Returned to Box",
+        "Text": "Items in red boxes\nare considered\nreturned to the box.",
         "colorstate": {
           "r": 0.9529412,
           "g": 0.109803967,
@@ -27613,9 +27644,9 @@
       "GUID": "b96ac5",
       "Name": "3DText",
       "Transform": {
-        "posX": -19.2778,
-        "posY": 0.9607579,
-        "posZ": 14.2796278,
+        "posX": -19.2584038,
+        "posY": 0.9607069,
+        "posZ": 13.1375046,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27645,7 +27676,7 @@
       "HideWhenFaceDown": false,
       "Hands": false,
       "Text": {
-        "Text": "Discard",
+        "Text": "Discard Pile",
         "colorstate": {
           "r": 1.0,
           "g": 1.0,
@@ -27658,52 +27689,12 @@
       "XmlUI": ""
     },
     {
-      "GUID": "86a9c3",
-      "Name": "ScriptingTrigger",
-      "Transform": {
-        "posX": -19.4022655,
-        "posY": 3.51113486,
-        "posZ": 11.9301376,
-        "rotX": 0.0,
-        "rotY": 0.405198574,
-        "rotZ": 0.0,
-        "scaleX": 2.80160666,
-        "scaleY": 5.1,
-        "scaleZ": 3.7256937
-      },
-      "Nickname": "",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 0.509803951
-      },
-      "LayoutGroupSortIndex": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": ""
-    },
-    {
       "GUID": "de3478",
       "Name": "3DText",
       "Transform": {
-        "posX": -19.3218956,
-        "posY": 3.62128353,
-        "posZ": 18.767416,
+        "posX": -19.3274155,
+        "posY": 1.04498971,
+        "posZ": 17.9935513,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27749,9 +27740,9 @@
       "GUID": "6d9eef",
       "Name": "Bag",
       "Transform": {
-        "posX": -26.844595,
+        "posX": -26.9742222,
         "posY": 3.43648171,
-        "posZ": 20.5409718,
+        "posZ": 20.17061,
         "rotX": 1.14391537E-06,
         "rotY": -0.000160729556,
         "rotZ": -5.661255E-06,
@@ -28861,8 +28852,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -17.98596,
-        "posY": 0.9611444,
-        "posZ": -7.56270552,
+        "posY": 0.9611578,
+        "posZ": -7.56274366,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -28948,9 +28939,9 @@
       "GUID": "21e0a5",
       "Name": "3DText",
       "Transform": {
-        "posX": -4.003363,
-        "posY": 0.9611424,
-        "posZ": -7.707568,
+        "posX": -4.00309372,
+        "posY": 0.961155832,
+        "posZ": -7.707595,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -28996,9 +28987,9 @@
       "GUID": "2e2049",
       "Name": "3DText",
       "Transform": {
-        "posX": 10.8511724,
-        "posY": 0.9611437,
-        "posZ": -7.67415047,
+        "posX": 10.85168,
+        "posY": 0.961156964,
+        "posZ": -7.67419243,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29044,9 +29035,9 @@
       "GUID": "ea5776",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.4514675,
-        "posY": 0.9611424,
-        "posZ": -7.603084,
+        "posX": 24.4520226,
+        "posY": 0.961155832,
+        "posZ": -7.60312271,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29378,9 +29369,9 @@
       "GUID": "71e3e9",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.3614,
-        "posY": 0.961129963,
-        "posZ": 0.4136743,
+        "posX": 24.36198,
+        "posY": 0.961124241,
+        "posZ": 0.413688421,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29417,6 +29408,102 @@
           "b": 1.0
         },
         "fontSize": 24
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "309762",
+      "Name": "3DText",
+      "Transform": {
+        "posX": -30.392355,
+        "posY": 3.62148261,
+        "posZ": 17.1704521,
+        "rotX": 90.0,
+        "rotY": 0.405198574,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "Text": {
+        "Text": "Removed\nEvolution\nCards",
+        "colorstate": {
+          "r": 1.0,
+          "g": 0.0,
+          "b": 0.0
+        },
+        "fontSize": 36
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "9f614b",
+      "Name": "3DText",
+      "Transform": {
+        "posX": -30.2374287,
+        "posY": 3.62148356,
+        "posZ": 13.0885572,
+        "rotX": 90.0,
+        "rotY": 0.405198574,
+        "rotZ": 0.0,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "Text": {
+        "Text": "Unused\nTrait\nCards",
+        "colorstate": {
+          "r": 1.0,
+          "g": 0.0,
+          "b": 0.0
+        },
+        "fontSize": 40
       },
       "LuaScript": "",
       "LuaScriptState": "",

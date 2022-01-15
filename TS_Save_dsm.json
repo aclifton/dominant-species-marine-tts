@@ -1,7 +1,7 @@
 {
   "SaveName": "Dominant Species Marine",
-  "EpochTime": 1642256568,
-  "Date": "1/15/2022 9:22:48 AM",
+  "EpochTime": 1642261117,
+  "Date": "1/15/2022 10:38:37 AM",
   "VersionNumber": "v13.1.1",
   "GameMode": "Dominant Species Marine",
   "GameType": "Game",
@@ -314,7 +314,7 @@
       "Size": 1.0
     }
   ],
-  "LuaScript": "RESEED_BUTTON = \"15f5b0\"\n\nEVOLUTION_DECK_ZONE = \"771647\"\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\nASTEROID_CARD = \"9fe901\"\nTRAIT_DECK = \"c5d0ec\"\n\nABUNDANCE_ZONE = \"c982e7\"\nAUTOTROPHS_ZONE = \"c4e77b\"\nDEPLETION_ZONE = \"e23076\"\nADAPTION_ZONE = \"b70e29\"\nREGRESSION_ZONE = \"91fe74\"\nSPECIATION_ZONE = \"075fb0\"\nWANDERLUST_ZONE = \"def2ff\"\nCOMPETITION_ZONE = \"90e44c\"\nEVOLUTION_ZONE = \"91934c\"\n\nELEMENT_TAG = \"element\"\nWANDERLUST_TAG = \"wanderlust\"\nTERRAIN_TAG = \"terrain\"\nSPECIES_TAG = \"species\"\nACTION_PAWN_TAG = \"action_pawn\"\n\nCRUSTACEANS_TAG = \"crustaceans\"\nFISHES_TAG = \"fishes\"\nCEPHALOPODS_TAG = \"cephalopods\"\nREPTILES_TAG = \"reptiles\"\n\nCOMMON_COMPONENTS = {\n    wander_lust_bag = \"7d9337\",\n    element_bag = \"e81219\",\n    terrain_bag = \"ed6578\",\n    box_bag = \"6d9eef\",\n    special_pawn_plankton = \"bd25f7\",\n    special_pawn_worms = \"7a63a2\",\n    special_pawn_sponges = \"5172a7\",\n    special_pawn_gastropods = \"bf11a4\",\n    special_pawn_algae = \"c12749\",\n    special_pawn_sun = \"c046bd\",\n    control_marker_plankton = \"dce92f\",\n    control_marker_worms = \"557086\",\n    control_marker_sponges = \"e92662\",\n    control_marker_gastropods = \"54bb45\",\n    control_marker_algae = \"0f9861\",\n    control_marker_sun = \"32bf2b\",\n    food_chain_start_zone = \"9ba132\",\n}\n\nPLAYER_COMPONENTS = {\n    [Player.Brown.color] = {\n        tag = CRUSTACEANS_TAG,\n        vp = \"17f953\",\n        boards = {\"85e368\", \"b5c87e\"},\n        food_chain_zone = \"d9b5af\",\n        food_chain_start_position = {-11.32, 1.35, 8.67},\n        food_chain_end_position = {-9.41, 1.29, 8.68},\n        gene_pool_bag = \"cd7b0d\",\n        action_pawn_position_first = vector(-25.21, 1.26, -8.36),\n        control_marker_zone = \"fb935b\",\n    },\n    [Player.Blue.color] = {\n        tag = FISHES_TAG,\n        vp = \"3f075f\",\n        boards = {\"bf4314\", \"578c29\"},\n        food_chain_zone = \"01090b\",\n        food_chain_start_position = {-11.31, 1.35, 9.74},\n        food_chain_end_position = {-9.41, 1.29, 9.74},\n        gene_pool_bag = \"ea715b\",\n        action_pawn_position_first = vector(-10.93, 1.26, -8.47),\n        control_marker_zone = \"6d7f31\",\n    },\n    [Player.Orange.color] = {\n        tag = CEPHALOPODS_TAG,\n        vp = \"bbb44d\",\n        boards = {\"c01aba\", \"24c905\"},\n        food_chain_zone = \"8aaf18\",\n        food_chain_start_position = {-11.32, 1.35, 10.74},\n        food_chain_end_position = {-9.40, 1.29, 10.74},\n        gene_pool_bag = \"93c7b1\",\n        action_pawn_position_first = vector(4.00, 1.26, -8.39),\n        control_marker_zone = \"de4c5c\",\n    },\n    [Player.Purple.color] = {\n        tag = REPTILES_TAG,\n        vp = \"e40bf9\",\n        boards = {\"76a1b4\", \"7c5462\"},\n        food_chain_zone = \"93093b\",\n        food_chain_start_position = {-11.30, 1.35, 11.76},\n        food_chain_end_position = {-9.39, 1.29, 11.78},\n        gene_pool_bag = \"253bcb\",\n        action_pawn_position_first = vector(17.44, 1.26, -8.38),\n        control_marker_zone = \"bb6f78\",\n    },\n}\n\nELEMENT_TYPE_ALGAE = \"algae\"\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\nELEMENT_TYPE_WORMS = \"worms\"\nELEMENT_TYPE_PLANKTON = \"plankton\"\nELEMENT_TYPE_SPONGES = \"sponges\"\nELEMENT_TYPE_SUN = \"sun\"\n\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\n\nELEMENT_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\n}\n\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\n}\n\nWANDERLUST_TILE_SCORES = {\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\n}\n\nTERRAIN_RESOURCE_TO_NAME_MAP = {\n    [\"https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download\"] = WANDERLUST_TILE_VENT,\n    [\"https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download\"] = WANDERLUST_TILE_OCEAN,\n    [\"https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download\"] = WANDERLUST_TILE_SAND,\n    [\"https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download\"] = WANDERLUST_TILE_SEAGRASS,\n    [\"https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\n    [\"https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download\"] = WANDERLUST_TILE_CORAL,\n    [\"https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download\"] = WANDERLUST_TILE_KELP,\n    [\"https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download\"] = WANDERLUST_TILE_LAND,\n}\n\nfunction getElementType(obj)\n    if obj.hasTag(ELEMENT_TAG) then\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getWanderlustType(obj)\n    if obj.hasTag(WANDERLUST_TAG) then\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getTerrainMarkerType(obj)\n    if obj.hasTag(TERRAIN_TAG) then\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\n    else\n        return nil\n    end\nend\n\nfunction getValidSeatedPlayers()\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\n    local seatedPlayers = {}\n    for _,player in ipairs(players) do\n        if player.seated then\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\n        end\n    end\n    return seatedPlayers\nend\n\nfunction getDeckOrCardFromZone(zone_guid)\n    local zone = getObjectFromGUID(zone_guid)\n    if zone == nil then return nil end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Deck\" then\n            return obj\n        end\n    end\n    for _, obj in ipairs(zone.getObjects()) do\n        if obj.type == \"Card\" then\n            return obj\n        end\n    end\n    return nil\n\nend\n\nfunction getEvolutionDeck()\n    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\nend\n\nfunction getEvolutionReserveDeck()\n    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\nend\n\nfunction onScriptingButtonDown(index, player_color)\n    if index == 1 then\n        local player = Player[player_color]\n        local pointerPosition = player.getPointerPosition()\n        pointerPosition[2] = pointerPosition[2] + 2\n        local playerComponents = PLAYER_COMPONENTS[player_color]\n        if playerComponents ~= nil then\n            local speciesBag = getObjectFromGUID(playerComponents.gene_pool_bag)\n            if #speciesBag.getObjects() > 0 then\n                speciesBag.takeObject({position=pointerPosition, rotation={0,0,0}})\n            end\n        end\n    end\nend",
+  "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"global\")\nend)\n__bundle_register(\"global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nrequire(\"common\")\r\n\r\nfunction onScriptingButtonDown(index, player_color)\r\n    if index == 1 then\r\n        local player = Player[player_color]\r\n        local pointerPosition = player.getPointerPosition()\r\n        pointerPosition[2] = pointerPosition[2] + 2\r\n        local playerComponents = PLAYER_COMPONENTS[player_color]\r\n        if playerComponents ~= nil then\r\n            local speciesBag = getObjectFromGUID(playerComponents.gene_pool_bag)\r\n            if #speciesBag.getObjects() > 0 then\r\n                speciesBag.takeObject({position=pointerPosition, rotation={0,0,0}})\r\n            end\r\n        end\r\n    end\r\nend\nend)\n__bundle_register(\"common\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\n\r\nfunction getElementType(obj)\r\n    if obj.hasTag(ELEMENT_TAG) then\r\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    if obj.hasTag(WANDERLUST_TAG) then\r\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    if obj.hasTag(TERRAIN_TAG) then\r\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\r\n    local seatedPlayers = {}\r\n    for _,player in ipairs(players) do\r\n        if player.seated then\r\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\r\n        end\r\n    end\r\n    return seatedPlayers\r\nend\r\n\r\nfunction getDeckOrCardFromZone(zone_guid)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    if zone == nil then return nil end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Deck\" then\r\n            return obj\r\n        end\r\n    end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Card\" then\r\n            return obj\r\n        end\r\n    end\r\n    return nil\r\n\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\r\nend\nend)\n__bundle_register(\"constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\nRESEED_BUTTON = \"15f5b0\"\r\n\r\nEVOLUTION_DECK_ZONE = \"771647\"\r\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\r\nASTEROID_CARD = \"9fe901\"\r\nTRAIT_DECK = \"c5d0ec\"\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nABUNDANCE_ZONE = \"c982e7\"\r\nAUTOTROPHS_ZONE = \"c4e77b\"\r\nDEPLETION_ZONE = \"e23076\"\r\nADAPTION_ZONE = \"b70e29\"\r\nREGRESSION_ZONE = \"91fe74\"\r\nSPECIATION_ZONE = \"075fb0\"\r\nWANDERLUST_ZONE = \"def2ff\"\r\nCOMPETITION_ZONE = \"90e44c\"\r\nEVOLUTION_ZONE = \"91934c\"\r\n\r\nELEMENT_TAG = \"element\"\r\nWANDERLUST_TAG = \"wanderlust\"\r\nTERRAIN_TAG = \"terrain\"\r\nSPECIES_TAG = \"species\"\r\nACTION_PAWN_TAG = \"action_pawn\"\r\n\r\nCRUSTACEANS_TAG = \"crustaceans\"\r\nFISHES_TAG = \"fishes\"\r\nCEPHALOPODS_TAG = \"cephalopods\"\r\nREPTILES_TAG = \"reptiles\"\r\n\r\nCOMMON_COMPONENTS = {\r\n    wander_lust_bag = \"7d9337\",\r\n    element_bag = \"e81219\",\r\n    terrain_bag = \"ed6578\",\r\n    box_bag = \"6d9eef\",\r\n    special_pawn_plankton = \"bd25f7\",\r\n    special_pawn_worms = \"7a63a2\",\r\n    special_pawn_sponges = \"5172a7\",\r\n    special_pawn_gastropods = \"bf11a4\",\r\n    special_pawn_algae = \"c12749\",\r\n    special_pawn_sun = \"c046bd\",\r\n    control_marker_plankton = \"dce92f\",\r\n    control_marker_worms = \"557086\",\r\n    control_marker_sponges = \"e92662\",\r\n    control_marker_gastropods = \"54bb45\",\r\n    control_marker_algae = \"0f9861\",\r\n    control_marker_sun = \"32bf2b\",\r\n    food_chain_start_zone = \"9ba132\",\r\n}\r\n\r\nPLAYER_COMPONENTS = {\r\n    [Player.Brown.color] = {\r\n        tag = CRUSTACEANS_TAG,\r\n        vp = \"17f953\",\r\n        boards = {\"85e368\", \"b5c87e\"},\r\n        food_chain_zone = \"d9b5af\",\r\n        food_chain_start_position = {-11.32, 1.35, 8.67},\r\n        food_chain_end_position = {-9.41, 1.29, 8.68},\r\n        gene_pool_bag = \"cd7b0d\",\r\n        action_pawn_position_first = vector(-25.21, 1.26, -8.36),\r\n        control_marker_zone = \"fb935b\",\r\n    },\r\n    [Player.Blue.color] = {\r\n        tag = FISHES_TAG,\r\n        vp = \"3f075f\",\r\n        boards = {\"bf4314\", \"578c29\"},\r\n        food_chain_zone = \"01090b\",\r\n        food_chain_start_position = {-11.31, 1.35, 9.74},\r\n        food_chain_end_position = {-9.41, 1.29, 9.74},\r\n        gene_pool_bag = \"ea715b\",\r\n        action_pawn_position_first = vector(-10.93, 1.26, -8.47),\r\n        control_marker_zone = \"6d7f31\",\r\n    },\r\n    [Player.Orange.color] = {\r\n        tag = CEPHALOPODS_TAG,\r\n        vp = \"bbb44d\",\r\n        boards = {\"c01aba\", \"24c905\"},\r\n        food_chain_zone = \"8aaf18\",\r\n        food_chain_start_position = {-11.32, 1.35, 10.74},\r\n        food_chain_end_position = {-9.40, 1.29, 10.74},\r\n        gene_pool_bag = \"93c7b1\",\r\n        action_pawn_position_first = vector(4.00, 1.26, -8.39),\r\n        control_marker_zone = \"de4c5c\",\r\n    },\r\n    [Player.Purple.color] = {\r\n        tag = REPTILES_TAG,\r\n        vp = \"e40bf9\",\r\n        boards = {\"76a1b4\", \"7c5462\"},\r\n        food_chain_zone = \"93093b\",\r\n        food_chain_start_position = {-11.30, 1.35, 11.76},\r\n        food_chain_end_position = {-9.39, 1.29, 11.78},\r\n        gene_pool_bag = \"253bcb\",\r\n        action_pawn_position_first = vector(17.44, 1.26, -8.38),\r\n        control_marker_zone = \"bb6f78\",\r\n    },\r\n}\r\n\r\nELEMENT_TYPE_ALGAE = \"algae\"\r\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\r\nELEMENT_TYPE_WORMS = \"worms\"\r\nELEMENT_TYPE_PLANKTON = \"plankton\"\r\nELEMENT_TYPE_SPONGES = \"sponges\"\r\nELEMENT_TYPE_SUN = \"sun\"\r\n\r\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\r\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\r\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\r\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\r\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\r\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\r\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\r\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\r\n\r\nELEMENT_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\r\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\r\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\r\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\r\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\r\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\r\n}\r\n\r\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\r\n\r\nWANDERLUST_TILE_SCORES = {\r\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\r\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\r\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\r\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\r\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\r\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\r\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\r\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\r\n}\r\n\r\nTERRAIN_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
   "LuaScriptState": "",
   "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
   "VectorLines": [
@@ -1323,7 +1323,7 @@
         "posX": -26.7824268,
         "posY": 1.06758332,
         "posZ": 12.2915106,
-        "rotX": 1.01649995E-08,
+        "rotX": -3.54767167E-08,
         "rotY": 180.012314,
         "rotZ": 180.0,
         "scaleX": 1.1214658,
@@ -6030,7 +6030,7 @@
         "posX": -26.758934,
         "posY": 1.14460778,
         "posZ": 16.2567425,
-        "rotX": -3.78246341E-08,
+        "rotX": -3.58240122E-08,
         "rotY": 179.992874,
         "rotZ": 180.0,
         "scaleX": 1.1516844,
@@ -7592,9 +7592,9 @@
         "posX": -19.4722252,
         "posY": 0.9736048,
         "posZ": 0.185467377,
-        "rotX": -1.041318E-08,
+        "rotX": 1.78232684E-09,
         "rotY": 180.000031,
-        "rotZ": -1.14915224E-07,
+        "rotZ": -7.335995E-08,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -7645,9 +7645,9 @@
         "posX": 19.3148689,
         "posY": 1.1600008,
         "posZ": -5.916854,
-        "rotX": 3.99513539E-07,
+        "rotX": -2.24926126E-07,
         "rotY": 180.012283,
-        "rotZ": -2.11595847E-07,
+        "rotZ": -1.38554E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7697,9 +7697,9 @@
         "posX": 20.1857052,
         "posY": 1.1600008,
         "posZ": -5.944249,
-        "rotX": -7.43350554E-08,
+        "rotX": -2.57831829E-07,
         "rotY": 179.997726,
-        "rotZ": -5.492156E-07,
+        "rotZ": -2.806171E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7749,9 +7749,9 @@
         "posX": 19.3440628,
         "posY": 1.1600008,
         "posZ": -6.82605171,
-        "rotX": 8.058106E-08,
+        "rotX": 1.07159671E-07,
         "rotY": 179.980225,
-        "rotZ": -3.64493332E-07,
+        "rotZ": -6.02238458E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7801,9 +7801,9 @@
         "posX": 20.1794624,
         "posY": 1.1600008,
         "posZ": -6.830599,
-        "rotX": 5.17472536E-08,
+        "rotX": -1.968477E-07,
         "rotY": 180.002136,
-        "rotZ": -6.709357E-08,
+        "rotZ": -3.38489968E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7851,7 +7851,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2358,
-        "posY": 0.773552,
+        "posY": 0.7735215,
         "posZ": 3.59527946,
         "rotX": 8.649523E-06,
         "rotY": -0.000370237569,
@@ -8777,12 +8777,12 @@
       "GUID": "bb92f9",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.205895,
-        "posY": 1.34817743,
-        "posZ": 14.1069908,
-        "rotX": 0.0725647956,
-        "rotY": 179.891159,
-        "rotZ": 0.3396802,
+        "posX": 9.206715,
+        "posY": 1.35056889,
+        "posZ": 14.1062689,
+        "rotX": 0.195935041,
+        "rotY": 179.9005,
+        "rotZ": 0.0384197757,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8832,12 +8832,12 @@
       "GUID": "14785c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.235262,
-        "posY": 1.539675,
-        "posZ": 14.0856562,
-        "rotX": 0.432698876,
-        "rotY": 179.444031,
-        "rotZ": 0.156973138,
+        "posX": 9.23691,
+        "posY": 1.539377,
+        "posZ": 14.084094,
+        "rotX": 0.2936692,
+        "rotY": 179.426468,
+        "rotZ": 0.07499696,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8887,12 +8887,12 @@
       "GUID": "710da1",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.225123,
-        "posY": 1.446562,
-        "posZ": 14.0987453,
-        "rotX": 0.21393466,
-        "rotY": 179.8183,
-        "rotZ": 0.270033568,
+        "posX": 9.226209,
+        "posY": 1.44634163,
+        "posZ": 14.0970421,
+        "rotX": 0.07756928,
+        "rotY": 179.820389,
+        "rotZ": 0.175884351,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8942,12 +8942,12 @@
       "GUID": "fd20dd",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.230891,
-        "posY": 1.6383512,
-        "posZ": 14.04896,
-        "rotX": 0.372519433,
-        "rotY": 179.190155,
-        "rotZ": 0.149172619,
+        "posX": 9.232317,
+        "posY": 1.637855,
+        "posZ": 14.046567,
+        "rotX": 0.3015756,
+        "rotY": 179.171631,
+        "rotZ": 359.963,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8997,12 +8997,12 @@
       "GUID": "208e6f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.232669,
-        "posY": 1.7339015,
-        "posZ": 14.0354881,
-        "rotX": 0.275384247,
-        "rotY": 179.235535,
-        "rotZ": 0.2427163,
+        "posX": 9.23416,
+        "posY": 1.73342443,
+        "posZ": 14.0327415,
+        "rotX": 0.313477844,
+        "rotY": 179.2261,
+        "rotZ": 0.0754437447,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9052,12 +9052,12 @@
       "GUID": "ac7bdf",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.23953,
-        "posY": 1.83293724,
-        "posZ": 14.0160866,
-        "rotX": 0.2742481,
-        "rotY": 179.153381,
-        "rotZ": 0.323226124,
+        "posX": 9.24076748,
+        "posY": 1.8324641,
+        "posZ": 14.0123768,
+        "rotX": 0.379866272,
+        "rotY": 179.149414,
+        "rotZ": 0.0353914537,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9107,12 +9107,12 @@
       "GUID": "535b2a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.199191,
-        "posY": 1.2523694,
-        "posZ": 14.1134844,
-        "rotX": 0.195283562,
-        "rotY": 179.926132,
-        "rotZ": 0.216033921,
+        "posX": 9.199781,
+        "posY": 1.25239873,
+        "posZ": 14.1128063,
+        "rotX": 0.181515679,
+        "rotY": 179.929123,
+        "rotZ": 0.231407776,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9162,12 +9162,12 @@
       "GUID": "7944c3",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.223136,
-        "posY": 2.2265327,
-        "posZ": 14.0227194,
-        "rotX": 0.223026767,
-        "rotY": 179.7359,
-        "rotZ": 0.42647022,
+        "posX": 9.223175,
+        "posY": 2.22598553,
+        "posZ": 14.0174446,
+        "rotX": 0.322972476,
+        "rotY": 179.742691,
+        "rotZ": 0.155117229,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9217,12 +9217,12 @@
       "GUID": "00d34d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.220797,
-        "posY": 2.126884,
-        "posZ": 14.02621,
-        "rotX": 0.245484293,
-        "rotY": 179.74794,
-        "rotZ": 0.441538632,
+        "posX": 9.221296,
+        "posY": 2.126339,
+        "posZ": 14.0212393,
+        "rotX": 0.345649451,
+        "rotY": 179.75354,
+        "rotZ": 0.170430258,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9272,12 +9272,12 @@
       "GUID": "5fea34",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.25429,
-        "posY": 2.028335,
-        "posZ": 14.0195408,
-        "rotX": 0.206195787,
-        "rotY": 178.900024,
-        "rotZ": 0.467728853,
+        "posX": 9.254985,
+        "posY": 2.02794623,
+        "posZ": 14.0147657,
+        "rotX": 0.302170873,
+        "rotY": 178.910446,
+        "rotZ": 0.192553625,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9327,12 +9327,12 @@
       "GUID": "e504c5",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.180614,
-        "posY": 1.15912259,
-        "posZ": 14.1117973,
-        "rotX": 0.008637111,
-        "rotY": 180.030716,
-        "rotZ": 0.0957680643,
+        "posX": 9.18062,
+        "posY": 1.15913761,
+        "posZ": 14.11173,
+        "rotX": 0.00761901261,
+        "rotY": 180.032379,
+        "rotZ": 0.09457764,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9382,12 +9382,12 @@
       "GUID": "df689f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.248425,
-        "posY": 1.92936742,
-        "posZ": 14.0220184,
-        "rotX": 0.280157655,
-        "rotY": 178.785934,
-        "rotZ": 0.4283289,
+        "posX": 9.24935,
+        "posY": 1.92896593,
+        "posZ": 14.0177288,
+        "rotX": 0.370594054,
+        "rotY": 178.787628,
+        "rotZ": 0.145962626,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9438,11 +9438,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.21,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": 5.473122E-06,
-        "rotY": 1.0454256E-05,
-        "rotZ": 4.856622E-08,
+        "rotX": -1.66476809E-06,
+        "rotY": 1.11588715E-05,
+        "rotZ": 1.0081917E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9451,9 +9451,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -9494,9 +9494,9 @@
         "posX": -10.93,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.22938809E-06,
-        "rotY": 1.01242022E-05,
-        "rotZ": 3.08600534E-07,
+        "rotX": -1.84594614E-06,
+        "rotY": 1.10338551E-05,
+        "rotZ": 1.04746562E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9546,11 +9546,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 17.4371967,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.95404148,
-        "rotX": -1.61882576E-06,
-        "rotY": 1.12937E-05,
-        "rotZ": 1.099851E-06,
+        "rotX": -1.75176672E-06,
+        "rotY": 1.22615893E-05,
+        "rotZ": 1.30324838E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9560,7 +9560,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -9602,9 +9602,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -4.02206069E-06,
-        "rotY": 1.19653314E-05,
-        "rotZ": 1.04131573E-06,
+        "rotX": -1.55266707E-06,
+        "rotY": 1.30517092E-05,
+        "rotZ": 7.38655331E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9653,12 +9653,12 @@
       "GUID": "bd25f7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -11.2184591,
-        "posY": 1.55684519,
-        "posZ": -2.11916065,
-        "rotX": -0.0002183128,
-        "rotY": -0.0004633779,
-        "rotZ": -0.001383733,
+        "posX": -11.2184544,
+        "posY": 1.556845,
+        "posZ": -2.11915874,
+        "rotX": -0.000137763462,
+        "rotY": -0.0005942306,
+        "rotZ": -0.0007442038,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9727,11 +9727,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.21,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -2.22239279E-07,
-        "rotY": 1.03093344E-05,
-        "rotZ": -1.90809351E-06,
+        "rotX": -1.76069364E-06,
+        "rotY": 1.15236762E-05,
+        "rotZ": 1.31029662E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9740,9 +9740,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -9783,9 +9783,9 @@
         "posX": -24.64,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -3.14666386E-06,
-        "rotY": 8.168913E-06,
-        "rotZ": 2.067577E-06,
+        "rotX": -2.493374E-06,
+        "rotY": 1.00078405E-05,
+        "rotZ": 1.20411755E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9794,9 +9794,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -9848,9 +9848,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -9881,7 +9881,7 @@
       "Bag": {
         "Order": 0
       },
-      "LuaScript": "function onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Crustacean Cubes.cd7b0d.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Crustacean Cubes.cd7b0d.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Crustacean Cubes.cd7b0d.lua\")",
       "LuaScriptState": "",
       "XmlUI": "",
       "ContainedObjects": [
@@ -11478,7 +11478,7 @@
       "Bag": {
         "Order": 0
       },
-      "LuaScript": "function onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Fish Cubes.ea715b.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Fish Cubes.ea715b.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Fish Cubes.ea715b.lua\")",
       "LuaScriptState": "",
       "XmlUI": "",
       "ContainedObjects": [
@@ -13043,7 +13043,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09802427,
+        "g": 0.09802384,
         "b": 0.619607747
       },
       "LayoutGroupSortIndex": 0,
@@ -13075,7 +13075,7 @@
       "Bag": {
         "Order": 0
       },
-      "LuaScript": "function onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Reptile Cubes.253bcb.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Reptile Cubes.253bcb.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Reptile Cubes.253bcb.lua\")",
       "LuaScriptState": "",
       "XmlUI": "",
       "ContainedObjects": [
@@ -14672,7 +14672,7 @@
       "Bag": {
         "Order": 0
       },
-      "LuaScript": "function onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Cephalopod Cubes.93c7b1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Cephalopod Cubes.93c7b1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Cephalopod Cubes.93c7b1.lua\")",
       "LuaScriptState": "",
       "XmlUI": "",
       "ContainedObjects": [
@@ -16225,9 +16225,9 @@
         "posX": -24.64,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -7.81089341E-07,
-        "rotY": 9.090389E-06,
-        "rotZ": -5.913415E-06,
+        "rotX": -2.15163732E-06,
+        "rotY": 9.9807E-06,
+        "rotZ": 1.33028334E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16236,9 +16236,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -16277,11 +16277,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.07,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -7.13699637E-06,
-        "rotY": 7.585393E-06,
-        "rotZ": 7.325109E-07,
+        "rotX": -1.78135974E-06,
+        "rotY": 8.959395E-06,
+        "rotZ": 1.4293164E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16290,9 +16290,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -16333,9 +16333,9 @@
         "posX": -24.0477734,
         "posY": 1.25684667,
         "posZ": -8.366049,
-        "rotX": -3.34984679E-06,
-        "rotY": 9.845736E-06,
-        "rotZ": 1.913634E-06,
+        "rotX": -1.96788233E-06,
+        "rotY": 1.05144372E-05,
+        "rotZ": 1.310644E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16344,9 +16344,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -16387,9 +16387,9 @@
         "posX": -23.5,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": 5.97923963E-06,
-        "rotY": 9.464474E-06,
-        "rotZ": -8.171535E-06,
+        "rotX": -2.10033727E-06,
+        "rotY": 1.08315917E-05,
+        "rotZ": 1.45396154E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16398,9 +16398,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -16439,11 +16439,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -23.5,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -4.813092E-07,
-        "rotY": 8.919717E-06,
-        "rotZ": -6.365979E-06,
+        "rotX": -5.39853363E-06,
+        "rotY": 1.02298063E-05,
+        "rotZ": -5.81818858E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16452,9 +16452,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.44299978,
-        "g": 0.230999768,
-        "b": 0.08999983
+        "r": 0.442999274,
+        "g": 0.230999261,
+        "b": 0.08999943
       },
       "Tags": [
         "action_pawn",
@@ -16493,11 +16493,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.93,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.47,
-        "rotX": -1.56347471E-06,
-        "rotY": 9.013946E-06,
-        "rotZ": 3.32887066E-06,
+        "rotX": -1.22774827E-06,
+        "rotY": 1.03915518E-05,
+        "rotZ": 8.04250533E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16547,11 +16547,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.3600006,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.20330378E-06,
-        "rotY": 1.03539123E-05,
-        "rotZ": 9.083808E-07,
+        "rotX": -1.48207107E-06,
+        "rotY": 1.20960285E-05,
+        "rotZ": 9.710628E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16603,9 +16603,9 @@
         "posX": -10.3600006,
         "posY": 1.25684667,
         "posZ": -8.47,
-        "rotX": -1.841292E-06,
-        "rotY": 9.570614E-06,
-        "rotZ": 1.00970431E-06,
+        "rotX": -1.32286186E-06,
+        "rotY": 1.07056239E-05,
+        "rotZ": 7.637063E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16657,9 +16657,9 @@
         "posX": -9.781352,
         "posY": 1.25684667,
         "posZ": -9.049998,
-        "rotX": -2.06007053E-06,
-        "rotY": 9.353512E-06,
-        "rotZ": 1.27698E-06,
+        "rotX": -1.46723119E-06,
+        "rotY": 1.04820656E-05,
+        "rotZ": 8.17120167E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16711,9 +16711,9 @@
         "posX": -9.781352,
         "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -1.59368381E-06,
-        "rotY": 1.07194264E-05,
-        "rotZ": 9.847461E-07,
+        "rotX": -1.60366028E-06,
+        "rotY": 1.18630414E-05,
+        "rotZ": 8.123413E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16763,11 +16763,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -9.206351,
-        "posY": 1.25684667,
+        "posY": 1.25684679,
         "posZ": -9.049998,
-        "rotX": -2.200359E-06,
-        "rotY": 1.09391622E-05,
-        "rotZ": 1.32292314E-06,
+        "rotX": 2.55177861E-06,
+        "rotY": 1.25292272E-05,
+        "rotZ": -1.73082142E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16817,11 +16817,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -9.206351,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -1.69786836E-06,
-        "rotY": 9.881031E-06,
-        "rotZ": 8.18931937E-07,
+        "rotX": -1.55578482E-06,
+        "rotY": 1.1660698E-05,
+        "rotZ": 7.966094E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16873,9 +16873,9 @@
         "posX": 17.44,
         "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": -1.03609511E-06,
-        "rotY": 6.43118528E-06,
-        "rotZ": 1.220178E-07,
+        "rotX": -2.21973642E-06,
+        "rotY": 7.860533E-06,
+        "rotZ": 9.576094E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16885,7 +16885,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -16927,9 +16927,9 @@
         "posX": 18.01,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -2.53931285E-06,
-        "rotY": 9.367302E-06,
-        "rotZ": 1.82920689E-06,
+        "rotX": -1.85263843E-06,
+        "rotY": 9.85587E-06,
+        "rotZ": 1.23347127E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16939,7 +16939,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -16979,11 +16979,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 18.0080776,
-        "posY": 1.25684679,
+        "posY": 1.25684667,
         "posZ": -8.36294,
-        "rotX": -3.7605007E-06,
-        "rotY": 9.64936953E-06,
-        "rotZ": -3.45608527E-07,
+        "rotX": -2.11244537E-06,
+        "rotY": 1.04949931E-05,
+        "rotZ": 1.41554335E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16993,7 +16993,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -17035,9 +17035,9 @@
         "posX": 18.58,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -2.98482087E-06,
-        "rotY": 9.433073E-06,
-        "rotZ": 1.32197329E-06,
+        "rotX": -2.3164107E-06,
+        "rotY": 1.06583448E-05,
+        "rotZ": 1.47050866E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17047,7 +17047,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -17089,9 +17089,9 @@
         "posX": 18.58162,
         "posY": 1.25684667,
         "posZ": -8.38058949,
-        "rotX": -2.17482489E-06,
-        "rotY": 7.505204E-06,
-        "rotZ": 1.542038E-06,
+        "rotX": -2.11883344E-06,
+        "rotY": 8.21619E-06,
+        "rotZ": 1.23278119E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17101,7 +17101,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -17141,11 +17141,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 19.15,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": 3.08946665E-06,
-        "rotY": 8.492889E-06,
-        "rotZ": 2.896333E-07,
+        "rotX": -2.13693056E-06,
+        "rotY": 9.722403E-06,
+        "rotZ": 1.467757E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17155,7 +17155,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -17195,11 +17195,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 19.15,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": -4.04838556E-06,
-        "rotY": 9.053653E-06,
-        "rotZ": 1.11990835E-06,
+        "rotX": -2.18324112E-06,
+        "rotY": 9.5280875E-06,
+        "rotZ": 1.1183713E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17209,7 +17209,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801913,
+        "g": 0.09801868,
         "b": 0.619607747
       },
       "Tags": [
@@ -17249,11 +17249,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 4.0,
-        "posY": 1.25684655,
+        "posY": 1.25684679,
         "posZ": -8.39,
-        "rotX": -1.11581278E-06,
-        "rotY": 9.54282E-06,
-        "rotZ": 7.475035E-08,
+        "rotX": -4.92202571E-06,
+        "rotY": 1.08283593E-05,
+        "rotZ": 1.83808118E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17303,11 +17303,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 4.57,
-        "posY": 1.25684655,
+        "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.72411183E-06,
-        "rotY": 9.876369E-06,
-        "rotZ": 1.7500015E-06,
+        "rotX": -9.636345E-07,
+        "rotY": 1.06250664E-05,
+        "rotZ": 5.61169145E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17357,11 +17357,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": 4.57,
-        "posY": 1.25684679,
+        "posY": 1.25684667,
         "posZ": -8.39,
-        "rotX": 1.03106E-06,
-        "rotY": 9.581045E-06,
-        "rotZ": 4.63083182E-07,
+        "rotX": -1.213598E-06,
+        "rotY": 1.04366554E-05,
+        "rotZ": 6.72962472E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17413,9 +17413,9 @@
         "posX": 5.14,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": 6.27962754E-06,
-        "rotY": 1.04480159E-05,
-        "rotZ": 1.4106065E-06,
+        "rotX": -1.36743722E-06,
+        "rotY": 1.15746316E-05,
+        "rotZ": 8.493215E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17467,9 +17467,9 @@
         "posX": 5.14,
         "posY": 1.25684667,
         "posZ": -8.39,
-        "rotX": -2.24265636E-06,
-        "rotY": 8.753917E-06,
-        "rotZ": 1.32655555E-06,
+        "rotX": -1.51911388E-06,
+        "rotY": 1.00389207E-05,
+        "rotZ": 7.93910658E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17521,9 +17521,9 @@
         "posX": 5.71,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -2.37486483E-06,
-        "rotY": 9.449299E-06,
-        "rotZ": 1.19259641E-06,
+        "rotX": -2.37210361E-06,
+        "rotY": 1.04289411E-05,
+        "rotZ": 8.670748E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17575,9 +17575,9 @@
         "posX": 5.721608,
         "posY": 1.25684667,
         "posZ": -8.387002,
-        "rotX": 6.39614564E-06,
-        "rotY": 8.9154255E-06,
-        "rotZ": 2.56966382E-06,
+        "rotX": -1.64399148E-06,
+        "rotY": 9.668776E-06,
+        "rotZ": 6.809555E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17626,12 +17626,12 @@
       "GUID": "bf11a4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.519413,
-        "posY": 1.55684507,
-        "posZ": -2.1382606,
-        "rotX": -0.000213996,
-        "rotY": -0.000608345959,
-        "rotZ": -0.00129549974,
+        "posX": -8.519408,
+        "posY": 1.55684483,
+        "posZ": -2.1382587,
+        "rotX": -0.0001319832,
+        "rotY": -0.0007755894,
+        "rotZ": -0.0007453045,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17699,12 +17699,12 @@
       "GUID": "c12749",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.58689,
-        "posY": 1.55684507,
-        "posZ": -2.14484668,
-        "rotX": -0.00021345877,
-        "rotY": 0.0009927523,
-        "rotZ": -0.001330056,
+        "posX": -7.586882,
+        "posY": 1.556845,
+        "posZ": -2.14484525,
+        "rotX": -0.000138146279,
+        "rotY": 0.0010373001,
+        "rotZ": -0.000775369,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17772,12 +17772,12 @@
       "GUID": "7a63a2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -10.309742,
-        "posY": 1.55684519,
-        "posZ": -2.12559032,
-        "rotX": -0.000198405382,
-        "rotY": -0.000308422081,
-        "rotZ": -0.00136619,
+        "posX": -10.3097363,
+        "posY": 1.556845,
+        "posZ": -2.12558842,
+        "rotX": -0.000128183587,
+        "rotY": -0.000369237125,
+        "rotZ": -0.00074580044,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17845,12 +17845,12 @@
       "GUID": "c046bd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -6.68804,
-        "posY": 1.55684519,
-        "posZ": -2.15120983,
-        "rotX": -0.000218276255,
-        "rotY": 0.000345336972,
-        "rotZ": -0.00131839048,
+        "posX": -6.68803167,
+        "posY": 1.55684483,
+        "posZ": -2.15120864,
+        "rotX": -0.0001255569,
+        "rotY": 0.000461644027,
+        "rotZ": -0.0007568723,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17918,12 +17918,12 @@
       "GUID": "5172a7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -9.392485,
-        "posY": 1.55684507,
-        "posZ": -2.13207126,
-        "rotX": -0.0002126204,
-        "rotY": 0.000112012756,
-        "rotZ": -0.00132507784,
+        "posX": -9.39248,
+        "posY": 1.55684483,
+        "posZ": -2.132069,
+        "rotX": -0.000130538043,
+        "rotY": -7.314644E-05,
+        "rotZ": -0.000747299055,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17992,7 +17992,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2579765,
-        "posY": 0.774719536,
+        "posY": 0.7747157,
         "posZ": -3.35825038,
         "rotX": -2.5846723E-06,
         "rotY": -2.503291E-05,
@@ -20187,7 +20187,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.30614,
-        "posY": 0.7740924,
+        "posY": 0.7740733,
         "posZ": 12.7843075,
         "rotX": -5.350759E-05,
         "rotY": 1.79692634E-05,
@@ -26549,12 +26549,12 @@
       "GUID": "ea8ac8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3763161,
-        "posY": 1.65258622,
-        "posZ": -6.758856,
-        "rotX": 359.778046,
-        "rotY": 178.994446,
-        "rotZ": 359.722015,
+        "posX": 18.3750134,
+        "posY": 1.65263581,
+        "posZ": -6.758909,
+        "rotX": 359.8781,
+        "rotY": 179.000549,
+        "rotZ": 359.635071,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26601,12 +26601,12 @@
       "GUID": "06945e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38983,
-        "posY": 1.25958037,
-        "posZ": -6.747006,
-        "rotX": 0.01807187,
-        "rotY": 179.367752,
-        "rotZ": 180.083664,
+        "posX": 18.3898544,
+        "posY": 1.25955081,
+        "posZ": -6.74697638,
+        "rotX": 0.01937696,
+        "rotY": 179.3654,
+        "rotZ": 180.088943,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26653,12 +26653,12 @@
       "GUID": "f93bf2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3828983,
-        "posY": 1.45377529,
-        "posZ": -6.7532115,
-        "rotX": 359.634857,
-        "rotY": 179.897232,
-        "rotZ": 359.6767,
+        "posX": 18.3821526,
+        "posY": 1.4538759,
+        "posZ": -6.75309324,
+        "rotX": 359.805359,
+        "rotY": 179.907333,
+        "rotZ": 359.5237,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26705,12 +26705,12 @@
       "GUID": "cbc9ad",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3818455,
-        "posY": 1.55338871,
-        "posZ": -6.763623,
-        "rotX": 359.73172,
-        "rotY": 179.261368,
-        "rotZ": 359.710724,
+        "posX": 18.3807926,
+        "posY": 1.55343449,
+        "posZ": -6.76363945,
+        "rotX": 359.8306,
+        "rotY": 179.269547,
+        "rotZ": 359.62793,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26757,12 +26757,12 @@
       "GUID": "d2bfb7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3835087,
-        "posY": 1.35610473,
-        "posZ": -6.80164051,
-        "rotX": 359.732574,
-        "rotY": 179.945023,
-        "rotZ": 359.8263,
+        "posX": 18.38323,
+        "posY": 1.356045,
+        "posZ": -6.801863,
+        "rotX": 359.888947,
+        "rotY": 179.952026,
+        "rotZ": 359.689026,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26809,12 +26809,12 @@
       "GUID": "81e2e6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3872147,
-        "posY": 1.256925,
-        "posZ": -6.80555,
-        "rotX": 359.776642,
-        "rotY": 179.914215,
-        "rotZ": -0.005136111,
+        "posX": 18.3872,
+        "posY": 1.25681508,
+        "posZ": -6.80571,
+        "rotX": 359.93457,
+        "rotY": 179.916245,
+        "rotZ": 359.851471,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26862,11 +26862,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -11.2180548,
-        "posY": 1.26000106,
-        "posZ": -2.11923766,
-        "rotX": -1.16274587E-05,
-        "rotY": 180.028625,
-        "rotZ": 180.000015,
+        "posY": 1.26000047,
+        "posZ": -2.11923814,
+        "rotX": 1.95225348E-05,
+        "rotY": 180.028229,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26914,11 +26914,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -10.3093166,
-        "posY": 1.26000106,
-        "posZ": -2.12566853,
-        "rotX": -1.22869051E-05,
-        "rotY": 179.97197,
-        "rotZ": 180.000015,
+        "posY": 1.26000047,
+        "posZ": -2.12566876,
+        "rotX": 1.83588181E-05,
+        "rotY": 179.971634,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26966,11 +26966,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -9.39207,
-        "posY": 1.26000071,
-        "posZ": -2.132153,
-        "rotX": -9.936865E-06,
-        "rotY": 180.020187,
-        "rotZ": 180.000015,
+        "posY": 1.26000023,
+        "posZ": -2.13215327,
+        "rotX": 1.85867E-05,
+        "rotY": 180.019775,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -27018,11 +27018,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": -8.519081,
-        "posY": 1.26000071,
-        "posZ": -2.13832831,
-        "rotX": -1.050968E-05,
-        "rotY": 179.996811,
-        "rotZ": 180.000015,
+        "posY": 1.26000023,
+        "posZ": -2.13832855,
+        "rotX": 1.876356E-05,
+        "rotY": 179.996368,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -27069,12 +27069,12 @@
       "GUID": "0f9861",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -7.586496,
-        "posY": 1.26000082,
-        "posZ": -2.1449275,
-        "rotX": -1.21828371E-05,
-        "rotY": 179.977142,
-        "rotZ": 180.000015,
+        "posX": -7.58649445,
+        "posY": 1.26000023,
+        "posZ": -2.14492846,
+        "rotX": 1.74188735E-05,
+        "rotY": 179.977036,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -27121,12 +27121,12 @@
       "GUID": "32bf2b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -6.68767166,
-        "posY": 1.26000082,
-        "posZ": -2.15128636,
-        "rotX": -1.11218469E-05,
-        "rotY": 180.015,
-        "rotZ": 180.000015,
+        "posX": -6.68766928,
+        "posY": 1.26000023,
+        "posZ": -2.15128779,
+        "rotX": 1.82176955E-05,
+        "rotY": 180.014862,
+        "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -27205,7 +27205,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "RESEED_BUTTON = Global.getVar(\"RESEED_BUTTON\")\r\n\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nEVOLUTION_DECK_ZONE = Global.getVar(\"EVOLUTION_DECK_ZONE\")\r\nEVOLUTION_DECK = Global.getVar(\"EVOLUTION_DECK\")\r\nASTEROID_CARD = Global.getVar(\"ASTEROID_CARD\")\r\nTRAIT_DECK = Global.getVar(\"TRAIT_DECK\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TYPE_ALGAE = Global.getVar(\"ELEMENT_TYPE_ALGAE\")\r\nELEMENT_TYPE_GASTROPODS = Global.getVar(\"ELEMENT_TYPE_GASTROPODS\")\r\nELEMENT_TYPE_WORMS = Global.getVar(\"ELEMENT_TYPE_WORMS\")\r\nELEMENT_TYPE_PLANKTON = Global.getVar(\"ELEMENT_TYPE_PLANKTON\")\r\nELEMENT_TYPE_SPONGES = Global.getVar(\"ELEMENT_TYPE_SPONGES\")\r\nELEMENT_TYPE_SUN = Global.getVar(\"ELEMENT_TYPE_SUN\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nWANDERLUST_TILE_SCORES = Global.getTable(\"WANDERLUST_TILE_SCORES\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 5.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return Global.call(\"getEvolutionDeck\")\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return Global.call(\"getEvolutionReserveDeck\")\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    return Global.call(\"getValidSeatedPlayers\")\r\nend\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    return Global.call(\"getWanderlustType\", obj)\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.5, 0, 0)\r\n    local shiftDown = vector(0, 0, -.5)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local count = 0\r\n    local playerList = getValidSeatedPlayers()\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            local current = first + (shiftRight * ii) + (count * shiftDown)\r\n            bag.takeObject({position=current})\r\n        end\r\n        count = count + 1\r\n    end\r\nend\r\n\r\nfunction positionToVector(position)\r\n    return vector(float, float, float)\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Setup.f2db58.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Setup.f2db58.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"setup\")\nend)\n__bundle_register(\"setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nrequire(\"common\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 5.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.5, 0, 0)\r\n    local shiftDown = vector(0, 0, -.5)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local count = 0\r\n    local playerList = getValidSeatedPlayers()\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            local current = first + (shiftRight * ii) + (count * shiftDown)\r\n            bag.takeObject({position=current})\r\n        end\r\n        count = count + 1\r\n    end\r\nend\r\n\r\nfunction positionToVector(position)\r\n    return vector(float, float, float)\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend\nend)\n__bundle_register(\"common\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\n\r\nfunction getElementType(obj)\r\n    if obj.hasTag(ELEMENT_TAG) then\r\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    if obj.hasTag(WANDERLUST_TAG) then\r\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    if obj.hasTag(TERRAIN_TAG) then\r\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\r\n    local seatedPlayers = {}\r\n    for _,player in ipairs(players) do\r\n        if player.seated then\r\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\r\n        end\r\n    end\r\n    return seatedPlayers\r\nend\r\n\r\nfunction getDeckOrCardFromZone(zone_guid)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    if zone == nil then return nil end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Deck\" then\r\n            return obj\r\n        end\r\n    end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Card\" then\r\n            return obj\r\n        end\r\n    end\r\n    return nil\r\n\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\r\nend\nend)\n__bundle_register(\"constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\nRESEED_BUTTON = \"15f5b0\"\r\n\r\nEVOLUTION_DECK_ZONE = \"771647\"\r\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\r\nASTEROID_CARD = \"9fe901\"\r\nTRAIT_DECK = \"c5d0ec\"\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nABUNDANCE_ZONE = \"c982e7\"\r\nAUTOTROPHS_ZONE = \"c4e77b\"\r\nDEPLETION_ZONE = \"e23076\"\r\nADAPTION_ZONE = \"b70e29\"\r\nREGRESSION_ZONE = \"91fe74\"\r\nSPECIATION_ZONE = \"075fb0\"\r\nWANDERLUST_ZONE = \"def2ff\"\r\nCOMPETITION_ZONE = \"90e44c\"\r\nEVOLUTION_ZONE = \"91934c\"\r\n\r\nELEMENT_TAG = \"element\"\r\nWANDERLUST_TAG = \"wanderlust\"\r\nTERRAIN_TAG = \"terrain\"\r\nSPECIES_TAG = \"species\"\r\nACTION_PAWN_TAG = \"action_pawn\"\r\n\r\nCRUSTACEANS_TAG = \"crustaceans\"\r\nFISHES_TAG = \"fishes\"\r\nCEPHALOPODS_TAG = \"cephalopods\"\r\nREPTILES_TAG = \"reptiles\"\r\n\r\nCOMMON_COMPONENTS = {\r\n    wander_lust_bag = \"7d9337\",\r\n    element_bag = \"e81219\",\r\n    terrain_bag = \"ed6578\",\r\n    box_bag = \"6d9eef\",\r\n    special_pawn_plankton = \"bd25f7\",\r\n    special_pawn_worms = \"7a63a2\",\r\n    special_pawn_sponges = \"5172a7\",\r\n    special_pawn_gastropods = \"bf11a4\",\r\n    special_pawn_algae = \"c12749\",\r\n    special_pawn_sun = \"c046bd\",\r\n    control_marker_plankton = \"dce92f\",\r\n    control_marker_worms = \"557086\",\r\n    control_marker_sponges = \"e92662\",\r\n    control_marker_gastropods = \"54bb45\",\r\n    control_marker_algae = \"0f9861\",\r\n    control_marker_sun = \"32bf2b\",\r\n    food_chain_start_zone = \"9ba132\",\r\n}\r\n\r\nPLAYER_COMPONENTS = {\r\n    [Player.Brown.color] = {\r\n        tag = CRUSTACEANS_TAG,\r\n        vp = \"17f953\",\r\n        boards = {\"85e368\", \"b5c87e\"},\r\n        food_chain_zone = \"d9b5af\",\r\n        food_chain_start_position = {-11.32, 1.35, 8.67},\r\n        food_chain_end_position = {-9.41, 1.29, 8.68},\r\n        gene_pool_bag = \"cd7b0d\",\r\n        action_pawn_position_first = vector(-25.21, 1.26, -8.36),\r\n        control_marker_zone = \"fb935b\",\r\n    },\r\n    [Player.Blue.color] = {\r\n        tag = FISHES_TAG,\r\n        vp = \"3f075f\",\r\n        boards = {\"bf4314\", \"578c29\"},\r\n        food_chain_zone = \"01090b\",\r\n        food_chain_start_position = {-11.31, 1.35, 9.74},\r\n        food_chain_end_position = {-9.41, 1.29, 9.74},\r\n        gene_pool_bag = \"ea715b\",\r\n        action_pawn_position_first = vector(-10.93, 1.26, -8.47),\r\n        control_marker_zone = \"6d7f31\",\r\n    },\r\n    [Player.Orange.color] = {\r\n        tag = CEPHALOPODS_TAG,\r\n        vp = \"bbb44d\",\r\n        boards = {\"c01aba\", \"24c905\"},\r\n        food_chain_zone = \"8aaf18\",\r\n        food_chain_start_position = {-11.32, 1.35, 10.74},\r\n        food_chain_end_position = {-9.40, 1.29, 10.74},\r\n        gene_pool_bag = \"93c7b1\",\r\n        action_pawn_position_first = vector(4.00, 1.26, -8.39),\r\n        control_marker_zone = \"de4c5c\",\r\n    },\r\n    [Player.Purple.color] = {\r\n        tag = REPTILES_TAG,\r\n        vp = \"e40bf9\",\r\n        boards = {\"76a1b4\", \"7c5462\"},\r\n        food_chain_zone = \"93093b\",\r\n        food_chain_start_position = {-11.30, 1.35, 11.76},\r\n        food_chain_end_position = {-9.39, 1.29, 11.78},\r\n        gene_pool_bag = \"253bcb\",\r\n        action_pawn_position_first = vector(17.44, 1.26, -8.38),\r\n        control_marker_zone = \"bb6f78\",\r\n    },\r\n}\r\n\r\nELEMENT_TYPE_ALGAE = \"algae\"\r\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\r\nELEMENT_TYPE_WORMS = \"worms\"\r\nELEMENT_TYPE_PLANKTON = \"plankton\"\r\nELEMENT_TYPE_SPONGES = \"sponges\"\r\nELEMENT_TYPE_SUN = \"sun\"\r\n\r\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\r\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\r\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\r\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\r\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\r\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\r\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\r\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\r\n\r\nELEMENT_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\r\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\r\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\r\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\r\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\r\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\r\n}\r\n\r\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\r\n\r\nWANDERLUST_TILE_SCORES = {\r\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\r\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\r\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\r\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\r\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\r\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\r\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\r\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\r\n}\r\n\r\nTERRAIN_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\nend)\nreturn __bundle_require(\"Setup.f2db58.lua\")",
       "LuaScriptState": "",
       "XmlUI": "<Defaults>\r\n    <Option fontSize=\"30\"/>\r\n    <Dropdown\r\n        fontSize=\"30\"\r\n        itemHeight=\"35\"\r\n        minHeight=\"50\"\r\n        minWidth=\"100\"\r\n        preferredWidth=\"200\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"0\"\r\n        />\r\n    <Text\r\n        fontSize=\"30\"\r\n        horizontalOverflow=\"Wrap\"\r\n        verticalOverflow=\"Wrap\"\r\n        color=\"White\"\r\n        minHeight=\"50\"\r\n        minWidth=\"50\"\r\n        preferredWidth=\"50\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"1\"\r\n        />\r\n    <Button fontSize=\"30\" minHeight=\"50\" minWidth=\"100\"/>\r\n    <HorizontalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <VerticalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <Cell outline=\"rgb(1,0,0)\"/>\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutSetup\" height=\"600\" width=\"800\" position=\"0 0 -100\">\r\n    <Text>Step 1: Each player chooses one of the 4 colors.</Text>\r\n    <HorizontalLayout>\r\n        <Text>Step 2: Choose setup options and click setup.</Text>\r\n        <VerticalLayout id=\"layoutStart\" minWidth=\"300\" preferredWidth=\"300\" flexibleWidth=\"1\">\r\n            <Text>Setup Options</Text>\r\n            <HorizontalLayout>\r\n                <Text>Game Length</Text>\r\n                <Dropdown id=\"dropdownGameLength\" onValueChanged=\"onGameLengthSelected\">\r\n                    <Option>Short</Option>\r\n                    <Option selected=\"true\">Standard</Option>\r\n                    <Option>Long</Option>\r\n                    <Option>Epic</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Earth Setup</Text>\r\n                <Dropdown id=\"dropDownRandomEarth\" onValueChanged=\"onRandomEarthSelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Animal Display</Text>\r\n                <Dropdown id=\"dropDownAnimalDisplay\" onValueChanged=\"onAnimalDisplaySelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <Button onClick=\"onClickStandard\">Setup</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n    <HorizontalLayout>\r\n        <Text preferredHeight=\"150\">Step 3: Move selected trait to player board. Then click confirm traits.  If playing with superhero variant take two traits instead of one.</Text>\r\n        <VerticalLayout id=\"layoutTrait\" visibility=\"Black\" minWidth=\"200\" preferredWidth=\"200\">\r\n            <Button id=\"btnConfirmTraits\" minWidth=\"200\" preferredWidth=\"200\" interactable=\"false\" onClick=\"onClickConfirmTraits\">Confirm Traits</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n</VerticalLayout>"
     },
@@ -27245,7 +27245,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ABUNDANCE_ZONE =  Global.getVar(\"ABUNDANCE_ZONE\")\r\nAUTOTROPHS_ZONE =  Global.getVar(\"AUTOTROPHS_ZONE\")\r\nDEPLETION_ZONE =  Global.getVar(\"DEPLETION_ZONE\")\r\nADAPTION_ZONE =  Global.getVar(\"ADAPTION_ZONE\")\r\nREGRESSION_ZONE =  Global.getVar(\"REGRESSION_ZONE\")\r\nSPECIATION_ZONE = Global.getVar(\"SPECIATION_ZONE\")\r\nWANDERLUST_ZONE =  Global.getVar(\"WANDERLUST_ZONE\")\r\nCOMPETITION_ZONE =  Global.getVar(\"COMPETITION_ZONE\")\r\nEVOLUTION_ZONE =  Global.getVar(\"EVOLUTION_ZONE\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TAG =  Global.getVar(\"ELEMENT_TAG\")\r\nTERRAIN_TAG =  Global.getVar(\"TERRAIN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nABUNDANCE_POSITIONS = {\r\n    {14.55, 1.26, 15.01},\r\n    {15.26, 1.16, 15.01},\r\n    {16.00, 1.16, 15.01},\r\n    {16.72, 1.16, 15.00}\r\n}\r\nAUTOTROPHS_POSITIONS = {\r\n    {14.61, 1.26, 13.80},\r\n    {15.24, 1.16, 13.84},\r\n    {16.00, 1.16, 13.86},\r\n    {16.71, 1.26, 13.85}\r\n}\r\nDEPLETION_POSITIONS = {\r\n    {14.52, 1.26, 12.49},\r\n    {15.17, 1.16, 12.49},\r\n    {15.96, 1.16, 12.47},\r\n    {16.73, 1.26, 12.48}\r\n}\r\nADAPTION_POSITIONS = {\r\n    {14.54, 1.26, 11.33},\r\n    {15.27, 1.16, 11.34},\r\n    {16.00, 1.16, 11.33},\r\n    {16.68, 1.26, 11.32}\r\n}\r\nREGRESSION_POSITIONS = {\r\n    {14.59, 1.26, 10.10},\r\n    {15.27, 1.16, 10.10},\r\n    {16.05, 1.16, 10.12},\r\n    {16.76, 1.26, 10.12}\r\n}\r\nSPECIATION_POSITIONS = {\r\n    {13.16, 1.26, 7.95},\r\n    {14.46, 1.16, 7.97},\r\n    {15.74, 1.26, 7.97},\r\n    {17.05, 1.16, 7.97},\r\n}\r\nWANDERLUST_POSITIONS = {\r\n    {14.54, 1.26, 6.78},\r\n    {15.24, 1.16, 6.77},\r\n    {15.98, 1.26, 6.78},\r\n    {16.69, 1.16, 6.78},\r\n}\r\nCOMPETITION_POSITIONS = {\r\n    {15.13, 1.26, 2.86},\r\n    {16.38, 1.16, 2.88},\r\n    {17.67, 1.16, 2.87}\r\n}\r\nEVOLUTION_POSITIONS = {\r\n    {15.10, 1.26, 1.39},\r\n    {16.09, 1.16, 1.41},\r\n    {17.14, 1.26, 1.40},\r\n    {18.09, 1.26, 1.37},\r\n    {19.10, 1.26, 1.39},\r\n}\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    return Global.call(\"getTerrainMarkerType\", obj)\r\nend\r\n\r\nfunction onLoad()\r\n    self.setPosition({-7.50, .9, 12.63})\r\n    self.setLock(true)\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClick()\r\n    startLuaCoroutine(self, \"reseedCoroutine\")\r\nend\r\n\r\nfunction reseedCoroutine()\r\n    reseed(true)\r\n    return 1\r\nend\r\n\r\nfunction reseed(notify)\r\n    if notify then notifyRegression() end\r\n    removeElements(DEPLETION_ZONE)\r\n    removeElements(REGRESSION_ZONE)\r\n    removeElements(SPECIATION_ZONE)\r\n    removeElements(WANDERLUST_ZONE)\r\n    removeTerrain(COMPETITION_ZONE)\r\n    removeTerrain(EVOLUTION_ZONE)\r\n    addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, COMPETITION_POSITIONS)\r\n    -- addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, EVOLUTION_POSITIONS)\r\n    addTerrainEvolution()\r\n    shiftElements(ADAPTION_ZONE, REGRESSION_POSITIONS)\r\n    shiftElements(AUTOTROPHS_ZONE, DEPLETION_POSITIONS)\r\n    shiftElements(ABUNDANCE_ZONE, AUTOTROPHS_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ABUNDANCE_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ADAPTION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, SPECIATION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, WANDERLUST_POSITIONS)\r\n    resetFoodChainCubes()\r\nend\r\n\r\nfunction notifyRegression()\r\n    local regression = getObjectFromGUID(REGRESSION_ZONE)\r\n    local regressionElementsSet = {}\r\n    for _,obj in ipairs(regression.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            local url = obj.getCustomObject().image\r\n            regressionElementsSet[getElementType(obj)] = true\r\n        end\r\n    end\r\n    local regressionElementList = {}\r\n    for k,v in pairs(regressionElementsSet) do\r\n        table.insert(regressionElementList, #regressionElementList + 1, k)\r\n    end\r\n\r\n    local rgb = {r=1, g=0, b=0}\r\n    local msg = \"Remove all elements from earth that are surrounded by exactly 3 Vent tiles.\"\r\n    if #regressionElementList > 0 then\r\n        local msgRegression = \"Regression action: \"\r\n        for ii, value in ipairs(regressionElementList) do\r\n            if ii ~= 1 then\r\n                msgRegression = msgRegression .. \", \"\r\n            end\r\n            msgRegression = msgRegression .. value\r\n        end\r\n        broadcastToAll(msg .. \"\\n\" .. msgRegression, rgb)\r\n    else\r\n        broadcastToAll(msg, rgb)\r\n    end\r\nend\r\n\r\nfunction removeElements(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction removeTerrain(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(TERRAIN_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction addFromBagToPosition(bag_guid, dest_positions)\r\n    local bag = getObjectFromGUID(bag_guid)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction shiftElements(src_zone_guid, dest_positions)\r\n    local zoneSrc = getObjectFromGUID(src_zone_guid)\r\n    local positionIndex = 1\r\n    for ii, element in ipairs(zoneSrc.getObjects()) do\r\n        if element.hasTag(ELEMENT_TAG) and positionIndex <= #dest_positions then\r\n            element.setPositionSmooth(dest_positions[positionIndex], false, false)\r\n            element.setRotation({0, 180, 0})\r\n            positionIndex = positionIndex + 1\r\n        end\r\n    end\r\nend\r\n\r\nfunction addElementsFromBag(dest_positions)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction resetFoodChainCubes()\r\n    for color, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        local zoneRef = getObjectFromGUID(playerComponents.food_chain_zone)\r\n        if zoneRef ~= nil then\r\n            for _, obj in ipairs(zoneRef.getObjects()) do\r\n                if obj.hasTag(SPECIES_TAG) then\r\n                    obj.setPositionSmooth(playerComponents.food_chain_start_position, false, false)\r\n                end\r\n            end\r\n        end\r\n    end\r\nend\r\n\r\nfunction addTerrainEvolution()\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local terrains = {}\r\n    for ii=1,#EVOLUTION_POSITIONS do\r\n        local obj = bag.takeObject()\r\n        table.insert(terrains, obj)\r\n    end\r\n    local terrain_index = {\r\n        [WANDERLUST_TILE_LAND] = 1,\r\n        [WANDERLUST_TILE_KELP] = 2,\r\n        [WANDERLUST_TILE_CORAL] = 3,\r\n        [WANDERLUST_TILE_SEAMOUNT] = 4,\r\n        [WANDERLUST_TILE_SEAGRASS] = 5,\r\n        [WANDERLUST_TILE_SAND] = 6,\r\n        [WANDERLUST_TILE_OCEAN] = 7,\r\n        [WANDERLUST_TILE_VENT] = 8,\r\n    }\r\n    table.sort(terrains, function(a,b)\r\n        return terrain_index[getTerrainMarkerType(a)] < terrain_index[getTerrainMarkerType(b)]\r\n    end)\r\n    for ii, position in ipairs(EVOLUTION_POSITIONS) do\r\n        terrains[ii].setPosition(position)\r\n        terrains[ii].setRotation({0,180,0})\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Reseed.15f5b0.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Reseed.15f5b0.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"Reseed\")\nend)\n__bundle_register(\"Reseed\", function(require, _LOADED, __bundle_register, __bundle_modules)\nABUNDANCE_ZONE =  Global.getVar(\"ABUNDANCE_ZONE\")\r\nAUTOTROPHS_ZONE =  Global.getVar(\"AUTOTROPHS_ZONE\")\r\nDEPLETION_ZONE =  Global.getVar(\"DEPLETION_ZONE\")\r\nADAPTION_ZONE =  Global.getVar(\"ADAPTION_ZONE\")\r\nREGRESSION_ZONE =  Global.getVar(\"REGRESSION_ZONE\")\r\nSPECIATION_ZONE = Global.getVar(\"SPECIATION_ZONE\")\r\nWANDERLUST_ZONE =  Global.getVar(\"WANDERLUST_ZONE\")\r\nCOMPETITION_ZONE =  Global.getVar(\"COMPETITION_ZONE\")\r\nEVOLUTION_ZONE =  Global.getVar(\"EVOLUTION_ZONE\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nELEMENT_TAG =  Global.getVar(\"ELEMENT_TAG\")\r\nTERRAIN_TAG =  Global.getVar(\"TERRAIN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nWANDERLUST_TILE_VENT = Global.getVar(\"WANDERLUST_TILE_VENT\")\r\nWANDERLUST_TILE_OCEAN = Global.getVar(\"WANDERLUST_TILE_OCEAN\")\r\nWANDERLUST_TILE_SAND = Global.getVar(\"WANDERLUST_TILE_SAND\")\r\nWANDERLUST_TILE_SEAGRASS = Global.getVar(\"WANDERLUST_TILE_SEAGRASS\")\r\nWANDERLUST_TILE_SEAMOUNT = Global.getVar(\"WANDERLUST_TILE_SEAMOUNT\")\r\nWANDERLUST_TILE_CORAL = Global.getVar(\"WANDERLUST_TILE_CORAL\")\r\nWANDERLUST_TILE_KELP = Global.getVar(\"WANDERLUST_TILE_KELP\")\r\nWANDERLUST_TILE_LAND = Global.getVar(\"WANDERLUST_TILE_LAND\")\r\n\r\nABUNDANCE_POSITIONS = {\r\n    {14.55, 1.26, 15.01},\r\n    {15.26, 1.16, 15.01},\r\n    {16.00, 1.16, 15.01},\r\n    {16.72, 1.16, 15.00}\r\n}\r\nAUTOTROPHS_POSITIONS = {\r\n    {14.61, 1.26, 13.80},\r\n    {15.24, 1.16, 13.84},\r\n    {16.00, 1.16, 13.86},\r\n    {16.71, 1.26, 13.85}\r\n}\r\nDEPLETION_POSITIONS = {\r\n    {14.52, 1.26, 12.49},\r\n    {15.17, 1.16, 12.49},\r\n    {15.96, 1.16, 12.47},\r\n    {16.73, 1.26, 12.48}\r\n}\r\nADAPTION_POSITIONS = {\r\n    {14.54, 1.26, 11.33},\r\n    {15.27, 1.16, 11.34},\r\n    {16.00, 1.16, 11.33},\r\n    {16.68, 1.26, 11.32}\r\n}\r\nREGRESSION_POSITIONS = {\r\n    {14.59, 1.26, 10.10},\r\n    {15.27, 1.16, 10.10},\r\n    {16.05, 1.16, 10.12},\r\n    {16.76, 1.26, 10.12}\r\n}\r\nSPECIATION_POSITIONS = {\r\n    {13.16, 1.26, 7.95},\r\n    {14.46, 1.16, 7.97},\r\n    {15.74, 1.26, 7.97},\r\n    {17.05, 1.16, 7.97},\r\n}\r\nWANDERLUST_POSITIONS = {\r\n    {14.54, 1.26, 6.78},\r\n    {15.24, 1.16, 6.77},\r\n    {15.98, 1.26, 6.78},\r\n    {16.69, 1.16, 6.78},\r\n}\r\nCOMPETITION_POSITIONS = {\r\n    {15.13, 1.26, 2.86},\r\n    {16.38, 1.16, 2.88},\r\n    {17.67, 1.16, 2.87}\r\n}\r\nEVOLUTION_POSITIONS = {\r\n    {15.10, 1.26, 1.39},\r\n    {16.09, 1.16, 1.41},\r\n    {17.14, 1.26, 1.40},\r\n    {18.09, 1.26, 1.37},\r\n    {19.10, 1.26, 1.39},\r\n}\r\n\r\nfunction getElementType(obj)\r\n    return Global.call(\"getElementType\",obj)\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    return Global.call(\"getTerrainMarkerType\", obj)\r\nend\r\n\r\nfunction onLoad()\r\n    self.setPosition({-7.50, .9, 12.63})\r\n    self.setLock(true)\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClick()\r\n    startLuaCoroutine(self, \"reseedCoroutine\")\r\nend\r\n\r\nfunction reseedCoroutine()\r\n    reseed(true)\r\n    return 1\r\nend\r\n\r\nfunction reseed(notify)\r\n    if notify then notifyRegression() end\r\n    removeElements(DEPLETION_ZONE)\r\n    removeElements(REGRESSION_ZONE)\r\n    removeElements(SPECIATION_ZONE)\r\n    removeElements(WANDERLUST_ZONE)\r\n    removeTerrain(COMPETITION_ZONE)\r\n    removeTerrain(EVOLUTION_ZONE)\r\n    addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, COMPETITION_POSITIONS)\r\n    -- addFromBagToPosition(COMMON_COMPONENTS.terrain_bag, EVOLUTION_POSITIONS)\r\n    addTerrainEvolution()\r\n    shiftElements(ADAPTION_ZONE, REGRESSION_POSITIONS)\r\n    shiftElements(AUTOTROPHS_ZONE, DEPLETION_POSITIONS)\r\n    shiftElements(ABUNDANCE_ZONE, AUTOTROPHS_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ABUNDANCE_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, ADAPTION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, SPECIATION_POSITIONS)\r\n    addFromBagToPosition(COMMON_COMPONENTS.element_bag, WANDERLUST_POSITIONS)\r\n    resetFoodChainCubes()\r\nend\r\n\r\nfunction notifyRegression()\r\n    local regression = getObjectFromGUID(REGRESSION_ZONE)\r\n    local regressionElementsSet = {}\r\n    for _,obj in ipairs(regression.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            local url = obj.getCustomObject().image\r\n            regressionElementsSet[getElementType(obj)] = true\r\n        end\r\n    end\r\n    local regressionElementList = {}\r\n    for k,v in pairs(regressionElementsSet) do\r\n        table.insert(regressionElementList, #regressionElementList + 1, k)\r\n    end\r\n\r\n    local rgb = {r=1, g=0, b=0}\r\n    local msg = \"Remove all elements from earth that are surrounded by exactly 3 Vent tiles.\"\r\n    if #regressionElementList > 0 then\r\n        local msgRegression = \"Regression action: \"\r\n        for ii, value in ipairs(regressionElementList) do\r\n            if ii ~= 1 then\r\n                msgRegression = msgRegression .. \", \"\r\n            end\r\n            msgRegression = msgRegression .. value\r\n        end\r\n        broadcastToAll(msg .. \"\\n\" .. msgRegression, rgb)\r\n    else\r\n        broadcastToAll(msg, rgb)\r\n    end\r\nend\r\n\r\nfunction removeElements(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(ELEMENT_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction removeTerrain(zone_guid)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.hasTag(TERRAIN_TAG) then\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\nend\r\n\r\nfunction addFromBagToPosition(bag_guid, dest_positions)\r\n    local bag = getObjectFromGUID(bag_guid)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction shiftElements(src_zone_guid, dest_positions)\r\n    local zoneSrc = getObjectFromGUID(src_zone_guid)\r\n    local positionIndex = 1\r\n    for ii, element in ipairs(zoneSrc.getObjects()) do\r\n        if element.hasTag(ELEMENT_TAG) and positionIndex <= #dest_positions then\r\n            element.setPositionSmooth(dest_positions[positionIndex], false, false)\r\n            element.setRotation({0, 180, 0})\r\n            positionIndex = positionIndex + 1\r\n        end\r\n    end\r\nend\r\n\r\nfunction addElementsFromBag(dest_positions)\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    for _, position in ipairs(dest_positions) do\r\n        local params = {}\r\n        params.position = position\r\n        params.rotation = {0, 180, 0}\r\n        bag.takeObject(params)\r\n    end\r\nend\r\n\r\nfunction resetFoodChainCubes()\r\n    for color, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        local zoneRef = getObjectFromGUID(playerComponents.food_chain_zone)\r\n        if zoneRef ~= nil then\r\n            for _, obj in ipairs(zoneRef.getObjects()) do\r\n                if obj.hasTag(SPECIES_TAG) then\r\n                    obj.setPositionSmooth(playerComponents.food_chain_start_position, false, false)\r\n                end\r\n            end\r\n        end\r\n    end\r\nend\r\n\r\nfunction addTerrainEvolution()\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.terrain_bag)\r\n    local terrains = {}\r\n    for ii=1,#EVOLUTION_POSITIONS do\r\n        local obj = bag.takeObject()\r\n        table.insert(terrains, obj)\r\n    end\r\n    local terrain_index = {\r\n        [WANDERLUST_TILE_LAND] = 1,\r\n        [WANDERLUST_TILE_KELP] = 2,\r\n        [WANDERLUST_TILE_CORAL] = 3,\r\n        [WANDERLUST_TILE_SEAMOUNT] = 4,\r\n        [WANDERLUST_TILE_SEAGRASS] = 5,\r\n        [WANDERLUST_TILE_SAND] = 6,\r\n        [WANDERLUST_TILE_OCEAN] = 7,\r\n        [WANDERLUST_TILE_VENT] = 8,\r\n    }\r\n    table.sort(terrains, function(a,b)\r\n        return terrain_index[getTerrainMarkerType(a)] < terrain_index[getTerrainMarkerType(b)]\r\n    end)\r\n    for ii, position in ipairs(EVOLUTION_POSITIONS) do\r\n        terrains[ii].setPosition(position)\r\n        terrains[ii].setRotation({0,180,0})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Reseed.15f5b0.lua\")",
       "LuaScriptState": "",
       "XmlUI": "<Defaults>\r\n    <Text fontSize=\"20\" />\r\n    <Button fontSize=\"30\" />\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutStart\" width=\"200\" height=\"80\" position=\"0 0 -30\">\r\n<Button onClick=\"onClick\">Reseed</Button>\r\n</VerticalLayout>"
     },
@@ -27707,9 +27707,9 @@
         "posX": -23.5071449,
         "posY": 0.9736048,
         "posZ": 16.2446232,
-        "rotX": 7.52829E-08,
+        "rotX": 1.3529867E-08,
         "rotY": 180.0,
-        "rotZ": -3.94697963E-09,
+        "rotZ": 3.453273E-08,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -27758,8 +27758,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -23.0025921,
-        "posY": 3.62124348,
-        "posZ": 20.8929424,
+        "posY": 3.62123418,
+        "posZ": 20.8929787,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27807,8 +27807,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.2584038,
-        "posY": 0.960695446,
-        "posZ": 13.1375418,
+        "posY": 0.9606802,
+        "posZ": 13.1375914,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27856,8 +27856,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.3274155,
-        "posY": 1.04497826,
-        "posZ": 17.993578,
+        "posY": 1.04496312,
+        "posZ": 17.9936218,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29006,17 +29006,17 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Retrieve Pawns Crustaceans.399213.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Retrieve Pawns Crustaceans.399213.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"retrieve-pawn\")\nend)\n__bundle_register(\"retrieve-pawn\", function(require, _LOADED, __bundle_register, __bundle_modules)\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Retrieve Pawns Crustaceans.399213.lua\")",
       "LuaScriptState": "",
-      "XmlUI": "<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>"
+      "XmlUI": "<!-- include retrieve-pawn.xml -->\n<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>\n<!-- include retrieve-pawn.xml -->"
     },
     {
       "GUID": "f3158a",
       "Name": "3DText",
       "Transform": {
         "posX": -17.98596,
-        "posY": 0.96116066,
-        "posZ": -7.56275034,
+        "posY": 0.9611644,
+        "posZ": -7.5627594,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29104,9 +29104,9 @@
       "GUID": "21e0a5",
       "Name": "3DText",
       "Transform": {
-        "posX": -4.00303459,
-        "posY": 0.9611587,
-        "posZ": -7.7076,
+        "posX": -4.00296068,
+        "posY": 0.961162448,
+        "posZ": -7.707604,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29153,9 +29153,9 @@
       "GUID": "2e2049",
       "Name": "3DText",
       "Transform": {
-        "posX": 10.8517942,
-        "posY": 0.9611598,
-        "posZ": -7.67420149,
+        "posX": 10.8519382,
+        "posY": 0.9611637,
+        "posZ": -7.674213,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29202,9 +29202,9 @@
       "GUID": "ea5776",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.45216,
-        "posY": 0.9611587,
-        "posZ": -7.60313272,
+        "posX": 24.452343,
+        "posY": 0.961162448,
+        "posZ": -7.603145,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29409,9 +29409,9 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Retrieve Pawns - Fishes.e6d02a.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Retrieve Pawns - Fishes.e6d02a.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"retrieve-pawn\")\nend)\n__bundle_register(\"retrieve-pawn\", function(require, _LOADED, __bundle_register, __bundle_modules)\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Retrieve Pawns - Fishes.e6d02a.lua\")",
       "LuaScriptState": "",
-      "XmlUI": "<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>"
+      "XmlUI": "<!-- include retrieve-pawn.xml -->\n<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>\n<!-- include retrieve-pawn.xml -->"
     },
     {
       "GUID": "e9b2d0",
@@ -29452,9 +29452,9 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Retrieve Pawns - Cephalopods.e9b2d0.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Retrieve Pawns - Cephalopods.e9b2d0.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"retrieve-pawn\")\nend)\n__bundle_register(\"retrieve-pawn\", function(require, _LOADED, __bundle_register, __bundle_modules)\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Retrieve Pawns - Cephalopods.e9b2d0.lua\")",
       "LuaScriptState": "",
-      "XmlUI": "<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>"
+      "XmlUI": "<!-- include retrieve-pawn.xml -->\n<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>\n<!-- include retrieve-pawn.xml -->"
     },
     {
       "GUID": "9d93ea",
@@ -29495,9 +29495,9 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "ACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCRUSTACEANS_TAG = Global.getVar(\"CRUSTACEANS_TAG\")\r\nFISHES_TAG = Global.getVar(\"FISHES_TAG\")\r\nCEPHALOPODS_TAG = Global.getVar(\"CEPHALOPODS_TAG\")\r\nREPTILES_TAG = Global.getVar(\"REPTILES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Retrieve Pawns - Reptiles.9d93ea.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Retrieve Pawns - Reptiles.9d93ea.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"retrieve-pawn\")\nend)\n__bundle_register(\"retrieve-pawn\", function(require, _LOADED, __bundle_register, __bundle_modules)\nACTION_PAWN_TAG = Global.getVar(\"ACTION_PAWN_TAG\")\r\nSPECIES_TAG = Global.getVar(\"SPECIES_TAG\")\r\n\r\nCOMMON_COMPONENTS = Global.getTable(\"COMMON_COMPONENTS\")\r\nPLAYER_COMPONENTS = Global.getTable(\"PLAYER_COMPONENTS\")\r\n\r\nfunction onClick()\r\n    local tags = self.getTags()\r\n    local animalTag = tags[1]\r\n    local playerColor = nil\r\n    for key, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n        if playerComponents.tag == animalTag then\r\n            playerColor = key\r\n        end\r\n    end\r\n    table.insert(tags, ACTION_PAWN_TAG)\r\n    local pawns = getObjectsWithAllTags(tags)\r\n    -- Add special pawns to list\r\n    for _, obj in ipairs(getObjectFromGUID(PLAYER_COMPONENTS[playerColor].control_marker_zone).getObjects()) do\r\n        if obj.getGUID() == COMMON_COMPONENTS.control_marker_sun then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sun))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_plankton then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_plankton))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_worms then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_worms))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_sponges then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_sponges))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_gastropods then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_gastropods))\r\n        elseif obj.getGUID() == COMMON_COMPONENTS.control_marker_algae then\r\n            table.insert(pawns, getObjectFromGUID(COMMON_COMPONENTS.special_pawn_algae))\r\n        end\r\n    end\r\n    -- Move pawns into position\r\n    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first\r\n    local shiftRight = vector(.57,0,0)\r\n    local shiftDown = vector(0,0,-0.57)\r\n    local currentPosition = firstPosition\r\n    for ii, pawn in ipairs(pawns) do\r\n        if ii % 2 == 0 then\r\n            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        else\r\n            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)\r\n        end\r\n        pawn.setRotation({0,0,0})\r\n    end\r\n    -- Move food chain cube\r\n    local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)\r\n    for _, obj in ipairs(food_chain_zone.getObjects()) do\r\n        if obj.hasTag(SPECIES_TAG) and obj.hasTag(animalTag) then\r\n            obj.setPositionSmooth(PLAYER_COMPONENTS[playerColor].food_chain_end_position, false, false)\r\n        end\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Retrieve Pawns - Reptiles.9d93ea.lua\")",
       "LuaScriptState": "",
-      "XmlUI": "<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>"
+      "XmlUI": "<!-- include retrieve-pawn.xml -->\n<Button width=\"100\" height=\"100\" position=\"0 0 -20\" onClick=\"onClick\">Retrieve Pawns</Button>\n<!-- include retrieve-pawn.xml -->"
     },
     {
       "GUID": "9ba132",
@@ -29544,9 +29544,9 @@
       "GUID": "71e3e9",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.3621,
-        "posY": 0.9611232,
-        "posZ": 0.413691074,
+        "posX": 24.3622551,
+        "posY": 0.9611214,
+        "posZ": 0.413695365,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29593,9 +29593,9 @@
       "GUID": "309762",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.392374,
-        "posY": 3.62147546,
-        "posZ": 17.1704636,
+        "posX": -30.3924026,
+        "posY": 3.62146664,
+        "posZ": 17.1705036,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29642,9 +29642,9 @@
       "GUID": "9f614b",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.23745,
-        "posY": 3.62147784,
-        "posZ": 13.08858,
+        "posX": -30.2374783,
+        "posY": 3.62146878,
+        "posZ": 13.0886106,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,

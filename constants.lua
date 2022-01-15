@@ -56,7 +56,7 @@ PLAYER_COMPONENTS = {
         food_chain_start_position = {-11.32, 1.35, 8.67},
         food_chain_end_position = {-9.41, 1.29, 8.68},
         gene_pool_bag = "cd7b0d",
-        action_pawn_position_first = vector(-25.21, 1.26, -8.36),
+        action_pawn_position_first = {-25.21, 1.26, -8.93},
         control_marker_zone = "fb935b",
     },
     [Player.Blue.color] = {
@@ -67,7 +67,7 @@ PLAYER_COMPONENTS = {
         food_chain_start_position = {-11.31, 1.35, 9.74},
         food_chain_end_position = {-9.41, 1.29, 9.74},
         gene_pool_bag = "ea715b",
-        action_pawn_position_first = vector(-10.93, 1.26, -8.47),
+        action_pawn_position_first = {-10.93, 1.26, -9.04},
         control_marker_zone = "6d7f31",
     },
     [Player.Orange.color] = {
@@ -78,7 +78,7 @@ PLAYER_COMPONENTS = {
         food_chain_start_position = {-11.32, 1.35, 10.74},
         food_chain_end_position = {-9.40, 1.29, 10.74},
         gene_pool_bag = "93c7b1",
-        action_pawn_position_first = vector(4.00, 1.26, -8.39),
+        action_pawn_position_first = {4.00, 1.26, -8.96},
         control_marker_zone = "de4c5c",
     },
     [Player.Purple.color] = {
@@ -89,7 +89,7 @@ PLAYER_COMPONENTS = {
         food_chain_start_position = {-11.30, 1.35, 11.76},
         food_chain_end_position = {-9.39, 1.29, 11.78},
         gene_pool_bag = "253bcb",
-        action_pawn_position_first = vector(17.44, 1.26, -8.38),
+        action_pawn_position_first = {17.44, 1.26, -8.95},
         control_marker_zone = "bb6f78",
     },
 }

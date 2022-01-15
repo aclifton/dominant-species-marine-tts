@@ -1,4 +1,5 @@
 require("constants")
+local DeckUtils = require("tts-utils.DeckUtils")
 
 function getElementType(obj)
     if obj.hasTag(ELEMENT_TAG) then
@@ -35,27 +36,10 @@ function getValidSeatedPlayers()
     return seatedPlayers
 end
 
-function getDeckOrCardFromZone(zone_guid)
-    local zone = getObjectFromGUID(zone_guid)
-    if zone == nil then return nil end
-    for _, obj in ipairs(zone.getObjects()) do
-        if obj.type == "Deck" then
-            return obj
-        end
-    end
-    for _, obj in ipairs(zone.getObjects()) do
-        if obj.type == "Card" then
-            return obj
-        end
-    end
-    return nil
-
-end
-
 function getEvolutionDeck()
-    return getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)
+    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)
 end
 
 function getEvolutionReserveDeck()
-    return getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)
+    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)
 end

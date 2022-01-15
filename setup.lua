@@ -1,5 +1,6 @@
 require("constants")
 require("common")
+local ComponentUtils = require("tts-utils.ComponentUtils")
 
 STANDARD_SETUP_TILES = {
     {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},
@@ -392,25 +393,24 @@ function setupElementTokensRandom()
 end
 
 function setupSpeciesCubes()
-    local first = vector(0.5, 1.45, 6.12)
-    local shiftRight = vector(.5, 0, 0)
-    local shiftDown = vector(0, 0, -.5)
-    local center = vector(1.30, 1.45, 5.34)
-    local count = 0
+    local center = vector(1.34, 1.66, 5.39)
     local playerList = getValidSeatedPlayers()
+    local cubes = {}
     for _, player in ipairs(playerList) do
         local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)
         bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})
         for ii=1,3 do
-            local current = first + (shiftRight * ii) + (count * shiftDown)
-            bag.takeObject({position=current})
+            table.insert(cubes, bag.takeObject())
         end
-        count = count + 1
     end
-end
-
-function positionToVector(position)
-    return vector(float, float, float)
+    ComponentUtils.arrange({
+        items = cubes,
+        padding = .1,
+        origin = center,
+        rows = #playerList,
+        cols = 3,
+        positionSmooth = true,
+    })
 end
 
 function setupSpeciesCubesRandom()

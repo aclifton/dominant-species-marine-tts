@@ -1,8 +1,5 @@
-ACTION_PAWN_TAG = Global.getVar("ACTION_PAWN_TAG")
-SPECIES_TAG = Global.getVar("SPECIES_TAG")
-
-COMMON_COMPONENTS = Global.getTable("COMMON_COMPONENTS")
-PLAYER_COMPONENTS = Global.getTable("PLAYER_COMPONENTS")
+require("constants")
+local ComponentUtils = require("tts-utils.ComponentUtils")
 
 function onClick()
     local tags = self.getTags()
@@ -32,18 +29,16 @@ function onClick()
         end
     end
     -- Move pawns into position
-    local firstPosition = PLAYER_COMPONENTS[playerColor].action_pawn_position_first
-    local shiftRight = vector(.57,0,0)
-    local shiftDown = vector(0,0,-0.57)
-    local currentPosition = firstPosition
-    for ii, pawn in ipairs(pawns) do
-        if ii % 2 == 0 then
-            pawn.setPositionSmooth(firstPosition + math.floor((ii - 1)/2) * shiftRight, false, false)
-        else
-            pawn.setPositionSmooth(firstPosition + shiftDown + math.floor((ii - 1)/2) * shiftRight, false, false)
-        end
-        pawn.setRotation({0,0,0})
-    end
+    ComponentUtils.arrange({
+        items = pawns,
+        padding = .1,
+        origin = PLAYER_COMPONENTS[playerColor].action_pawn_position_first,
+        alignment = "left",
+        rows = 2,
+        cols = math.ceil(#pawns/2),
+        positionSmooth = true,
+        reverseRowDirection = true,
+    })
     -- Move food chain cube
     local food_chain_zone = getObjectFromGUID(COMMON_COMPONENTS.food_chain_start_zone)
     for _, obj in ipairs(food_chain_zone.getObjects()) do

@@ -1,0 +1,3 @@
+[submodule "tts-utils"]
+	path = tts-utils
+	url = git@github.com:aclifton/tts-utils.git

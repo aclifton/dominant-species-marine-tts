@@ -1,7 +1,7 @@
 {
   "SaveName": "Dominant Species Marine",
-  "EpochTime": 1642265915,
-  "Date": "1/15/2022 11:58:35 AM",
+  "EpochTime": 1642266596,
+  "Date": "1/15/2022 12:09:56 PM",
   "VersionNumber": "v13.1.1",
   "GameMode": "Dominant Species Marine",
   "GameType": "Game",
@@ -312,11 +312,105 @@
       "Name": "Sponge",
       "ImageURL": "https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download",
       "Size": 1.0
+    },
+    {
+      "Name": "c",
+      "ImageURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
+      "Size": 0.1
+    },
+    {
+      "Name": "c",
+      "ImageURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
+      "Size": 0.1
+    },
+    {
+      "Name": "r",
+      "ImageURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
+      "Size": 0.1
+    },
+    {
+      "Name": "f",
+      "ImageURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
+      "Size": 0.1
     }
   ],
   "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Global.-1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Global.-1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"global\")\nend)\n__bundle_register(\"global\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nrequire(\"common\")\r\n\r\nfunction onScriptingButtonDown(index, player_color)\r\n    if index == 1 then\r\n        local player = Player[player_color]\r\n        local pointerPosition = player.getPointerPosition()\r\n        pointerPosition[2] = pointerPosition[2] + 2\r\n        local playerComponents = PLAYER_COMPONENTS[player_color]\r\n        if playerComponents ~= nil then\r\n            local speciesBag = getObjectFromGUID(playerComponents.gene_pool_bag)\r\n            if #speciesBag.getObjects() > 0 then\r\n                speciesBag.takeObject({position=pointerPosition, rotation={0,0,0}})\r\n            end\r\n        end\r\n    end\r\nend\nend)\n__bundle_register(\"common\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nlocal DeckUtils = require(\"tts-utils.DeckUtils\")\r\n\r\nfunction getElementType(obj)\r\n    if obj.hasTag(ELEMENT_TAG) then\r\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    if obj.hasTag(WANDERLUST_TAG) then\r\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    if obj.hasTag(TERRAIN_TAG) then\r\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\r\n    local seatedPlayers = {}\r\n    for _,player in ipairs(players) do\r\n        if player.seated then\r\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\r\n        end\r\n    end\r\n    return seatedPlayers\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\r\nend\nend)\n__bundle_register(\"tts-utils.DeckUtils\", function(require, _LOADED, __bundle_register, __bundle_modules)\nlocal DeckUtils = {}\r\n\r\nfunction DeckUtils.getDeckOrCardFromZone(zone_guid)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    if zone == nil then return nil end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Deck\" then\r\n            return obj\r\n        end\r\n    end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Card\" then\r\n            return obj\r\n        end\r\n    end\r\n    return nil\r\nend\r\n\r\nreturn DeckUtils\nend)\n__bundle_register(\"constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\nRESEED_BUTTON = \"15f5b0\"\r\n\r\nEVOLUTION_DECK_ZONE = \"771647\"\r\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\r\nASTEROID_CARD = \"9fe901\"\r\nTRAIT_DECK = \"c5d0ec\"\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nABUNDANCE_ZONE = \"c982e7\"\r\nAUTOTROPHS_ZONE = \"c4e77b\"\r\nDEPLETION_ZONE = \"e23076\"\r\nADAPTION_ZONE = \"b70e29\"\r\nREGRESSION_ZONE = \"91fe74\"\r\nSPECIATION_ZONE = \"075fb0\"\r\nWANDERLUST_ZONE = \"def2ff\"\r\nCOMPETITION_ZONE = \"90e44c\"\r\nEVOLUTION_ZONE = \"91934c\"\r\n\r\nELEMENT_TAG = \"element\"\r\nWANDERLUST_TAG = \"wanderlust\"\r\nTERRAIN_TAG = \"terrain\"\r\nSPECIES_TAG = \"species\"\r\nACTION_PAWN_TAG = \"action_pawn\"\r\n\r\nCRUSTACEANS_TAG = \"crustaceans\"\r\nFISHES_TAG = \"fishes\"\r\nCEPHALOPODS_TAG = \"cephalopods\"\r\nREPTILES_TAG = \"reptiles\"\r\n\r\nCOMMON_COMPONENTS = {\r\n    wander_lust_bag = \"7d9337\",\r\n    element_bag = \"e81219\",\r\n    terrain_bag = \"ed6578\",\r\n    box_bag = \"6d9eef\",\r\n    special_pawn_plankton = \"bd25f7\",\r\n    special_pawn_worms = \"7a63a2\",\r\n    special_pawn_sponges = \"5172a7\",\r\n    special_pawn_gastropods = \"bf11a4\",\r\n    special_pawn_algae = \"c12749\",\r\n    special_pawn_sun = \"c046bd\",\r\n    control_marker_plankton = \"dce92f\",\r\n    control_marker_worms = \"557086\",\r\n    control_marker_sponges = \"e92662\",\r\n    control_marker_gastropods = \"54bb45\",\r\n    control_marker_algae = \"0f9861\",\r\n    control_marker_sun = \"32bf2b\",\r\n    food_chain_start_zone = \"9ba132\",\r\n}\r\n\r\nPLAYER_COMPONENTS = {\r\n    [Player.Brown.color] = {\r\n        tag = CRUSTACEANS_TAG,\r\n        vp = \"17f953\",\r\n        boards = {\"85e368\", \"b5c87e\"},\r\n        food_chain_zone = \"d9b5af\",\r\n        food_chain_start_position = {-11.32, 1.35, 8.67},\r\n        food_chain_end_position = {-9.41, 1.29, 8.68},\r\n        gene_pool_bag = \"cd7b0d\",\r\n        action_pawn_position_first = {-25.21, 1.26, -8.93},\r\n        control_marker_zone = \"fb935b\",\r\n    },\r\n    [Player.Blue.color] = {\r\n        tag = FISHES_TAG,\r\n        vp = \"3f075f\",\r\n        boards = {\"bf4314\", \"578c29\"},\r\n        food_chain_zone = \"01090b\",\r\n        food_chain_start_position = {-11.31, 1.35, 9.74},\r\n        food_chain_end_position = {-9.41, 1.29, 9.74},\r\n        gene_pool_bag = \"ea715b\",\r\n        action_pawn_position_first = {-10.93, 1.26, -9.04},\r\n        control_marker_zone = \"6d7f31\",\r\n    },\r\n    [Player.Orange.color] = {\r\n        tag = CEPHALOPODS_TAG,\r\n        vp = \"bbb44d\",\r\n        boards = {\"c01aba\", \"24c905\"},\r\n        food_chain_zone = \"8aaf18\",\r\n        food_chain_start_position = {-11.32, 1.35, 10.74},\r\n        food_chain_end_position = {-9.40, 1.29, 10.74},\r\n        gene_pool_bag = \"93c7b1\",\r\n        action_pawn_position_first = {4.00, 1.26, -8.96},\r\n        control_marker_zone = \"de4c5c\",\r\n    },\r\n    [Player.Purple.color] = {\r\n        tag = REPTILES_TAG,\r\n        vp = \"e40bf9\",\r\n        boards = {\"76a1b4\", \"7c5462\"},\r\n        food_chain_zone = \"93093b\",\r\n        food_chain_start_position = {-11.30, 1.35, 11.76},\r\n        food_chain_end_position = {-9.39, 1.29, 11.78},\r\n        gene_pool_bag = \"253bcb\",\r\n        action_pawn_position_first = {17.44, 1.26, -8.95},\r\n        control_marker_zone = \"bb6f78\",\r\n    },\r\n}\r\n\r\nELEMENT_TYPE_ALGAE = \"algae\"\r\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\r\nELEMENT_TYPE_WORMS = \"worms\"\r\nELEMENT_TYPE_PLANKTON = \"plankton\"\r\nELEMENT_TYPE_SPONGES = \"sponges\"\r\nELEMENT_TYPE_SUN = \"sun\"\r\n\r\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\r\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\r\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\r\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\r\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\r\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\r\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\r\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\r\n\r\nELEMENT_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download\"] = ELEMENT_TYPE_ALGAE,\r\n    [\"https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download\"] = ELEMENT_TYPE_GASTROPODS,\r\n    [\"https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download\"] = ELEMENT_TYPE_PLANKTON,\r\n    [\"https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download\"] = ELEMENT_TYPE_SPONGES,\r\n    [\"https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download\"] = ELEMENT_TYPE_SUN,\r\n    [\"https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download\"] = ELEMENT_TYPE_WORMS,\r\n}\r\n\r\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\r\n\r\nWANDERLUST_TILE_SCORES = {\r\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\r\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\r\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\r\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\r\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\r\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\r\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\r\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\r\n}\r\n\r\nTERRAIN_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download\"] = WANDERLUST_TILE_LAND,\r\n}\nend)\nreturn __bundle_require(\"Global.-1.lua\")",
   "LuaScriptState": "",
   "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "Decals": [
+    {
+      "Transform": {
+        "posX": -30.0486469,
+        "posY": 1.4820354,
+        "posZ": -21.6471462,
+        "rotX": 0.0,
+        "rotY": -1.02452832E-05,
+        "rotZ": 358.262,
+        "scaleX": 0.124252222,
+        "scaleY": 0.1,
+        "scaleZ": 0.1
+      },
+      "CustomDecal": {
+        "Name": "c",
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
+        "Size": 0.1
+      }
+    },
+    {
+      "Transform": {
+        "posX": -29.8997631,
+        "posY": 1.478246,
+        "posZ": -21.6471462,
+        "rotX": 0.0,
+        "rotY": -1.02452832E-05,
+        "rotZ": 358.262,
+        "scaleX": 0.124252222,
+        "scaleY": 0.1,
+        "scaleZ": 0.1
+      },
+      "CustomDecal": {
+        "Name": "f",
+        "ImageURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
+        "Size": 0.1
+      }
+    },
+    {
+      "Transform": {
+        "posX": -29.7606,
+        "posY": 1.45646214,
+        "posZ": -21.6471462,
+        "rotX": 0.0,
+        "rotY": -1.02452832E-05,
+        "rotZ": 358.262,
+        "scaleX": 0.124252222,
+        "scaleY": 0.1,
+        "scaleZ": 0.1
+      },
+      "CustomDecal": {
+        "Name": "c",
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
+        "Size": 0.1
+      }
+    },
+    {
+      "Transform": {
+        "posX": -29.6261082,
+        "posY": 1.45302749,
+        "posZ": -21.6471462,
+        "rotX": 0.0,
+        "rotY": -1.02452832E-05,
+        "rotZ": 358.262,
+        "scaleX": 0.124252222,
+        "scaleY": 0.1,
+        "scaleZ": 0.1
+      },
+      "CustomDecal": {
+        "Name": "r",
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
+        "Size": 0.1
+      }
+    }
+  ],
   "VectorLines": [
     {
       "points3": [
@@ -1323,7 +1417,7 @@
         "posX": -26.7824268,
         "posY": 1.06758332,
         "posZ": 12.2915106,
-        "rotX": -3.603017E-08,
+        "rotX": 7.482617E-09,
         "rotY": 180.012314,
         "rotZ": 180.0,
         "scaleX": 1.1214658,
@@ -6030,7 +6124,7 @@
         "posX": -26.758934,
         "posY": 1.14460778,
         "posZ": 16.2567425,
-        "rotX": -3.65770845E-08,
+        "rotX": -4.22244142E-08,
         "rotY": 179.992874,
         "rotZ": 180.0,
         "scaleX": 1.1516844,
@@ -7592,9 +7686,9 @@
         "posX": -19.4722252,
         "posY": 0.9736048,
         "posZ": 0.185467377,
-        "rotX": -8.611272E-09,
+        "rotX": -6.32710062E-09,
         "rotY": 180.000031,
-        "rotZ": -5.841536E-08,
+        "rotZ": -4.85739768E-08,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -7645,9 +7739,9 @@
         "posX": 19.3148689,
         "posY": 1.1600008,
         "posZ": -5.916854,
-        "rotX": 2.8908633E-07,
+        "rotX": 1.41944758E-08,
         "rotY": 180.012283,
-        "rotZ": -2.03119058E-07,
+        "rotZ": 9.91404E-08,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7697,9 +7791,9 @@
         "posX": 20.1857052,
         "posY": 1.1600008,
         "posZ": -5.944249,
-        "rotX": -3.06146539E-08,
+        "rotX": -2.23379544E-07,
         "rotY": 179.997726,
-        "rotZ": -3.989189E-07,
+        "rotZ": -1.848422E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7749,9 +7843,9 @@
         "posX": 19.3440628,
         "posY": 1.1600008,
         "posZ": -6.82605171,
-        "rotX": 9.094403E-08,
+        "rotX": 8.307944E-08,
         "rotY": 179.980225,
-        "rotZ": -2.546184E-07,
+        "rotZ": -1.251005E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7801,9 +7895,9 @@
         "posX": 20.1794624,
         "posY": 1.1600008,
         "posZ": -6.830599,
-        "rotX": -1.20791341E-07,
+        "rotX": 1.30352149E-07,
         "rotY": 180.002136,
-        "rotZ": -6.272615E-08,
+        "rotZ": 5.893973E-08,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -7851,7 +7945,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2358,
-        "posY": 0.7735062,
+        "posY": 0.7734948,
         "posZ": 3.59527946,
         "rotX": 8.649523E-06,
         "rotY": -0.000370237569,
@@ -8777,12 +8871,12 @@
       "GUID": "bb92f9",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.207218,
-        "posY": 1.350776,
-        "posZ": 14.1058331,
-        "rotX": 0.35517633,
-        "rotY": 179.87674,
-        "rotZ": 0.0178184938,
+        "posX": 9.20782,
+        "posY": 1.35101187,
+        "posZ": 14.1051121,
+        "rotX": 0.3898165,
+        "rotY": 179.854431,
+        "rotZ": 0.0353589654,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8832,12 +8926,12 @@
       "GUID": "14785c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.237029,
-        "posY": 1.53969622,
-        "posZ": 14.0819511,
-        "rotX": 0.638411343,
-        "rotY": 179.387451,
-        "rotZ": 359.76474,
+        "posX": 9.238041,
+        "posY": 1.54205,
+        "posZ": 14.0801754,
+        "rotX": 0.6570632,
+        "rotY": 179.345444,
+        "rotZ": 359.773651,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8887,12 +8981,12 @@
       "GUID": "710da1",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.226605,
-        "posY": 1.4465344,
-        "posZ": 14.0956545,
-        "rotX": 0.40394026,
-        "rotY": 179.794312,
-        "rotZ": 359.856384,
+        "posX": 9.227425,
+        "posY": 1.44453609,
+        "posZ": 14.0941019,
+        "rotX": 0.477650344,
+        "rotY": 179.758011,
+        "rotZ": 359.875061,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8942,12 +9036,12 @@
       "GUID": "fd20dd",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.231687,
-        "posY": 1.63792479,
-        "posZ": 14.043128,
-        "rotX": 0.6442351,
-        "rotY": 179.128845,
-        "rotZ": 359.65155,
+        "posX": 9.23277,
+        "posY": 1.63652849,
+        "posZ": 14.0405083,
+        "rotX": 0.5901912,
+        "rotY": 179.074387,
+        "rotZ": 359.710175,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -8997,12 +9091,12 @@
       "GUID": "208e6f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.23315048,
-        "posY": 1.73331487,
-        "posZ": 14.0282259,
-        "rotX": 0.6649352,
-        "rotY": 179.183853,
-        "rotZ": 359.752441,
+        "posX": 9.234337,
+        "posY": 1.73541594,
+        "posZ": 14.0252848,
+        "rotX": 0.5917406,
+        "rotY": 179.13678,
+        "rotZ": 359.798462,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9052,12 +9146,12 @@
       "GUID": "ac7bdf",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.239144,
-        "posY": 1.83226633,
-        "posZ": 14.006815,
-        "rotX": 0.6635538,
-        "rotY": 179.112473,
-        "rotZ": 359.830566,
+        "posX": 9.240487,
+        "posY": 1.83160865,
+        "posZ": 14.0033054,
+        "rotX": 0.594949365,
+        "rotY": 179.067947,
+        "rotZ": 359.878723,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9107,12 +9201,12 @@
       "GUID": "535b2a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.200178,
-        "posY": 1.25264335,
-        "posZ": 14.1126108,
-        "rotX": 0.338152826,
-        "rotY": 179.9148,
-        "rotZ": 0.217654645,
+        "posX": 9.200636,
+        "posY": 1.252336,
+        "posZ": 14.1121264,
+        "rotX": 0.215214774,
+        "rotY": 179.903824,
+        "rotZ": 0.227483243,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9162,12 +9256,12 @@
       "GUID": "7944c3",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.220294,
-        "posY": 2.22546673,
-        "posZ": 14.0092134,
-        "rotX": 0.6088896,
-        "rotY": 179.70726,
-        "rotZ": 359.951141,
+        "posX": 9.222169,
+        "posY": 2.22620368,
+        "posZ": 14.00549,
+        "rotX": 0.5497487,
+        "rotY": 179.665283,
+        "rotZ": 359.9889,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9217,12 +9311,12 @@
       "GUID": "00d34d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.218736,
-        "posY": 2.12638235,
-        "posZ": 14.0135756,
-        "rotX": 0.6335579,
-        "rotY": 179.719284,
-        "rotZ": 359.9642,
+        "posX": 9.220514,
+        "posY": 2.1271143,
+        "posZ": 14.00984,
+        "rotX": 0.5730965,
+        "rotY": 179.678375,
+        "rotZ": 0.00428094668,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9272,12 +9366,12 @@
       "GUID": "5fea34",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.252784,
-        "posY": 2.02696538,
-        "posZ": 14.007658,
-        "rotX": 0.585752547,
-        "rotY": 178.877228,
-        "rotZ": 359.979858,
+        "posX": 9.254446,
+        "posY": 2.0276823,
+        "posZ": 14.0038519,
+        "rotX": 0.525741339,
+        "rotY": 178.838,
+        "rotZ": 0.0208849963,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9327,12 +9421,12 @@
       "GUID": "e504c5",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.180623,
-        "posY": 1.15911186,
-        "posZ": 14.1117287,
-        "rotX": 0.0102283517,
-        "rotY": 180.031891,
-        "rotZ": 0.100332834,
+        "posX": 9.180629,
+        "posY": 1.15910411,
+        "posZ": 14.1116257,
+        "rotX": 0.0103363963,
+        "rotY": 180.033508,
+        "rotZ": 0.10102576,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9382,12 +9476,12 @@
       "GUID": "df689f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.24734,
-        "posY": 1.929647,
-        "posZ": 14.011301,
-        "rotX": 0.655225337,
-        "rotY": 178.7547,
-        "rotZ": 359.93808,
+        "posX": 9.248765,
+        "posY": 1.93035221,
+        "posZ": 14.00765,
+        "rotX": 0.6002802,
+        "rotY": 178.715,
+        "rotZ": 359.986816,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9438,11 +9532,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -25.21,
-        "posY": 1.25684667,
+        "posY": 1.25684655,
         "posZ": -8.929999,
-        "rotX": -1.27466228E-06,
-        "rotY": 4.904602E-07,
-        "rotZ": 1.47229741E-06,
+        "rotX": 5.116749E-07,
+        "rotY": 5.5887E-07,
+        "rotZ": 6.562526E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9451,9 +9545,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -9492,11 +9586,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.93,
-        "posY": 1.25684667,
+        "posY": 1.25684655,
         "posZ": -9.04,
-        "rotX": 7.498191E-07,
-        "rotY": 2.94269228E-07,
-        "rotZ": -2.47231441E-07,
+        "rotX": -9.612424E-07,
+        "rotY": 9.601617E-07,
+        "rotZ": 8.797226E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9548,9 +9642,9 @@
         "posX": 17.4371967,
         "posY": 1.25684667,
         "posZ": -8.95404148,
-        "rotX": -1.42007877E-07,
-        "rotY": 7.26093162E-07,
-        "rotZ": 1.02631361E-06,
+        "rotX": -1.934003E-06,
+        "rotY": 1.184062E-06,
+        "rotZ": 1.11307736E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9560,7 +9654,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -9602,9 +9696,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -7.286009E-07,
+        "rotY": 7.86405053E-07,
+        "rotZ": 4.717727E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9653,12 +9747,12 @@
       "GUID": "bd25f7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -11.21845,
-        "posY": 1.556845,
-        "posZ": -2.119158,
-        "rotX": -0.000131431269,
-        "rotY": -0.0005979033,
-        "rotZ": -0.0007499109,
+        "posX": -11.2184467,
+        "posY": 1.55684483,
+        "posZ": -2.11915731,
+        "rotX": -0.000127494292,
+        "rotY": -0.0006192819,
+        "rotZ": -0.000705919869,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9727,11 +9821,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -24.6349983,
-        "posY": 1.25684667,
+        "posY": 1.25684655,
         "posZ": -8.93,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": 6.15599561E-07,
+        "rotY": 6.454094E-07,
+        "rotZ": 5.632757E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9740,9 +9834,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -9783,9 +9877,9 @@
         "posX": -24.0599957,
         "posY": 1.25684667,
         "posZ": -8.93,
-        "rotX": -1.999986E-06,
-        "rotY": 3.24158577E-07,
-        "rotZ": 9.821342E-07,
+        "rotX": -9.357471E-07,
+        "rotY": 6.98367444E-07,
+        "rotZ": 9.146472E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -9794,9 +9888,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -9848,9 +9942,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -13043,7 +13137,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.0980236158,
+        "g": 0.09802344,
         "b": 0.619607747
       },
       "LayoutGroupSortIndex": 0,
@@ -16225,9 +16319,9 @@
         "posX": -23.484993,
         "posY": 1.25684667,
         "posZ": -8.93,
-        "rotX": -1.91587014E-06,
-        "rotY": 3.255203E-07,
-        "rotZ": 9.04622141E-07,
+        "rotX": -1.88196952E-06,
+        "rotY": 4.74565269E-07,
+        "rotZ": 1.02557192E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16236,9 +16330,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -16279,9 +16373,9 @@
         "posX": -25.21,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -2.034023E-06,
+        "rotY": 6.57544547E-07,
+        "rotZ": 9.772182E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16290,9 +16384,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -16333,9 +16427,9 @@
         "posX": -24.6349983,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -1.63001755E-06,
-        "rotY": 5.113238E-07,
-        "rotZ": -1.35125924E-06,
+        "rotX": -1.43252794E-06,
+        "rotY": 6.415057E-07,
+        "rotZ": 9.44723467E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16344,9 +16438,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -16387,9 +16481,9 @@
         "posX": -24.0599957,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.913498E-06,
+        "rotY": 7.071758E-07,
+        "rotZ": 1.14365571E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16398,9 +16492,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -16441,9 +16535,9 @@
         "posX": -23.5,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -7.46924229E-07,
+        "rotY": 1.42766476E-06,
+        "rotZ": 1.16350509E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16452,9 +16546,9 @@
       "Description": "",
       "GMNotes": "",
       "ColorDiffuse": {
-        "r": 0.442999035,
-        "g": 0.230999023,
-        "b": 0.08999922
+        "r": 0.442998827,
+        "g": 0.230998844,
+        "b": 0.08999906
       },
       "Tags": [
         "action_pawn",
@@ -16495,9 +16589,9 @@
         "posX": -10.355,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.45511751E-06,
-        "rotY": 3.68173119E-07,
-        "rotZ": 5.71823534E-07,
+        "rotX": -1.4061543E-06,
+        "rotY": 6.35481456E-07,
+        "rotZ": 6.882629E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16549,9 +16643,9 @@
         "posX": -9.779999,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -1.51516554E-06,
+        "rotY": 8.3535366E-07,
+        "rotZ": 7.833891E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16603,9 +16697,9 @@
         "posX": -9.204999,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -2.105238E-08,
+        "rotY": 9.563694E-07,
+        "rotZ": 1.37989957E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16655,11 +16749,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.93,
-        "posY": 1.25684667,
+        "posY": 1.25684655,
         "posZ": -8.464999,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -4.65073435E-06,
+        "rotY": 9.24707251E-07,
+        "rotZ": -1.44609191E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16711,9 +16805,9 @@
         "posX": -10.355,
         "posY": 1.25684667,
         "posZ": -8.464999,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -1.51516554E-06,
+        "rotY": 8.3535366E-07,
+        "rotZ": 7.833891E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16765,9 +16859,9 @@
         "posX": -9.779999,
         "posY": 1.25684667,
         "posZ": -8.464999,
-        "rotX": -9.32047953E-07,
-        "rotY": 4.958879E-08,
-        "rotZ": -4.928536E-07,
+        "rotX": -1.52744167E-06,
+        "rotY": 4.70811244E-07,
+        "rotZ": 7.666504E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16819,9 +16913,9 @@
         "posX": -9.206351,
         "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -1.55005262E-06,
-        "rotY": 3.962168E-07,
-        "rotZ": 8.023938E-07,
+        "rotX": -1.53855171E-06,
+        "rotY": 7.73013539E-07,
+        "rotZ": 8.310537E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16873,9 +16967,9 @@
         "posX": 18.0150032,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.49048719E-06,
+        "rotY": 8.910813E-07,
+        "rotZ": 9.045274E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16885,7 +16979,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -16927,9 +17021,9 @@
         "posX": 18.590004,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.57193176E-06,
+        "rotY": 4.15635441E-07,
+        "rotZ": 9.079795E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16939,7 +17033,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -16981,9 +17075,9 @@
         "posX": 19.1650066,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -2.04312141E-06,
+        "rotY": 7.3327044E-07,
+        "rotZ": 1.06005973E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -16993,7 +17087,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -17035,9 +17129,9 @@
         "posX": 17.44,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.14249917E-06,
+        "rotY": 8.07992E-07,
+        "rotZ": 1.02225658E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17047,7 +17141,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -17089,9 +17183,9 @@
         "posX": 18.0150032,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.98845987E-06,
+        "rotY": 7.024055E-07,
+        "rotZ": 1.0562643E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17101,7 +17195,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -17143,9 +17237,9 @@
         "posX": 18.590004,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -2.051292E-06,
-        "rotY": 3.19485139E-07,
-        "rotZ": 1.04781464E-06,
+        "rotX": -1.99974147E-06,
+        "rotY": 6.834859E-07,
+        "rotZ": 9.22946469E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17155,7 +17249,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -17197,9 +17291,9 @@
         "posX": 19.15,
         "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": 8.9180935E-07,
-        "rotY": 4.905763E-07,
-        "rotZ": 9.08149957E-07,
+        "rotX": -2.17478669E-06,
+        "rotY": 1.010274E-06,
+        "rotZ": 1.18727019E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17209,7 +17303,7 @@
       "GMNotes": "",
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801846,
+        "g": 0.09801828,
         "b": 0.619607747
       },
       "Tags": [
@@ -17251,9 +17345,9 @@
         "posX": 4.57500029,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.28671911E-06,
-        "rotY": 3.8961025E-07,
-        "rotZ": 7.438313E-07,
+        "rotX": -1.62020012E-06,
+        "rotY": 9.194471E-07,
+        "rotZ": 8.505383E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17305,9 +17399,9 @@
         "posX": 5.15000057,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -2.45606839E-06,
-        "rotY": 4.55171261E-07,
-        "rotZ": 1.53272978E-07,
+        "rotX": -1.745572E-06,
+        "rotY": 9.651816E-07,
+        "rotZ": 6.89662556E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17359,9 +17453,9 @@
         "posX": 5.72500134,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -5.99743942E-07,
-        "rotY": 8.75378532E-07,
-        "rotZ": -1.50841151E-06,
+        "rotX": -1.645729E-06,
+        "rotY": 1.37932113E-06,
+        "rotZ": 7.68661266E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17413,9 +17507,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -1.06707785E-06,
-        "rotY": 3.1129278E-07,
-        "rotZ": 5.32265062E-07,
+        "rotX": -1.82958775E-06,
+        "rotY": 7.23266567E-07,
+        "rotZ": 1.12309681E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17467,9 +17561,9 @@
         "posX": 4.57500029,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -9.666713E-07,
-        "rotY": 2.78224576E-07,
-        "rotZ": 4.61424435E-07,
+        "rotX": -6.85856435E-07,
+        "rotY": 9.95012E-07,
+        "rotZ": 8.89432E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17521,9 +17615,9 @@
         "posX": 5.15000057,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -1.2557515E-06,
-        "rotY": 3.142741E-07,
-        "rotZ": 6.94516643E-07,
+        "rotX": -5.66915162E-07,
+        "rotY": 6.52425854E-07,
+        "rotZ": 8.745038E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17575,9 +17669,9 @@
         "posX": 5.721608,
         "posY": 1.25684667,
         "posZ": -8.387002,
-        "rotX": -1.925668E-07,
-        "rotY": 1.07917276E-06,
-        "rotZ": 1.02835929E-06,
+        "rotX": -1.30360081E-06,
+        "rotY": 1.50723258E-06,
+        "rotZ": 7.489959E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17626,12 +17720,12 @@
       "GUID": "bf11a4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.519404,
+        "posX": -8.519402,
         "posY": 1.55684483,
-        "posZ": -2.1382575,
-        "rotX": -0.000136122617,
-        "rotY": -0.0008590282,
-        "rotZ": -0.000745851255,
+        "posZ": -2.138257,
+        "rotX": -0.0001435968,
+        "rotY": -0.000935803168,
+        "rotZ": -0.000746280944,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17699,12 +17793,12 @@
       "GUID": "c12749",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.58687735,
-        "posY": 1.55684483,
-        "posZ": -2.14484453,
-        "rotX": -0.000116496944,
-        "rotY": 0.00109730719,
-        "rotZ": -0.0007617585,
+        "posX": -7.58687353,
+        "posY": 1.556845,
+        "posZ": -2.14484429,
+        "rotX": -0.000132781221,
+        "rotY": 0.00107167265,
+        "rotZ": -0.000758016,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17772,12 +17866,12 @@
       "GUID": "7a63a2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -10.3097324,
+        "posX": -10.30973,
         "posY": 1.556845,
-        "posZ": -2.1255877,
-        "rotX": -0.000141293262,
-        "rotY": -0.000414522568,
-        "rotZ": -0.000746306032,
+        "posZ": -2.125587,
+        "rotX": -0.0001309553,
+        "rotY": -0.000444660225,
+        "rotZ": -0.00074619794,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17845,12 +17939,12 @@
       "GUID": "c046bd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -6.688026,
-        "posY": 1.556845,
-        "posZ": -2.15120816,
-        "rotX": -0.000133075213,
-        "rotY": 0.0004713189,
-        "rotZ": -0.0007741162,
+        "posX": -6.688022,
+        "posY": 1.55684483,
+        "posZ": -2.15120769,
+        "rotX": -0.000121057514,
+        "rotY": 0.0004595582,
+        "rotZ": -0.00074675557,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17918,12 +18012,12 @@
       "GUID": "5172a7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -9.392476,
+        "posX": -9.392473,
         "posY": 1.55684483,
-        "posZ": -2.13206816,
-        "rotX": -0.000123331178,
-        "rotY": -0.000182109463,
-        "rotZ": -0.0007467971,
+        "posZ": -2.13206768,
+        "rotX": -0.0001451685,
+        "rotY": -0.0002324416,
+        "rotZ": -0.000745441939,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17992,7 +18086,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.2579765,
-        "posY": 0.7747138,
+        "posY": 0.7747124,
         "posZ": -3.35825038,
         "rotX": -2.5846723E-06,
         "rotY": -2.503291E-05,
@@ -20187,7 +20281,7 @@
       "Name": "Bag",
       "Transform": {
         "posX": 22.30614,
-        "posY": 0.774063766,
+        "posY": 0.7740566,
         "posZ": 12.7843075,
         "rotX": -5.350759E-05,
         "rotY": 1.79692634E-05,
@@ -26549,12 +26643,12 @@
       "GUID": "ea8ac8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3752289,
-        "posY": 1.65257323,
-        "posZ": -6.757641,
-        "rotX": 359.7835,
-        "rotY": 178.989532,
-        "rotZ": 359.711731,
+        "posX": 18.37439,
+        "posY": 1.65261686,
+        "posZ": -6.758178,
+        "rotX": 359.93985,
+        "rotY": 178.99707,
+        "rotZ": 359.565552,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26601,12 +26695,12 @@
       "GUID": "06945e",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38982,
-        "posY": 1.25956893,
-        "posZ": -6.746966,
-        "rotX": 0.0203156676,
-        "rotY": 179.367279,
-        "rotZ": 180.08345,
+        "posX": 18.3898487,
+        "posY": 1.259561,
+        "posZ": -6.74694872,
+        "rotX": 0.0171204749,
+        "rotY": 179.365173,
+        "rotZ": 180.089,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26653,12 +26747,12 @@
       "GUID": "f93bf2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3821468,
-        "posY": 1.4537698,
-        "posZ": -6.752388,
-        "rotX": 359.6426,
-        "rotY": 179.894791,
-        "rotZ": 359.664429,
+        "posX": 18.3817959,
+        "posY": 1.453834,
+        "posZ": -6.75252247,
+        "rotX": 359.79364,
+        "rotY": 179.90625,
+        "rotZ": 359.528168,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26705,12 +26799,12 @@
       "GUID": "cbc9ad",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38099,
-        "posY": 1.55337739,
-        "posZ": -6.76258469,
-        "rotX": 359.73938,
-        "rotY": 179.25827,
-        "rotZ": 359.698059,
+        "posX": 18.3804111,
+        "posY": 1.55342662,
+        "posZ": -6.76292944,
+        "rotX": 359.8883,
+        "rotY": 179.266891,
+        "rotZ": 359.562,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26757,12 +26851,12 @@
       "GUID": "d2bfb7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.383234,
-        "posY": 1.35609543,
-        "posZ": -6.8017025,
-        "rotX": 359.741974,
-        "rotY": 179.944351,
-        "rotZ": 359.8147,
+        "posX": 18.3831215,
+        "posY": 1.35603046,
+        "posZ": -6.80190229,
+        "rotX": 359.875854,
+        "rotY": 179.951,
+        "rotZ": 359.6957,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26809,12 +26903,12 @@
       "GUID": "81e2e6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.38702,
-        "posY": 1.25690722,
-        "posZ": -6.80589437,
-        "rotX": 359.786041,
-        "rotY": 179.909592,
-        "rotZ": 359.981659,
+        "posX": 18.3870888,
+        "posY": 1.25681031,
+        "posZ": -6.80592251,
+        "rotX": 359.9214,
+        "rotY": 179.91156,
+        "rotZ": 359.859436,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -26861,11 +26955,11 @@
       "GUID": "dce92f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -11.2180548,
-        "posY": 1.26000047,
+        "posX": -11.2180538,
+        "posY": 1.26000023,
         "posZ": -2.11923862,
-        "rotX": 1.912563E-05,
-        "rotY": 180.028046,
+        "rotX": 1.82064268E-05,
+        "rotY": 180.027939,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26916,8 +27010,8 @@
         "posX": -10.3093166,
         "posY": 1.26000047,
         "posZ": -2.125669,
-        "rotX": 1.95384055E-05,
-        "rotY": 179.971436,
+        "rotX": 1.88122849E-05,
+        "rotY": 179.971283,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -26968,8 +27062,8 @@
         "posX": -9.39207,
         "posY": 1.26000023,
         "posZ": -2.13215327,
-        "rotX": 1.80139559E-05,
-        "rotY": 180.019562,
+        "rotX": 1.94614422E-05,
+        "rotY": 180.019409,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -27020,8 +27114,8 @@
         "posX": -8.519081,
         "posY": 1.26000023,
         "posZ": -2.13832831,
-        "rotX": 1.99550359E-05,
-        "rotY": 179.99617,
+        "rotX": 1.98314228E-05,
+        "rotY": 179.996,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -27071,9 +27165,9 @@
       "Transform": {
         "posX": -7.586494,
         "posY": 1.26000023,
-        "posZ": -2.144929,
-        "rotX": 1.927832E-05,
-        "rotY": 179.976944,
+        "posZ": -2.14492941,
+        "rotX": 1.97998343E-05,
+        "rotY": 179.976913,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -27121,11 +27215,11 @@
       "GUID": "32bf2b",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -6.687669,
+        "posX": -6.68766832,
         "posY": 1.26000023,
-        "posZ": -2.151288,
-        "rotX": 1.744768E-05,
-        "rotY": 180.014725,
+        "posZ": -2.15128827,
+        "rotX": 1.76714111E-05,
+        "rotY": 180.0146,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -27707,9 +27801,9 @@
         "posX": -23.5071449,
         "posY": 0.9736048,
         "posZ": 16.2446232,
-        "rotX": 7.432854E-09,
+        "rotX": -1.31376088E-09,
         "rotY": 180.0,
-        "rotZ": 6.10583E-08,
+        "rotZ": 2.13855387E-07,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -27758,8 +27852,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -23.0025921,
-        "posY": 3.62122941,
-        "posZ": 20.8929977,
+        "posY": 3.62122631,
+        "posZ": 20.893013,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27807,8 +27901,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.2584038,
-        "posY": 0.960672557,
-        "posZ": 13.1376123,
+        "posY": 0.960666835,
+        "posZ": 13.1376314,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -27856,8 +27950,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.3274155,
-        "posY": 1.04495537,
-        "posZ": 17.9936447,
+        "posY": 1.04494965,
+        "posZ": 17.99366,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -28111,822 +28205,6 @@
       "XmlUI": ""
     },
     {
-      "GUID": "85e368",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": -20.0169582,
-        "posY": 0.960000336,
-        "posZ": -13.8054867,
-        "rotX": -3.05643724E-08,
-        "rotY": 180.043686,
-        "rotZ": -9.167355E-09,
-        "scaleX": 4.442831,
-        "scaleY": 1.0,
-        "scaleZ": 4.442831
-      },
-      "Nickname": "Crustaceans Player Board Standard",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "https://drive.google.com/u/0/uc?id=1kCp94YqOXKsxmwy7_hEcrcNWDWbXdiBM&export=download",
-        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1kCp94YqOXKsxmwy7_hEcrcNWDWbXdiBM&export=download",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 0,
-          "Thickness": 0.2,
-          "Stackable": false,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "AttachedSnapPoints": [
-        {
-          "Position": {
-            "x": 0.5876226,
-            "y": 0.200000346,
-            "z": -0.848019242
-          }
-        },
-        {
-          "Position": {
-            "x": 0.418794066,
-            "y": 0.200000346,
-            "z": -0.848089159
-          }
-        },
-        {
-          "Position": {
-            "x": 0.254676133,
-            "y": 0.200000346,
-            "z": -0.8483154
-          }
-        },
-        {
-          "Position": {
-            "x": 0.8641665,
-            "y": 0.200000346,
-            "z": -0.2918347
-          },
-          "Rotation": {
-            "x": -4.0101213E-08,
-            "y": 359.949677,
-            "z": -4.891686E-08
-          }
-        }
-      ],
-      "States": {
-        "2": {
-          "GUID": "b5c87e",
-          "Name": "Custom_Tile",
-          "Transform": {
-            "posX": -20.0169582,
-            "posY": 0.960000336,
-            "posZ": -13.8054867,
-            "rotX": -3.05643724E-08,
-            "rotY": 180.043686,
-            "rotZ": -9.167355E-09,
-            "scaleX": 4.442831,
-            "scaleY": 1.0,
-            "scaleZ": 4.442831
-          },
-          "Nickname": "Crustaceans Player Board Alternate",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomImage": {
-            "ImageURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
-            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
-            "ImageScalar": 1.0,
-            "WidthScale": 0.0,
-            "CustomTile": {
-              "Type": 0,
-              "Thickness": 0.2,
-              "Stackable": false,
-              "Stretch": true
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": 1.09574234,
-                "y": 0.200000346,
-                "z": -0.8512309
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.9269138,
-                "y": 0.200000346,
-                "z": -0.851300836
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.762795866,
-                "y": 0.200000346,
-                "z": -0.8515271
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.584775,
-                "y": 0.200000346,
-                "z": -0.848087549
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.4159465,
-                "y": 0.200000346,
-                "z": -0.848157942
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.251828581,
-                "y": 0.200000346,
-                "z": -0.848383546
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.8641665,
-                "y": 0.200000346,
-                "z": -0.2918347
-              },
-              "Rotation": {
-                "x": 1.44091086E-08,
-                "y": 359.949677,
-                "z": 1.28127482E-08
-              },
-              "Tags": []
-            }
-          ]
-        }
-      }
-    },
-    {
-      "GUID": "bf4314",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": -6.16158772,
-        "posY": 0.960000157,
-        "posZ": -13.8901739,
-        "rotX": -2.72051864E-07,
-        "rotY": 179.9814,
-        "rotZ": -1.12461208E-07,
-        "scaleX": 4.37562943,
-        "scaleY": 1.0,
-        "scaleZ": 4.37562943
-      },
-      "Nickname": "Fishes Player Board Standard",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "https://drive.google.com/u/0/uc?id=13DeO97wfD5dq4ukN8m_u7JCOQLOwtOwW&export=download",
-        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=13DeO97wfD5dq4ukN8m_u7JCOQLOwtOwW&export=download",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 0,
-          "Thickness": 0.2,
-          "Stackable": false,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "AttachedSnapPoints": [
-        {
-          "Position": {
-            "x": 0.251940757,
-            "y": 0.2000004,
-            "z": -0.847263753
-          }
-        },
-        {
-          "Position": {
-            "x": 0.4185793,
-            "y": 0.2000004,
-            "z": -0.847215235
-          }
-        },
-        {
-          "Position": {
-            "x": 0.590000868,
-            "y": 0.2000004,
-            "z": -0.8473306
-          }
-        },
-        {
-          "Position": {
-            "x": 0.8622892,
-            "y": 0.200000346,
-            "z": -0.2981386
-          },
-          "Rotation": {
-            "x": -1.503831E-08,
-            "y": 0.0119664911,
-            "z": -1.2671758E-07
-          }
-        }
-      ],
-      "States": {
-        "2": {
-          "GUID": "578c29",
-          "Name": "Custom_Tile",
-          "Transform": {
-            "posX": -6.16158772,
-            "posY": 0.960000157,
-            "posZ": -13.8901739,
-            "rotX": -2.72049874E-07,
-            "rotY": 179.9814,
-            "rotZ": -1.12461208E-07,
-            "scaleX": 4.37562943,
-            "scaleY": 1.0,
-            "scaleZ": 4.37562943
-          },
-          "Nickname": "Fishes Player Board Alternate",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomImage": {
-            "ImageURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
-            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
-            "ImageScalar": 1.0,
-            "WidthScale": 0.0,
-            "CustomTile": {
-              "Type": 0,
-              "Thickness": 0.2,
-              "Stackable": false,
-              "Stretch": true
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": 1.10687268,
-                "y": 0.200000465,
-                "z": -0.8513059
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.935451269,
-                "y": 0.200000465,
-                "z": -0.8511905
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.7688126,
-                "y": 0.200000465,
-                "z": -0.8512391
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.595680654,
-                "y": 0.200000465,
-                "z": -0.85031265
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.4242593,
-                "y": 0.200000465,
-                "z": -0.850197256
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.257620454,
-                "y": 0.200000465,
-                "z": -0.8502454
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.8622892,
-                "y": 0.200000346,
-                "z": -0.29813835
-              },
-              "Rotation": {
-                "x": 1.5600957E-08,
-                "y": 0.0119528314,
-                "z": 3.23241274E-08
-              },
-              "Tags": []
-            }
-          ]
-        }
-      }
-    },
-    {
-      "GUID": "c01aba",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 8.93434,
-        "posY": 0.9600003,
-        "posZ": -13.8273888,
-        "rotX": 1.51643945E-07,
-        "rotY": 179.986832,
-        "rotZ": -7.145869E-08,
-        "scaleX": 4.443043,
-        "scaleY": 1.0,
-        "scaleZ": 4.443043
-      },
-      "Nickname": "Cephalopods Player Board Standard",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "https://drive.google.com/u/0/uc?id=1J3Ej2apHfElvYh-XKZic8t9vUYnuL6Kj&export=download",
-        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1J3Ej2apHfElvYh-XKZic8t9vUYnuL6Kj&export=download",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 0,
-          "Thickness": 0.2,
-          "Stackable": false,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "AttachedSnapPoints": [
-        {
-          "Position": {
-            "x": 0.25845173,
-            "y": 0.2000004,
-            "z": -0.845006
-          }
-        },
-        {
-          "Position": {
-            "x": 0.422561973,
-            "y": 0.2000004,
-            "z": -0.84494257
-          }
-        },
-        {
-          "Position": {
-            "x": 0.5913824,
-            "y": 0.2000004,
-            "z": -0.8450402
-          }
-        },
-        {
-          "Position": {
-            "x": 0.8520449,
-            "y": 0.200000361,
-            "z": -0.308767259
-          },
-          "Rotation": {
-            "x": -5.13345242E-08,
-            "y": 0.00652966043,
-            "z": -7.0208344E-08
-          }
-        }
-      ],
-      "States": {
-        "2": {
-          "GUID": "24c905",
-          "Name": "Custom_Tile",
-          "Transform": {
-            "posX": 8.93434,
-            "posY": 0.9600003,
-            "posZ": -13.8273888,
-            "rotX": 1.51643945E-07,
-            "rotY": 179.986832,
-            "rotZ": -7.145869E-08,
-            "scaleX": 4.443043,
-            "scaleY": 1.0,
-            "scaleZ": 4.443043
-          },
-          "Nickname": "Cephalopods Player Board Alternate",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomImage": {
-            "ImageURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
-            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
-            "ImageScalar": 1.0,
-            "WidthScale": 0.0,
-            "CustomTile": {
-              "Type": 0,
-              "Thickness": 0.2,
-              "Stackable": false,
-              "Stretch": true
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": 0.256243974,
-                "y": 0.200000376,
-                "z": -0.8430999
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.420354217,
-                "y": 0.200000376,
-                "z": -0.84303695
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.589174569,
-                "y": 0.200000376,
-                "z": -0.8431341
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.7596798,
-                "y": 0.2000005,
-                "z": -0.8440308
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.923790157,
-                "y": 0.200000376,
-                "z": -0.8439674
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 1.09261036,
-                "y": 0.200000376,
-                "z": -0.844064534
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.8520449,
-                "y": 0.200000361,
-                "z": -0.308767259
-              },
-              "Rotation": {
-                "x": 7.04962178E-09,
-                "y": 0.00652966043,
-                "z": 5.15815266E-08
-              },
-              "Tags": []
-            }
-          ]
-        }
-      }
-    },
-    {
-      "GUID": "76a1b4",
-      "Name": "Custom_Tile",
-      "Transform": {
-        "posX": 22.63779,
-        "posY": 0.9600003,
-        "posZ": -13.8189888,
-        "rotX": -2.2944814E-08,
-        "rotY": 180.009354,
-        "rotZ": -1.23735518E-07,
-        "scaleX": 4.443043,
-        "scaleY": 1.0,
-        "scaleZ": 4.443043
-      },
-      "Nickname": "Reptiles Player Board Standard",
-      "Description": "",
-      "GMNotes": "",
-      "ColorDiffuse": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0
-      },
-      "LayoutGroupSortIndex": 0,
-      "Value": 0,
-      "Locked": true,
-      "Grid": true,
-      "Snap": true,
-      "IgnoreFoW": false,
-      "MeasureMovement": false,
-      "DragSelectable": true,
-      "Autoraise": true,
-      "Sticky": true,
-      "Tooltip": true,
-      "GridProjection": false,
-      "HideWhenFaceDown": false,
-      "Hands": false,
-      "CustomImage": {
-        "ImageURL": "https://drive.google.com/u/0/uc?id=1UR9EojyhKhWPOcDIKUq-xIaJcgksNog_&export=download",
-        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1UR9EojyhKhWPOcDIKUq-xIaJcgksNog_&export=download",
-        "ImageScalar": 1.0,
-        "WidthScale": 0.0,
-        "CustomTile": {
-          "Type": 0,
-          "Thickness": 0.2,
-          "Stackable": false,
-          "Stretch": true
-        }
-      },
-      "LuaScript": "",
-      "LuaScriptState": "",
-      "XmlUI": "",
-      "AttachedSnapPoints": [
-        {
-          "Position": {
-            "x": 0.26092127,
-            "y": 0.200000525,
-            "z": -0.849685431
-          }
-        },
-        {
-          "Position": {
-            "x": 0.425031483,
-            "y": 0.200000525,
-            "z": -0.8495576
-          }
-        },
-        {
-          "Position": {
-            "x": 0.5938519,
-            "y": 0.200000525,
-            "z": -0.8495888
-          }
-        },
-        {
-          "Position": {
-            "x": 0.855032563,
-            "y": 0.200000539,
-            "z": -0.300358772
-          },
-          "Rotation": {
-            "x": -2.8854549E-08,
-            "y": 359.984,
-            "z": 1.17187966E-08
-          }
-        }
-      ],
-      "States": {
-        "2": {
-          "GUID": "7c5462",
-          "Name": "Custom_Tile",
-          "Transform": {
-            "posX": 22.63779,
-            "posY": 0.9600003,
-            "posZ": -13.8189888,
-            "rotX": -2.2944814E-08,
-            "rotY": 180.009354,
-            "rotZ": -1.23735518E-07,
-            "scaleX": 4.443043,
-            "scaleY": 1.0,
-            "scaleZ": 4.443043
-          },
-          "Nickname": "Reptiles Player Board Alternate",
-          "Description": "",
-          "GMNotes": "",
-          "ColorDiffuse": {
-            "r": 1.0,
-            "g": 1.0,
-            "b": 1.0
-          },
-          "LayoutGroupSortIndex": 0,
-          "Value": 0,
-          "Locked": true,
-          "Grid": true,
-          "Snap": true,
-          "IgnoreFoW": false,
-          "MeasureMovement": false,
-          "DragSelectable": true,
-          "Autoraise": true,
-          "Sticky": true,
-          "Tooltip": true,
-          "GridProjection": false,
-          "HideWhenFaceDown": false,
-          "Hands": false,
-          "CustomImage": {
-            "ImageURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
-            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
-            "ImageScalar": 1.0,
-            "WidthScale": 0.0,
-            "CustomTile": {
-              "Type": 0,
-              "Thickness": 0.2,
-              "Stackable": false,
-              "Stretch": true
-            }
-          },
-          "LuaScript": "",
-          "LuaScriptState": "",
-          "XmlUI": "",
-          "AttachedSnapPoints": [
-            {
-              "Position": {
-                "x": 0.257719,
-                "y": 0.200000525,
-                "z": -0.856292069
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.421829224,
-                "y": 0.200000525,
-                "z": -0.856164634
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.5906496,
-                "y": 0.200000525,
-                "z": -0.85619545
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.761155069,
-                "y": 0.200000525,
-                "z": -0.857025146
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.9252653,
-                "y": 0.200000539,
-                "z": -0.856897235
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 1.09408653,
-                "y": 0.200000539,
-                "z": -0.8569285
-              },
-              "Tags": []
-            },
-            {
-              "Position": {
-                "x": 0.855032563,
-                "y": 0.200000539,
-                "z": -0.300359
-              },
-              "Rotation": {
-                "x": 5.37994218E-08,
-                "y": 359.984,
-                "z": -1.17286213E-07
-              },
-              "Tags": []
-            }
-          ]
-        }
-      }
-    },
-    {
       "GUID": "e4f818",
       "Name": "ScriptingTrigger",
       "Transform": {
@@ -29015,8 +28293,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -17.98596,
-        "posY": 0.9611664,
-        "posZ": -7.562764,
+        "posY": 0.961167753,
+        "posZ": -7.562768,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29104,9 +28382,9 @@
       "GUID": "21e0a5",
       "Name": "3DText",
       "Transform": {
-        "posX": -4.002922,
-        "posY": 0.9611644,
-        "posZ": -7.70761,
+        "posX": -4.002892,
+        "posY": 0.9611658,
+        "posZ": -7.707614,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29153,9 +28431,9 @@
       "GUID": "2e2049",
       "Name": "3DText",
       "Transform": {
-        "posX": 10.8520069,
-        "posY": 0.961165547,
-        "posZ": -7.674219,
+        "posX": 10.8520613,
+        "posY": 0.961167037,
+        "posZ": -7.67422247,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29202,9 +28480,9 @@
       "GUID": "ea5776",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.452425,
-        "posY": 0.9611644,
-        "posZ": -7.60315,
+        "posX": 24.45248,
+        "posY": 0.9611658,
+        "posZ": -7.60315561,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29544,9 +28822,9 @@
       "GUID": "71e3e9",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.36233,
-        "posY": 0.9611206,
-        "posZ": 0.413697273,
+        "posX": 24.3623924,
+        "posY": 0.9611201,
+        "posZ": 0.413698941,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29593,9 +28871,9 @@
       "GUID": "309762",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.392416,
-        "posY": 3.621462,
-        "posZ": 17.1705189,
+        "posX": -30.3924274,
+        "posY": 3.62145829,
+        "posZ": 17.1705341,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29642,9 +28920,9 @@
       "GUID": "9f614b",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.2374935,
-        "posY": 3.62146449,
-        "posZ": 13.08863,
+        "posX": -30.2375011,
+        "posY": 3.62146139,
+        "posZ": 13.0886383,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -29686,6 +28964,794 @@
       "LuaScript": "",
       "LuaScriptState": "",
       "XmlUI": ""
+    },
+    {
+      "GUID": "76a1b4",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 22.63779,
+        "posY": 0.9600003,
+        "posZ": -13.8189888,
+        "rotX": -2.2944814E-08,
+        "rotY": 180.009354,
+        "rotZ": -1.23735518E-07,
+        "scaleX": 4.443043,
+        "scaleY": 1.0,
+        "scaleZ": 4.443043
+      },
+      "Nickname": "Reptiles Player Board Standard",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1UR9EojyhKhWPOcDIKUq-xIaJcgksNog_&export=download",
+        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1UR9EojyhKhWPOcDIKUq-xIaJcgksNog_&export=download",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 0.26092127,
+            "y": 0.200000525,
+            "z": -0.849685431
+          }
+        },
+        {
+          "Position": {
+            "x": 0.425031483,
+            "y": 0.200000525,
+            "z": -0.8495576
+          }
+        },
+        {
+          "Position": {
+            "x": 0.5938519,
+            "y": 0.200000525,
+            "z": -0.8495888
+          }
+        },
+        {
+          "Position": {
+            "x": 0.855032563,
+            "y": 0.200000539,
+            "z": -0.300358772
+          },
+          "Rotation": {
+            "x": -2.8854549E-08,
+            "y": 359.984,
+            "z": 1.17187966E-08
+          }
+        }
+      ],
+      "States": {
+        "2": {
+          "GUID": "7c5462",
+          "Name": "Custom_Tile",
+          "Transform": {
+            "posX": 22.63779,
+            "posY": 0.9600003,
+            "posZ": -13.8189888,
+            "rotX": -2.2944814E-08,
+            "rotY": 180.009354,
+            "rotZ": -1.23735518E-07,
+            "scaleX": 4.443043,
+            "scaleY": 1.0,
+            "scaleZ": 4.443043
+          },
+          "Nickname": "Reptiles Player Board Alternate",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
+            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1b5_piY6vF_sq0VVrrV3zBPCluo5wLXyy&export=download",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.2,
+              "Stackable": false,
+              "Stretch": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "AttachedSnapPoints": [
+            {
+              "Position": {
+                "x": 0.257719,
+                "y": 0.200000525,
+                "z": -0.856292069
+              }
+            },
+            {
+              "Position": {
+                "x": 0.421829224,
+                "y": 0.200000525,
+                "z": -0.856164634
+              }
+            },
+            {
+              "Position": {
+                "x": 0.5906496,
+                "y": 0.200000525,
+                "z": -0.85619545
+              }
+            },
+            {
+              "Position": {
+                "x": 0.761155069,
+                "y": 0.200000525,
+                "z": -0.857025146
+              }
+            },
+            {
+              "Position": {
+                "x": 0.9252653,
+                "y": 0.200000539,
+                "z": -0.856897235
+              }
+            },
+            {
+              "Position": {
+                "x": 1.09408653,
+                "y": 0.200000539,
+                "z": -0.8569285
+              }
+            },
+            {
+              "Position": {
+                "x": 0.855032563,
+                "y": 0.200000539,
+                "z": -0.300359
+              },
+              "Rotation": {
+                "x": 5.37994218E-08,
+                "y": 359.984,
+                "z": -1.17286227E-07
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "GUID": "c01aba",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": 8.93434,
+        "posY": 0.9600003,
+        "posZ": -13.8273888,
+        "rotX": 1.51643945E-07,
+        "rotY": 179.986832,
+        "rotZ": -7.145869E-08,
+        "scaleX": 4.443043,
+        "scaleY": 1.0,
+        "scaleZ": 4.443043
+      },
+      "Nickname": "Cephalopods Player Board Standard",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1J3Ej2apHfElvYh-XKZic8t9vUYnuL6Kj&export=download",
+        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1J3Ej2apHfElvYh-XKZic8t9vUYnuL6Kj&export=download",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 0.25845173,
+            "y": 0.2000004,
+            "z": -0.845006
+          }
+        },
+        {
+          "Position": {
+            "x": 0.422561973,
+            "y": 0.2000004,
+            "z": -0.84494257
+          }
+        },
+        {
+          "Position": {
+            "x": 0.5913824,
+            "y": 0.2000004,
+            "z": -0.8450402
+          }
+        },
+        {
+          "Position": {
+            "x": 0.8520449,
+            "y": 0.200000361,
+            "z": -0.308767259
+          },
+          "Rotation": {
+            "x": -5.13345242E-08,
+            "y": 0.00652966043,
+            "z": -7.0208344E-08
+          }
+        }
+      ],
+      "States": {
+        "2": {
+          "GUID": "24c905",
+          "Name": "Custom_Tile",
+          "Transform": {
+            "posX": 8.93434,
+            "posY": 0.9600003,
+            "posZ": -13.8273888,
+            "rotX": 1.51643945E-07,
+            "rotY": 179.986832,
+            "rotZ": -7.145869E-08,
+            "scaleX": 4.443043,
+            "scaleY": 1.0,
+            "scaleZ": 4.443043
+          },
+          "Nickname": "Cephalopods Player Board Alternate",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
+            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1l0K5D3DFXfb5RQfvG5NB__wuI6n8O4kJ&export=download",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.2,
+              "Stackable": false,
+              "Stretch": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "AttachedSnapPoints": [
+            {
+              "Position": {
+                "x": 0.256243974,
+                "y": 0.200000376,
+                "z": -0.8430999
+              }
+            },
+            {
+              "Position": {
+                "x": 0.420354217,
+                "y": 0.200000376,
+                "z": -0.84303695
+              }
+            },
+            {
+              "Position": {
+                "x": 0.589174569,
+                "y": 0.200000376,
+                "z": -0.8431341
+              }
+            },
+            {
+              "Position": {
+                "x": 0.7596798,
+                "y": 0.2000005,
+                "z": -0.8440308
+              }
+            },
+            {
+              "Position": {
+                "x": 0.923790157,
+                "y": 0.200000376,
+                "z": -0.8439674
+              }
+            },
+            {
+              "Position": {
+                "x": 1.09261036,
+                "y": 0.200000376,
+                "z": -0.844064534
+              }
+            },
+            {
+              "Position": {
+                "x": 0.8520449,
+                "y": 0.200000361,
+                "z": -0.308767259
+              },
+              "Rotation": {
+                "x": 7.04962178E-09,
+                "y": 0.00652966043,
+                "z": 5.15815266E-08
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "GUID": "bf4314",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": -6.16158772,
+        "posY": 0.960000157,
+        "posZ": -13.8901739,
+        "rotX": -2.72051864E-07,
+        "rotY": 179.9814,
+        "rotZ": -1.12461208E-07,
+        "scaleX": 4.37562943,
+        "scaleY": 1.0,
+        "scaleZ": 4.37562943
+      },
+      "Nickname": "Fishes Player Board Standard",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://drive.google.com/u/0/uc?id=13DeO97wfD5dq4ukN8m_u7JCOQLOwtOwW&export=download",
+        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=13DeO97wfD5dq4ukN8m_u7JCOQLOwtOwW&export=download",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 0.251940757,
+            "y": 0.2000004,
+            "z": -0.847263753
+          }
+        },
+        {
+          "Position": {
+            "x": 0.4185793,
+            "y": 0.2000004,
+            "z": -0.847215235
+          }
+        },
+        {
+          "Position": {
+            "x": 0.590000868,
+            "y": 0.2000004,
+            "z": -0.8473306
+          }
+        },
+        {
+          "Position": {
+            "x": 0.8622892,
+            "y": 0.200000346,
+            "z": -0.2981386
+          },
+          "Rotation": {
+            "x": -1.503831E-08,
+            "y": 0.0119664911,
+            "z": -1.2671758E-07
+          }
+        }
+      ],
+      "States": {
+        "2": {
+          "GUID": "578c29",
+          "Name": "Custom_Tile",
+          "Transform": {
+            "posX": -6.16158772,
+            "posY": 0.960000157,
+            "posZ": -13.8901739,
+            "rotX": -2.72051864E-07,
+            "rotY": 179.9814,
+            "rotZ": -1.12461208E-07,
+            "scaleX": 4.37562943,
+            "scaleY": 1.0,
+            "scaleZ": 4.37562943
+          },
+          "Nickname": "Fishes Player Board Alternate",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
+            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=17B1TdxM19azd5jh1H77y4Ru8s92BD4Y7&export=download",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.2,
+              "Stackable": false,
+              "Stretch": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "AttachedSnapPoints": [
+            {
+              "Position": {
+                "x": 1.10687268,
+                "y": 0.200000465,
+                "z": -0.8513059
+              }
+            },
+            {
+              "Position": {
+                "x": 0.935451269,
+                "y": 0.200000465,
+                "z": -0.8511905
+              }
+            },
+            {
+              "Position": {
+                "x": 0.7688126,
+                "y": 0.200000465,
+                "z": -0.8512391
+              }
+            },
+            {
+              "Position": {
+                "x": 0.595680654,
+                "y": 0.200000465,
+                "z": -0.85031265
+              }
+            },
+            {
+              "Position": {
+                "x": 0.4242593,
+                "y": 0.200000465,
+                "z": -0.850197256
+              }
+            },
+            {
+              "Position": {
+                "x": 0.257620454,
+                "y": 0.200000465,
+                "z": -0.8502454
+              }
+            },
+            {
+              "Position": {
+                "x": 0.8622892,
+                "y": 0.200000346,
+                "z": -0.29813835
+              },
+              "Rotation": {
+                "x": 1.5600957E-08,
+                "y": 0.0119528314,
+                "z": 3.23241274E-08
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "GUID": "85e368",
+      "Name": "Custom_Tile",
+      "Transform": {
+        "posX": -20.0169582,
+        "posY": 0.960000336,
+        "posZ": -13.8054867,
+        "rotX": -3.05643724E-08,
+        "rotY": 180.043686,
+        "rotZ": -9.167355E-09,
+        "scaleX": 4.442831,
+        "scaleY": 1.0,
+        "scaleZ": 4.442831
+      },
+      "Nickname": "Crustaceans Player Board Standard",
+      "Description": "",
+      "GMNotes": "",
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": true,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://drive.google.com/u/0/uc?id=1kCp94YqOXKsxmwy7_hEcrcNWDWbXdiBM&export=download",
+        "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1kCp94YqOXKsxmwy7_hEcrcNWDWbXdiBM&export=download",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.0,
+        "CustomTile": {
+          "Type": 0,
+          "Thickness": 0.2,
+          "Stackable": false,
+          "Stretch": true
+        }
+      },
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 0.5876226,
+            "y": 0.200000346,
+            "z": -0.848019242
+          }
+        },
+        {
+          "Position": {
+            "x": 0.418794066,
+            "y": 0.200000346,
+            "z": -0.848089159
+          }
+        },
+        {
+          "Position": {
+            "x": 0.254676133,
+            "y": 0.200000346,
+            "z": -0.8483154
+          }
+        },
+        {
+          "Position": {
+            "x": 0.8641665,
+            "y": 0.200000346,
+            "z": -0.2918347
+          },
+          "Rotation": {
+            "x": -4.0101213E-08,
+            "y": 359.949677,
+            "z": -4.891686E-08
+          }
+        }
+      ],
+      "States": {
+        "2": {
+          "GUID": "b5c87e",
+          "Name": "Custom_Tile",
+          "Transform": {
+            "posX": -20.0169582,
+            "posY": 0.960000336,
+            "posZ": -13.8054867,
+            "rotX": -3.05643724E-08,
+            "rotY": 180.043686,
+            "rotZ": -9.167355E-09,
+            "scaleX": 4.442831,
+            "scaleY": 1.0,
+            "scaleZ": 4.442831
+          },
+          "Nickname": "Crustaceans Player Board Alternate",
+          "Description": "",
+          "GMNotes": "",
+          "ColorDiffuse": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0
+          },
+          "LayoutGroupSortIndex": 0,
+          "Value": 0,
+          "Locked": true,
+          "Grid": true,
+          "Snap": true,
+          "IgnoreFoW": false,
+          "MeasureMovement": false,
+          "DragSelectable": true,
+          "Autoraise": true,
+          "Sticky": true,
+          "Tooltip": true,
+          "GridProjection": false,
+          "HideWhenFaceDown": false,
+          "Hands": false,
+          "CustomImage": {
+            "ImageURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
+            "ImageSecondaryURL": "https://drive.google.com/u/0/uc?id=1vaFgpSWxjtzF3QUbu2h-X-jF5PhI6WNP&export=download",
+            "ImageScalar": 1.0,
+            "WidthScale": 0.0,
+            "CustomTile": {
+              "Type": 0,
+              "Thickness": 0.2,
+              "Stackable": false,
+              "Stretch": true
+            }
+          },
+          "LuaScript": "",
+          "LuaScriptState": "",
+          "XmlUI": "",
+          "AttachedSnapPoints": [
+            {
+              "Position": {
+                "x": 1.09574234,
+                "y": 0.200000346,
+                "z": -0.8512309
+              }
+            },
+            {
+              "Position": {
+                "x": 0.9269138,
+                "y": 0.200000346,
+                "z": -0.851300836
+              }
+            },
+            {
+              "Position": {
+                "x": 0.762795866,
+                "y": 0.200000346,
+                "z": -0.8515271
+              }
+            },
+            {
+              "Position": {
+                "x": 0.584775,
+                "y": 0.200000346,
+                "z": -0.848087549
+              }
+            },
+            {
+              "Position": {
+                "x": 0.4159465,
+                "y": 0.200000346,
+                "z": -0.848157942
+              }
+            },
+            {
+              "Position": {
+                "x": 0.251828581,
+                "y": 0.200000346,
+                "z": -0.848383546
+              }
+            },
+            {
+              "Position": {
+                "x": 0.8641665,
+                "y": 0.200000346,
+                "z": -0.2918347
+              },
+              "Rotation": {
+                "x": 1.44091086E-08,
+                "y": 359.949677,
+                "z": 1.28127482E-08
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }

@@ -58,6 +58,7 @@ PLAYER_COMPONENTS = {
         gene_pool_bag = "cd7b0d",
         action_pawn_position_first = {-25.21, 1.26, -8.93},
         control_marker_zone = "fb935b",
+        eliminated_species = "9ebfda",
     },
     [Player.Blue.color] = {
         tag = FISHES_TAG,
@@ -69,6 +70,7 @@ PLAYER_COMPONENTS = {
         gene_pool_bag = "ea715b",
         action_pawn_position_first = {-10.93, 1.26, -9.04},
         control_marker_zone = "6d7f31",
+        eliminated_species = "3c5002",
     },
     [Player.Orange.color] = {
         tag = CEPHALOPODS_TAG,
@@ -80,6 +82,7 @@ PLAYER_COMPONENTS = {
         gene_pool_bag = "93c7b1",
         action_pawn_position_first = {4.00, 1.26, -8.96},
         control_marker_zone = "de4c5c",
+        eliminated_species = "72d935",
     },
     [Player.Purple.color] = {
         tag = REPTILES_TAG,
@@ -91,6 +94,7 @@ PLAYER_COMPONENTS = {
         gene_pool_bag = "253bcb",
         action_pawn_position_first = {17.44, 1.26, -8.95},
         control_marker_zone = "bb6f78",
+        eliminated_species = "8167d6",
     },
 }
 

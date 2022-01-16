@@ -15,3 +15,31 @@ function onScriptingButtonDown(index, player_color)
         end
     end
 end
+
+function tryObjectEnterContainer(container, object)
+    if container.getGUID() == COMMON_COMPONENTS.box_bag and object.hasTag(SPECIES_TAG) then
+        for _, info in pairs(PLAYER_COMPONENTS) do
+            if object.hasTag(info.tag) then
+                getObjectFromGUID(info.eliminated_species).putObject(object)
+                return false
+            end
+        end
+    end
+    for _, info in pairs(PLAYER_COMPONENTS) do
+        if container.getGUID() == info.eliminated_species then
+            if not object.hasTag(SPECIES_TAG) then
+                return false
+            elseif object.hasTag(info.tag) then
+                return true
+            else
+                for _, player_info in pairs(PLAYER_COMPONENTS) do
+                    if object.hasTag(player_info.tag) then
+                        getObjectFromGUID(player_info.eliminated_species).putObject(object)                        
+                    end
+                end
+                return false
+            end
+        end
+    end
+    return true -- Allows object to enter.
+end

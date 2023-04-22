@@ -124,14 +124,14 @@ ELEMENT_RESOURCE_TO_NAME_MAP = {
 }
 
 WANDERLUST_RESOURCE_TO_NAME_MAP = {
-    ["https://drive.google.com/u/0/uc?id=1JGVsWPFdiO0Zl7Ud7APLri8SEjZA5Xpt&export=download"] = WANDERLUST_TILE_VENT,
-    ["https://drive.google.com/u/0/uc?id=1UGOB3kS9p_Wp7fe8SuaUMW_nF3mZ6RCS&export=download"] = WANDERLUST_TILE_OCEAN,
-    ["https://drive.google.com/u/0/uc?id=1MC-KhhQHcq8e7-SnU0SJjcqqI9OlAAnz&export=download"] = WANDERLUST_TILE_SAND,
-    ["https://drive.google.com/u/0/uc?id=1Kkdm34ugyOa6CdNGwuPb2w9g1_iQ3vnp&export=download"] = WANDERLUST_TILE_SEAGRASS,
-    ["https://drive.google.com/u/0/uc?id=1ZlWCAQ0QiY2twxowqvoBZs8ugjsBH5xg&export=download"] = WANDERLUST_TILE_SEAMOUNT,
-    ["https://drive.google.com/u/0/uc?id=1sSgRIM8tWOpwB_lfVyazQr2ak3p6gLlp&export=download"] = WANDERLUST_TILE_CORAL,
-    ["https://drive.google.com/u/0/uc?id=1_OuwQOxTTHu3MrDUKIqTIyRnxRUOQoHm&export=download"] = WANDERLUST_TILE_KELP,
-    ["https://drive.google.com/u/0/uc?id=1Ty8YRbJUgOtStvnwD3o79Z4u2f4-krpj&export=download"] = WANDERLUST_TILE_LAND,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/hvent.png"] = WANDERLUST_TILE_VENT,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-open-ocean.png"] = WANDERLUST_TILE_OCEAN,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-sand.png"] = WANDERLUST_TILE_SAND,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasgrass.png"] = WANDERLUST_TILE_SEAGRASS,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasmount.png"] = WANDERLUST_TILE_SEAMOUNT,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-coral.png"] = WANDERLUST_TILE_CORAL,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-kelp.png"] = WANDERLUST_TILE_KELP,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-land.png"] = WANDERLUST_TILE_LAND,
 }
 
 WANDERLUST_TILE_SCORES = {

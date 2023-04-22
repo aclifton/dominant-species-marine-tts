@@ -1,8 +1,8 @@
 {
   "SaveName": "Dominant Species Marine",
-  "EpochTime": 1642352277,
-  "Date": "1/16/2022 11:57:57 AM",
-  "VersionNumber": "v13.1.1",
+  "EpochTime": 1682189965,
+  "Date": "4/22/2023 2:59:25 PM",
+  "VersionNumber": "v13.2.2",
   "GameMode": "Dominant Species Marine",
   "GameType": "Game",
   "GameComplexity": "Medium Complexity",
@@ -1448,7 +1448,7 @@
         "posX": -26.7824268,
         "posY": 1.06758332,
         "posZ": 12.2915106,
-        "rotX": -6.329901E-08,
+        "rotX": 3.85141625E-08,
         "rotY": 180.012314,
         "rotZ": 180.0,
         "scaleX": 1.1214658,
@@ -6255,7 +6255,7 @@
         "posX": -26.758934,
         "posY": 1.14460778,
         "posZ": 16.2567425,
-        "rotX": -5.13440668E-08,
+        "rotX": -9.18963536E-08,
         "rotY": 179.992874,
         "rotZ": 180.0,
         "scaleX": 1.1516844,
@@ -7992,9 +7992,9 @@
         "posX": -19.4722252,
         "posY": 0.9736048,
         "posZ": 0.185467377,
-        "rotX": -1.35128966E-08,
+        "rotX": -6.836535E-08,
         "rotY": 180.000031,
-        "rotZ": -8.948629E-08,
+        "rotZ": -1.25187228E-07,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -8050,9 +8050,9 @@
         "posX": 19.3148689,
         "posY": 1.1600008,
         "posZ": -5.916854,
-        "rotX": -7.70539259E-08,
+        "rotX": 2.05519413E-07,
         "rotY": 180.012283,
-        "rotZ": -3.48136524E-07,
+        "rotZ": -3.48816229E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -8107,9 +8107,9 @@
         "posX": 20.1857052,
         "posY": 1.1600008,
         "posZ": -5.944249,
-        "rotX": -4.48185858E-07,
+        "rotX": -4.675132E-08,
         "rotY": 179.997726,
-        "rotZ": -1.95406471E-07,
+        "rotZ": -1.04530457E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -8164,9 +8164,9 @@
         "posX": 19.3440628,
         "posY": 1.1600008,
         "posZ": -6.82605171,
-        "rotX": 7.42315152E-08,
+        "rotX": -1.31495126E-08,
         "rotY": 179.980225,
-        "rotZ": -5.687141E-07,
+        "rotZ": -1.11865468E-07,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -8221,9 +8221,9 @@
         "posX": 20.1794624,
         "posY": 1.1600008,
         "posZ": -6.830599,
-        "rotX": -2.34041579E-07,
+        "rotX": -4.33244622E-08,
         "rotY": 180.002136,
-        "rotZ": -2.33957181E-07,
+        "rotZ": -4.191257E-08,
         "scaleX": 0.381514639,
         "scaleY": 1.0,
         "scaleZ": 0.381514639
@@ -9287,12 +9287,12 @@
       "GUID": "bb92f9",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.209302,
-        "posY": 1.34863842,
-        "posZ": 14.1036015,
-        "rotX": 0.356194615,
-        "rotY": 179.811386,
-        "rotZ": 0.196983665,
+        "posX": 9.209376,
+        "posY": 1.3509798,
+        "posZ": 14.1036177,
+        "rotX": 0.309738636,
+        "rotY": 179.808548,
+        "rotZ": 0.179916978,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9347,12 +9347,12 @@
       "GUID": "14785c",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.240751,
-        "posY": 1.53896546,
-        "posZ": 14.0771942,
-        "rotX": 0.781722963,
-        "rotY": 179.266663,
-        "rotZ": 359.97467,
+        "posX": 9.240906,
+        "posY": 1.54080653,
+        "posZ": 14.0771017,
+        "rotX": 0.751233041,
+        "rotY": 179.260483,
+        "rotZ": 359.9684,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9407,12 +9407,12 @@
       "GUID": "710da1",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.229475,
-        "posY": 1.4458,
-        "posZ": 14.0920048,
-        "rotX": 0.536461234,
-        "rotY": 179.69339,
-        "rotZ": 0.07021535,
+        "posX": 9.22959,
+        "posY": 1.44335008,
+        "posZ": 14.09204,
+        "rotX": 0.571364,
+        "rotY": 179.688522,
+        "rotZ": 0.0699760839,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9467,12 +9467,12 @@
       "GUID": "fd20dd",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.236076,
-        "posY": 1.63722849,
-        "posZ": 14.036725,
-        "rotX": 0.6776974,
-        "rotY": 178.9818,
-        "rotZ": 359.9041,
+        "posX": 9.236205,
+        "posY": 1.63521469,
+        "posZ": 14.0365639,
+        "rotX": 0.68720144,
+        "rotY": 178.973785,
+        "rotZ": 359.899658,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9527,12 +9527,12 @@
       "GUID": "208e6f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.238089,
-        "posY": 1.73278081,
-        "posZ": 14.0202875,
-        "rotX": 0.6992995,
-        "rotY": 179.055237,
-        "rotZ": -0.00392040843,
+        "posX": 9.238214,
+        "posY": 1.73405969,
+        "posZ": 14.0199766,
+        "rotX": 0.6886955,
+        "rotY": 179.049118,
+        "rotZ": 359.98764,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9587,12 +9587,12 @@
       "GUID": "ac7bdf",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.24493,
-        "posY": 1.83168542,
-        "posZ": 13.9972858,
-        "rotX": 0.6985629,
-        "rotY": 178.99054,
-        "rotZ": 0.07263949,
+        "posX": 9.245054,
+        "posY": 1.83018827,
+        "posZ": 13.9968472,
+        "rotX": 0.692457855,
+        "rotY": 178.985641,
+        "rotZ": 0.0672116056,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9647,12 +9647,12 @@
       "GUID": "535b2a",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.201746,
-        "posY": 1.252368,
-        "posZ": 14.1113453,
-        "rotX": 0.223018259,
-        "rotY": 179.8817,
-        "rotZ": 0.22161302,
+        "posX": 9.201787,
+        "posY": 1.25233734,
+        "posZ": 14.1113615,
+        "rotX": 0.219395638,
+        "rotY": 179.879852,
+        "rotZ": 0.219573721,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9707,12 +9707,12 @@
       "GUID": "7944c3",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.228737,
-        "posY": 2.22524071,
-        "posZ": 13.9975834,
-        "rotX": 0.65224725,
-        "rotY": 179.592484,
-        "rotZ": 0.184726313,
+        "posX": 9.228897,
+        "posY": 2.2248354,
+        "posZ": 13.9970131,
+        "rotX": 0.646235,
+        "rotY": 179.5887,
+        "rotZ": 0.182996958,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9767,12 +9767,12 @@
       "GUID": "00d34d",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.226667,
-        "posY": 2.1256187,
-        "posZ": 14.0022421,
-        "rotX": 0.6746646,
-        "rotY": 179.607117,
-        "rotZ": 0.199957192,
+        "posX": 9.226831,
+        "posY": 2.125761,
+        "posZ": 14.0016832,
+        "rotX": 0.6707339,
+        "rotY": 179.6035,
+        "rotZ": 0.195881888,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9827,12 +9827,12 @@
       "GUID": "5fea34",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.260125,
-        "posY": 2.02716041,
-        "posZ": 13.99656,
-        "rotX": 0.6316814,
-        "rotY": 178.770737,
-        "rotZ": 0.2180973,
+        "posX": 9.260275,
+        "posY": 2.02619362,
+        "posZ": 13.9960127,
+        "rotX": 0.628932655,
+        "rotY": 178.767563,
+        "rotZ": 0.216186821,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9888,11 +9888,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 9.180728,
-        "posY": 1.1591028,
-        "posZ": 14.1114445,
-        "rotX": 0.0105239982,
-        "rotY": 180.036026,
-        "rotZ": 0.1017083,
+        "posY": 1.15910363,
+        "posZ": 14.111455,
+        "rotX": 0.00952823553,
+        "rotY": 180.035721,
+        "rotZ": 0.100539848,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -9947,12 +9947,12 @@
       "GUID": "df689f",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 9.253678,
-        "posY": 1.92820132,
-        "posZ": 14.000802,
-        "rotX": 0.7046374,
-        "rotY": 178.645569,
-        "rotZ": 0.178314254,
+        "posX": 9.2538,
+        "posY": 1.92890429,
+        "posZ": 14.000288,
+        "rotX": 0.698967457,
+        "rotY": 178.641891,
+        "rotZ": 0.174558535,
         "scaleX": 1.069738,
         "scaleY": 1.0,
         "scaleZ": 1.26724315
@@ -10010,9 +10010,9 @@
         "posX": -25.21,
         "posY": 1.25684667,
         "posZ": -8.929999,
-        "rotX": -1.96549536E-06,
-        "rotY": 1.00850366E-06,
-        "rotZ": 1.0462868E-06,
+        "rotX": -2.63997072E-06,
+        "rotY": 1.15785372E-06,
+        "rotZ": 1.32692765E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10026,9 +10026,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -10069,9 +10069,9 @@
         "posX": -10.93,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -9.52735945E-07,
-        "rotY": 1.77151753E-06,
-        "rotZ": 1.01088813E-06,
+        "rotX": -1.70530143E-06,
+        "rotY": 1.95041821E-06,
+        "rotZ": 1.02429817E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10128,9 +10128,9 @@
         "posX": 17.4371967,
         "posY": 1.25684667,
         "posZ": -8.95404148,
-        "rotX": -1.84273506E-06,
-        "rotY": 1.69325665E-06,
-        "rotZ": 9.515601E-07,
+        "rotX": -2.86167688E-06,
+        "rotY": 1.83898476E-06,
+        "rotZ": 1.42288889E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10145,7 +10145,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -10187,9 +10187,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.31946206E-06,
-        "rotY": 1.32289767E-06,
-        "rotZ": 7.25774271E-07,
+        "rotX": -1.59893227E-06,
+        "rotY": 1.507539E-06,
+        "rotZ": 1.14067848E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10243,12 +10243,12 @@
       "GUID": "bd25f7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -11.218442,
+        "posX": -11.218441,
         "posY": 1.55684483,
-        "posZ": -2.11915636,
-        "rotX": -0.000139283715,
-        "rotY": -0.0006517079,
-        "rotZ": -0.0007440611,
+        "posZ": -2.11915612,
+        "rotX": -0.000136389615,
+        "rotY": -0.00067352684,
+        "rotZ": -0.0007481227,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10324,9 +10324,9 @@
         "posX": -24.6349983,
         "posY": 1.25684667,
         "posZ": -8.93,
-        "rotX": -1.70226281E-06,
-        "rotY": 1.090713E-06,
-        "rotZ": 9.282635E-07,
+        "rotX": -2.60891989E-06,
+        "rotY": 1.23492111E-06,
+        "rotZ": 1.38862606E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10340,9 +10340,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -10383,9 +10383,9 @@
         "posX": -24.0599957,
         "posY": 1.25684667,
         "posZ": -8.93,
-        "rotX": -2.06041568E-06,
-        "rotY": 1.161797E-06,
-        "rotZ": 1.03980949E-06,
+        "rotX": -2.92656728E-06,
+        "rotY": 1.31296758E-06,
+        "rotZ": 1.51302686E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -10399,9 +10399,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -10458,9 +10458,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -10493,6 +10493,7 @@
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Crustacean Cubes.cd7b0d.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Crustacean Cubes.cd7b0d.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Crustacean Cubes.cd7b0d.lua\")",
       "LuaScriptState": "",
+      "XmlUI": "",
       "ContainedObjects": [
         {
           "GUID": "ad75b2",
@@ -12269,6 +12270,7 @@
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Fish Cubes.ea715b.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Fish Cubes.ea715b.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Fish Cubes.ea715b.lua\")",
       "LuaScriptState": "",
+      "XmlUI": "",
       "ContainedObjects": [
         {
           "GUID": "58a269",
@@ -14011,7 +14013,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.0980232,
+        "g": 0.09802314,
         "b": 0.619607747
       },
       "LayoutGroupSortIndex": 0,
@@ -14045,6 +14047,7 @@
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Reptile Cubes.253bcb.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Reptile Cubes.253bcb.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Reptile Cubes.253bcb.lua\")",
       "LuaScriptState": "",
+      "XmlUI": "",
       "ContainedObjects": [
         {
           "GUID": "c390b0",
@@ -15821,6 +15824,7 @@
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Cephalopod Cubes.93c7b1.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Cephalopod Cubes.93c7b1.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Cephalopod Cubes.93c7b1.lua\")",
       "LuaScriptState": "",
+      "XmlUI": "",
       "ContainedObjects": [
         {
           "GUID": "7f503a",
@@ -17546,9 +17550,9 @@
         "posX": -23.484993,
         "posY": 1.25684667,
         "posZ": -8.93,
-        "rotX": -9.28644852E-07,
-        "rotY": 1.17393017E-06,
-        "rotZ": 9.493865E-07,
+        "rotX": 1.44252783E-06,
+        "rotY": 1.2005313E-06,
+        "rotZ": 2.64760251E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17562,9 +17566,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -17605,9 +17609,9 @@
         "posX": -25.21,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -1.97136774E-06,
-        "rotY": 1.14611782E-06,
-        "rotZ": 1.074447E-06,
+        "rotX": -2.77179447E-06,
+        "rotY": 1.29357056E-06,
+        "rotZ": 1.38595522E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17621,9 +17625,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -17664,9 +17668,9 @@
         "posX": -24.6349983,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -1.97515146E-06,
-        "rotY": 1.12087207E-06,
-        "rotZ": 1.06158052E-06,
+        "rotX": -2.77845766E-06,
+        "rotY": 1.26911493E-06,
+        "rotZ": 1.46174739E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17680,9 +17684,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -17723,9 +17727,9 @@
         "posX": -24.0599957,
         "posY": 1.25684667,
         "posZ": -8.355,
-        "rotX": -1.97094732E-06,
-        "rotY": 1.19154424E-06,
-        "rotZ": 1.024805E-06,
+        "rotX": 9.07818E-06,
+        "rotY": 1.34088486E-06,
+        "rotZ": 1.18059461E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17739,9 +17743,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -17782,9 +17786,9 @@
         "posX": -23.5,
         "posY": 1.25684667,
         "posZ": -8.36,
-        "rotX": -1.965749E-06,
-        "rotY": 1.884285E-06,
-        "rotZ": 1.07481435E-06,
+        "rotX": 3.38947234E-06,
+        "rotY": 1.8729628E-06,
+        "rotZ": -7.819478E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17798,9 +17802,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "Tags": [
         "action_pawn",
@@ -17841,9 +17845,9 @@
         "posX": -10.355,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.2930584E-06,
-        "rotY": 1.19715719E-06,
-        "rotZ": 7.40869268E-07,
+        "rotX": -1.57252839E-06,
+        "rotY": 1.38179871E-06,
+        "rotZ": 1.15577348E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17900,9 +17904,9 @@
         "posX": -9.779999,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.329558E-06,
-        "rotY": 1.39746476E-06,
-        "rotZ": 6.253397E-07,
+        "rotX": -1.880606E-06,
+        "rotY": 1.57693546E-06,
+        "rotZ": 9.09495952E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -17959,9 +17963,9 @@
         "posX": -9.204999,
         "posY": 1.25684667,
         "posZ": -9.04,
-        "rotX": -1.33707556E-06,
-        "rotY": 1.48349454E-06,
-        "rotZ": 6.883274E-07,
+        "rotX": 1.44842375E-06,
+        "rotY": 1.79080416E-06,
+        "rotZ": -4.293112E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18016,11 +18020,11 @@
       "Name": "Custom_Model",
       "Transform": {
         "posX": -10.93,
-        "posY": 1.25684667,
+        "posY": 1.25684655,
         "posZ": -8.464999,
-        "rotX": -1.50286144E-06,
-        "rotY": 1.49300536E-06,
-        "rotZ": 7.871424E-07,
+        "rotX": -1.91032E-06,
+        "rotY": 1.82325721E-06,
+        "rotZ": 4.212203E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18077,9 +18081,9 @@
         "posX": -10.355,
         "posY": 1.25684667,
         "posZ": -8.464999,
-        "rotX": -1.260643E-06,
-        "rotY": 1.20589038E-06,
-        "rotZ": 6.437418E-07,
+        "rotX": -1.79395238E-06,
+        "rotY": 1.38178757E-06,
+        "rotZ": 9.891053E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18136,9 +18140,9 @@
         "posX": -9.779999,
         "posY": 1.25684667,
         "posZ": -8.464999,
-        "rotX": -1.32372361E-06,
-        "rotY": 1.03691571E-06,
-        "rotZ": 6.27153E-07,
+        "rotX": -1.8747694E-06,
+        "rotY": 1.21638618E-06,
+        "rotZ": 9.11309257E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18195,9 +18199,9 @@
         "posX": -9.206351,
         "posY": 1.25684667,
         "posZ": -8.47499752,
-        "rotX": -1.05926415E-06,
-        "rotY": 1.63339485E-06,
-        "rotZ": 7.193092E-07,
+        "rotX": -1.66073085E-06,
+        "rotY": 1.81103508E-06,
+        "rotZ": 1.131647E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18254,9 +18258,9 @@
         "posX": 18.0150032,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -1.982765E-06,
-        "rotY": 1.378111E-06,
-        "rotZ": 1.05938329E-06,
+        "rotX": -2.78607035E-06,
+        "rotY": 1.5263538E-06,
+        "rotZ": 1.45955028E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18271,7 +18275,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18313,9 +18317,9 @@
         "posX": 18.590004,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -1.9612487E-06,
-        "rotY": 8.902165E-07,
-        "rotZ": 9.977209E-07,
+        "rotX": -2.733686E-06,
+        "rotY": 1.04103992E-06,
+        "rotZ": 1.44246735E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18330,7 +18334,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18372,9 +18376,9 @@
         "posX": 19.1650066,
         "posY": 1.25684667,
         "posZ": -8.95,
-        "rotX": -1.89909838E-06,
-        "rotY": 1.1644388E-06,
-        "rotZ": 1.062169E-06,
+        "rotX": -2.93726112E-06,
+        "rotY": 1.31042566E-06,
+        "rotZ": 1.48258869E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18389,7 +18393,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18431,9 +18435,9 @@
         "posX": 17.44,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -1.75505488E-06,
-        "rotY": 1.07299036E-06,
-        "rotZ": 8.475877E-07,
+        "rotX": -2.46105742E-06,
+        "rotY": 1.21895357E-06,
+        "rotZ": 1.20247091E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18448,7 +18452,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18490,9 +18494,9 @@
         "posX": 18.0150032,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -2.04231128E-06,
-        "rotY": 1.190285E-06,
-        "rotZ": 9.675612E-07,
+        "rotX": -2.766824E-06,
+        "rotY": 1.33697142E-06,
+        "rotZ": 1.33619108E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18507,7 +18511,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18549,9 +18553,9 @@
         "posX": 18.590004,
         "posY": 1.25684667,
         "posZ": -8.375,
-        "rotX": -2.0979387E-06,
-        "rotY": 1.17746492E-06,
-        "rotZ": 9.715895E-07,
+        "rotX": -2.75968318E-06,
+        "rotY": 1.32837124E-06,
+        "rotZ": 1.42056319E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18566,7 +18570,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18608,9 +18612,9 @@
         "posX": 19.15,
         "posY": 1.25684667,
         "posZ": -8.38,
-        "rotX": -2.01207126E-06,
-        "rotY": 1.50212065E-06,
-        "rotZ": 1.048294E-06,
+        "rotX": -2.75407274E-06,
+        "rotY": 1.64984817E-06,
+        "rotZ": 1.386094E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18625,7 +18629,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.09801806,
+        "g": 0.09801801,
         "b": 0.619607747
       },
       "Tags": [
@@ -18667,9 +18671,9 @@
         "posX": 4.57500029,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.38614575E-06,
-        "rotY": 1.47920241E-06,
-        "rotZ": 8.55828659E-07,
+        "rotX": -1.66523319E-06,
+        "rotY": 1.65836616E-06,
+        "rotZ": 1.31343256E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18726,9 +18730,9 @@
         "posX": 5.15000057,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.78128221E-06,
-        "rotY": 1.67152E-06,
-        "rotZ": 8.421007E-07,
+        "rotX": -1.90063031E-06,
+        "rotY": 1.85439535E-06,
+        "rotZ": 1.07632957E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18785,9 +18789,9 @@
         "posX": 5.72500134,
         "posY": 1.25684667,
         "posZ": -8.96,
-        "rotX": -1.38054543E-06,
-        "rotY": 1.92714219E-06,
-        "rotZ": 7.45034E-07,
+        "rotX": -1.8280225E-06,
+        "rotY": 2.10820576E-06,
+        "rotZ": 8.77045863E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18844,9 +18848,9 @@
         "posX": 4.0,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -1.403413E-06,
-        "rotY": 1.26710506E-06,
-        "rotZ": 7.696257E-07,
+        "rotX": -1.86006173E-06,
+        "rotY": 1.45122954E-06,
+        "rotZ": 9.07894E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18903,9 +18907,9 @@
         "posX": 4.57500029,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -1.331818E-06,
-        "rotY": 1.54691236E-06,
-        "rotZ": 6.974395E-07,
+        "rotX": -1.80316431E-06,
+        "rotY": 1.72763259E-06,
+        "rotZ": 1.02810179E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -18962,9 +18966,9 @@
         "posX": 5.15000057,
         "posY": 1.25684667,
         "posZ": -8.384999,
-        "rotX": -2.13945839E-07,
-        "rotY": 1.160484E-06,
-        "rotZ": 5.903935E-07,
+        "rotX": -1.5447614E-06,
+        "rotY": 1.33003E-06,
+        "rotZ": 9.612526E-07,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19021,9 +19025,9 @@
         "posX": 5.721608,
         "posY": 1.25684667,
         "posZ": -8.387002,
-        "rotX": -1.32023979E-06,
-        "rotY": 2.07245671E-06,
-        "rotZ": 6.759949E-07,
+        "rotX": -1.65098936E-06,
+        "rotY": 2.25277677E-06,
+        "rotZ": 1.11543159E-06,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19077,12 +19081,12 @@
       "GUID": "bf11a4",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -8.5194,
+        "posX": -8.519399,
         "posY": 1.55684483,
-        "posZ": -2.13825536,
-        "rotX": -0.000132253932,
-        "rotY": -0.00100542244,
-        "rotZ": -0.0007474262,
+        "posZ": -2.13825512,
+        "rotX": -0.000130067681,
+        "rotY": -0.00103022135,
+        "rotZ": -0.0007471531,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19155,12 +19159,12 @@
       "GUID": "c12749",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -7.586891,
-        "posY": 1.556845,
+        "posX": -7.58688974,
+        "posY": 1.55684483,
         "posZ": -2.14484072,
-        "rotX": -0.000132101384,
-        "rotY": 0.001103249,
-        "rotZ": -0.000772521656,
+        "rotX": -0.000135384136,
+        "rotY": 0.00110896677,
+        "rotZ": -0.000762712,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19233,12 +19237,12 @@
       "GUID": "7a63a2",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -10.3097248,
+        "posX": -10.3097239,
         "posY": 1.556845,
-        "posZ": -2.12558627,
-        "rotX": -0.000126876519,
-        "rotY": -0.000418629352,
-        "rotZ": -0.000742037839,
+        "posZ": -2.125586,
+        "rotX": -0.000125998369,
+        "rotY": -0.00044563305,
+        "rotZ": -0.0007469776,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19311,12 +19315,12 @@
       "GUID": "c046bd",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -6.68804026,
+        "posX": -6.688039,
         "posY": 1.556845,
-        "posZ": -2.15120387,
-        "rotX": -0.000135924041,
-        "rotY": 0.000387492852,
-        "rotZ": -0.0007679659,
+        "posZ": -2.15120363,
+        "rotX": -0.0001379764,
+        "rotY": 0.00039773545,
+        "rotZ": -0.0007702849,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -19389,12 +19393,12 @@
       "GUID": "5172a7",
       "Name": "Custom_Model",
       "Transform": {
-        "posX": -9.392499,
+        "posX": -9.392498,
         "posY": 1.55684483,
         "posZ": -2.13206053,
-        "rotX": -0.000135775,
-        "rotY": -0.000259961525,
-        "rotZ": -0.000748887542,
+        "rotX": -0.000141711891,
+        "rotY": -0.000288581825,
+        "rotZ": -0.0007460255,
         "scaleX": 0.475000441,
         "scaleY": 0.475000441,
         "scaleZ": 0.475000441
@@ -28810,12 +28814,12 @@
       "GUID": "ea8ac8",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3744545,
-        "posY": 1.65263712,
-        "posZ": -6.757955,
-        "rotX": 359.9478,
-        "rotY": 179.005844,
-        "rotZ": 359.560577,
+        "posX": 18.3744526,
+        "posY": 1.65262985,
+        "posZ": -6.75772333,
+        "rotX": 359.8734,
+        "rotY": 179.006012,
+        "rotZ": 359.634338,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -28868,11 +28872,11 @@
       "Name": "Custom_Tile",
       "Transform": {
         "posX": 18.3898,
-        "posY": 1.25955284,
-        "posZ": -6.746943,
-        "rotX": 0.0190107655,
-        "rotY": 179.363052,
-        "rotZ": 180.088867,
+        "posY": 1.25955057,
+        "posZ": -6.746938,
+        "rotX": 0.019128615,
+        "rotY": 179.362885,
+        "rotZ": 180.088913,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -28924,12 +28928,12 @@
       "GUID": "f93bf2",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3818874,
-        "posY": 1.4538554,
-        "posZ": -6.752259,
-        "rotX": 359.8036,
-        "rotY": 179.91716,
-        "rotZ": 359.52182,
+        "posX": 18.3817959,
+        "posY": 1.453871,
+        "posZ": -6.75218964,
+        "rotX": 359.800537,
+        "rotY": 179.916565,
+        "rotZ": 359.5228,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -28981,12 +28985,12 @@
       "GUID": "cbc9ad",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3805084,
-        "posY": 1.55344558,
-        "posZ": -6.76269245,
-        "rotX": 359.898,
-        "rotY": 179.276474,
-        "rotZ": 359.5553,
+        "posX": 18.38041,
+        "posY": 1.55343032,
+        "posZ": -6.76260138,
+        "rotX": 359.825775,
+        "rotY": 179.276779,
+        "rotZ": 359.6271,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -29038,12 +29042,12 @@
       "GUID": "d2bfb7",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.3834267,
-        "posY": 1.35604179,
-        "posZ": -6.80200243,
-        "rotX": 359.885742,
-        "rotY": 179.957,
-        "rotZ": 359.689545,
+        "posX": 18.3833961,
+        "posY": 1.35604811,
+        "posZ": -6.802008,
+        "rotX": 359.885468,
+        "rotY": 179.956924,
+        "rotZ": 359.688324,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -29095,12 +29099,12 @@
       "GUID": "81e2e6",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": 18.387516,
-        "posY": 1.25681448,
-        "posZ": -6.806099,
-        "rotX": 359.931366,
-        "rotY": 179.913086,
-        "rotZ": 359.852234,
+        "posX": 18.3874989,
+        "posY": 1.256818,
+        "posZ": -6.806128,
+        "rotX": 359.930847,
+        "rotY": 179.913269,
+        "rotZ": 359.850372,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
         "scaleZ": 0.367304444
@@ -29155,8 +29159,8 @@
         "posX": -11.2180538,
         "posY": 1.26000023,
         "posZ": -2.11923885,
-        "rotX": 1.93981923E-05,
-        "rotY": 180.027771,
+        "rotX": 1.90444134E-05,
+        "rotY": 180.02771,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29212,8 +29216,8 @@
         "posX": -10.3093166,
         "posY": 1.26000047,
         "posZ": -2.12566972,
-        "rotX": 1.85265653E-05,
-        "rotY": 179.97113,
+        "rotX": 1.81433516E-05,
+        "rotY": 179.971069,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29269,8 +29273,8 @@
         "posX": -9.392071,
         "posY": 1.26000023,
         "posZ": -2.13215232,
-        "rotX": 1.89422572E-05,
-        "rotY": 180.019257,
+        "rotX": 2.01076873E-05,
+        "rotY": 180.0192,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29326,8 +29330,8 @@
         "posX": -8.519082,
         "posY": 1.26000023,
         "posZ": -2.138328,
-        "rotX": 1.83458942E-05,
-        "rotY": 179.995834,
+        "rotX": 1.867209E-05,
+        "rotY": 179.995789,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29380,11 +29384,11 @@
       "GUID": "0f9861",
       "Name": "Custom_Tile",
       "Transform": {
-        "posX": -7.58649254,
+        "posX": -7.586492,
         "posY": 1.26000023,
-        "posZ": -2.14493012,
-        "rotX": 1.88818613E-05,
-        "rotY": 179.976837,
+        "posZ": -2.14493036,
+        "rotX": 2.00482245E-05,
+        "rotY": 179.976822,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29440,8 +29444,8 @@
         "posX": -6.687667,
         "posY": 1.26000023,
         "posZ": -2.15128875,
-        "rotX": 1.75857767E-05,
-        "rotY": 180.014435,
+        "rotX": 1.92601965E-05,
+        "rotY": 180.0144,
         "rotZ": 180.000122,
         "scaleX": 0.367304444,
         "scaleY": 1.0,
@@ -29531,7 +29535,7 @@
       "GridProjection": false,
       "HideWhenFaceDown": false,
       "Hands": false,
-      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Setup.f2db58.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Setup.f2db58.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"setup\")\nend)\n__bundle_register(\"setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nrequire(\"common\")\r\nlocal ComponentUtils = require(\"tts-utils.ComponentUtils\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 5.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local center = vector(1.34, 1.66, 5.39)\r\n    local playerList = getValidSeatedPlayers()\r\n    local cubes = {}\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            table.insert(cubes, bag.takeObject())\r\n        end\r\n    end\r\n    ComponentUtils.arrange({\r\n        items = cubes,\r\n        padding = .1,\r\n        origin = center,\r\n        rows = #playerList,\r\n        cols = 3,\r\n        positionSmooth = true,\r\n    })\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend\nend)\n__bundle_register(\"tts-utils.ComponentUtils\", function(require, _LOADED, __bundle_register, __bundle_modules)\nlocal ComponentUtils = {}\r\n\r\nfunction ComponentUtils.arrange(params)\r\n    values = {\r\n        items = {},\r\n        origin = {0, 0, 0},\r\n        alignment = \"center\",\r\n        rotation = {0, 0, 0},\r\n        padding = .1,\r\n        rows = 0,\r\n        cols = 0,\r\n        positionSmooth = false,\r\n        positionFast = false,\r\n        reverseRowDirection = false,\r\n    }\r\n    for k,v in pairs(params) do values[k] = v end\r\n    if #values.items == 0 then return end\r\n    -- if values.cols == 0 and values.rows == 0 then\r\n    --     local sqrtItems = math.ceil(math.sqrt(#values.items))\r\n    --     values.rows = sqrtItems\r\n    --     if values.rows == 0 then values.rows = 1 end\r\n    --     values.cols = math.ceil(#values.items/values.rows)        \r\n    -- end\r\n    if type(values.padding) ~= \"table\" then\r\n        values.padding = {values.padding, values.padding, values.padding}\r\n    end\r\n    local padding = Vector(values.padding)\r\n    local position = Vector(values.origin)\r\n    local max_item_bounds = Vector(0,0,0)\r\n    local rows = values.rows\r\n    local cols = values.cols    \r\n    for _, item in ipairs(values.items) do\r\n        item.setRotation(values.rotation)\r\n        max_item_bounds = Vector.max(max_item_bounds, item.getBounds().size)\r\n    end\r\n    max_item_bounds.y = 0\r\n    local first_position = position\r\n    if values.alignment == \"center\" then\r\n        local originOffset = Vector(\r\n            -max_item_bounds[1]*(cols-1)/2 - padding[1]*(cols-1)/2,\r\n            0,\r\n            max_item_bounds[3]*(rows-1)/2 + padding[3]*(rows-1)/2\r\n        )\r\n        if values.reverseRowDirection then\r\n            originOffset.z = -originOffset.z\r\n        end\r\n        first_position = first_position + originOffset\r\n    elseif values.alignment == \"left\" then\r\n    else\r\n        error(\"Invalid arg alignment:\"..values.alignment)\r\n    end\r\n\r\n    local positionOffsetX = Vector(max_item_bounds[1] + padding[1], 0, 0)\r\n    local positionOffsetZ = -1 * Vector(0, 0, max_item_bounds[3] + padding[3])\r\n    if values.reverseRowDirection then\r\n        positionOffsetZ = -1 * positionOffsetZ\r\n    end\r\n    for i, item in ipairs(values.items) do\r\n        local index = i - 1\r\n        local r = math.floor(index/cols)\r\n        local c = index - (r * cols)\r\n        local current = first_position + positionOffsetX * (c) + positionOffsetZ * (r)\r\n        item.setVelocity({0,0,0})\r\n        item.setAngularVelocity({0,0,0})\r\n        item.setRotation(values.rotation)\r\n        if values.positionSmooth then\r\n            item.setPositionSmooth(current, false, values.positionFast)\r\n        else\r\n            item.setPosition(current)\r\n        end\r\n    end    \r\nend\r\n\r\nreturn ComponentUtils\nend)\n__bundle_register(\"common\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nlocal DeckUtils = require(\"tts-utils.DeckUtils\")\r\n\r\nfunction getElementType(obj)\r\n    if obj.hasTag(ELEMENT_TAG) then\r\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    if obj.hasTag(WANDERLUST_TAG) then\r\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    if obj.hasTag(TERRAIN_TAG) then\r\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\r\n    local seatedPlayers = {}\r\n    for _,player in ipairs(players) do\r\n        if player.seated then\r\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\r\n        end\r\n    end\r\n    return seatedPlayers\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\r\nend\nend)\n__bundle_register(\"tts-utils.DeckUtils\", function(require, _LOADED, __bundle_register, __bundle_modules)\nlocal DeckUtils = {}\r\n\r\nfunction DeckUtils.getDeckOrCardFromZone(zone_guid)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    if zone == nil then return nil end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Deck\" then\r\n            return obj\r\n        end\r\n    end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Card\" then\r\n            return obj\r\n        end\r\n    end\r\n    return nil\r\nend\r\n\r\nreturn DeckUtils\nend)\n__bundle_register(\"constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\nRESEED_BUTTON = \"15f5b0\"\r\n\r\nEVOLUTION_DECK_ZONE = \"771647\"\r\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\r\nASTEROID_CARD = \"9fe901\"\r\nTRAIT_DECK = \"c5d0ec\"\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nABUNDANCE_ZONE = \"c982e7\"\r\nAUTOTROPHS_ZONE = \"c4e77b\"\r\nDEPLETION_ZONE = \"e23076\"\r\nADAPTION_ZONE = \"b70e29\"\r\nREGRESSION_ZONE = \"91fe74\"\r\nSPECIATION_ZONE = \"075fb0\"\r\nWANDERLUST_ZONE = \"def2ff\"\r\nCOMPETITION_ZONE = \"90e44c\"\r\nEVOLUTION_ZONE = \"91934c\"\r\n\r\nELEMENT_TAG = \"element\"\r\nWANDERLUST_TAG = \"wanderlust\"\r\nTERRAIN_TAG = \"terrain\"\r\nSPECIES_TAG = \"species\"\r\nACTION_PAWN_TAG = \"action_pawn\"\r\n\r\nCRUSTACEANS_TAG = \"crustaceans\"\r\nFISHES_TAG = \"fishes\"\r\nCEPHALOPODS_TAG = \"cephalopods\"\r\nREPTILES_TAG = \"reptiles\"\r\n\r\nCOMMON_COMPONENTS = {\r\n    wander_lust_bag = \"7d9337\",\r\n    element_bag = \"e81219\",\r\n    terrain_bag = \"ed6578\",\r\n    box_bag = \"6d9eef\",\r\n    special_pawn_plankton = \"bd25f7\",\r\n    special_pawn_worms = \"7a63a2\",\r\n    special_pawn_sponges = \"5172a7\",\r\n    special_pawn_gastropods = \"bf11a4\",\r\n    special_pawn_algae = \"c12749\",\r\n    special_pawn_sun = \"c046bd\",\r\n    control_marker_plankton = \"dce92f\",\r\n    control_marker_worms = \"557086\",\r\n    control_marker_sponges = \"e92662\",\r\n    control_marker_gastropods = \"54bb45\",\r\n    control_marker_algae = \"0f9861\",\r\n    control_marker_sun = \"32bf2b\",\r\n    food_chain_start_zone = \"9ba132\",\r\n}\r\n\r\nPLAYER_COMPONENTS = {\r\n    [Player.Brown.color] = {\r\n        tag = CRUSTACEANS_TAG,\r\n        vp = \"17f953\",\r\n        boards = {\"85e368\", \"b5c87e\"},\r\n        food_chain_zone = \"d9b5af\",\r\n        food_chain_start_position = {-11.32, 1.35, 8.67},\r\n        food_chain_end_position = {-9.41, 1.29, 8.68},\r\n        gene_pool_bag = \"cd7b0d\",\r\n        action_pawn_position_first = {-25.21, 1.26, -8.93},\r\n        control_marker_zone = \"fb935b\",\r\n        eliminated_species = \"9ebfda\",\r\n    },\r\n    [Player.Blue.color] = {\r\n        tag = FISHES_TAG,\r\n        vp = \"3f075f\",\r\n        boards = {\"bf4314\", \"578c29\"},\r\n        food_chain_zone = \"01090b\",\r\n        food_chain_start_position = {-11.31, 1.35, 9.74},\r\n        food_chain_end_position = {-9.41, 1.29, 9.74},\r\n        gene_pool_bag = \"ea715b\",\r\n        action_pawn_position_first = {-10.93, 1.26, -9.04},\r\n        control_marker_zone = \"6d7f31\",\r\n        eliminated_species = \"3c5002\",\r\n    },\r\n    [Player.Orange.color] = {\r\n        tag = CEPHALOPODS_TAG,\r\n        vp = \"bbb44d\",\r\n        boards = {\"c01aba\", \"24c905\"},\r\n        food_chain_zone = \"8aaf18\",\r\n        food_chain_start_position = {-11.32, 1.35, 10.74},\r\n        food_chain_end_position = {-9.40, 1.29, 10.74},\r\n        gene_pool_bag = \"93c7b1\",\r\n        action_pawn_position_first = {4.00, 1.26, -8.96},\r\n        control_marker_zone = \"de4c5c\",\r\n        eliminated_species = \"72d935\",\r\n    },\r\n    [Player.Purple.color] = {\r\n        tag = REPTILES_TAG,\r\n        vp = \"e40bf9\",\r\n        boards = {\"76a1b4\", \"7c5462\"},\r\n        food_chain_zone = \"93093b\",\r\n        food_chain_start_position = {-11.30, 1.35, 11.76},\r\n        food_chain_end_position = {-9.39, 1.29, 11.78},\r\n        gene_pool_bag = \"253bcb\",\r\n        action_pawn_position_first = {17.44, 1.26, -8.95},\r\n        control_marker_zone = \"bb6f78\",\r\n        eliminated_species = \"8167d6\",\r\n    },\r\n}\r\n\r\nELEMENT_TYPE_ALGAE = \"algae\"\r\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\r\nELEMENT_TYPE_WORMS = \"worms\"\r\nELEMENT_TYPE_PLANKTON = \"plankton\"\r\nELEMENT_TYPE_SPONGES = \"sponges\"\r\nELEMENT_TYPE_SUN = \"sun\"\r\n\r\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\r\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\r\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\r\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\r\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\r\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\r\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\r\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\r\n\r\nELEMENT_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-green.png\"] = ELEMENT_TYPE_ALGAE,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-brown.png\"] = ELEMENT_TYPE_GASTROPODS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-blue.png\"] = ELEMENT_TYPE_PLANKTON,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-yellow.png\"] = ELEMENT_TYPE_SPONGES,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-red.png\"] = ELEMENT_TYPE_SUN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-purple.png\"] = ELEMENT_TYPE_WORMS,\r\n}\r\n\r\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/hvent.png\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-open-ocean.png\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-sand.png\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasgrass.png\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasmount.png\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-coral.png\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-kelp.png\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-land.png\"] = WANDERLUST_TILE_LAND,\r\n}\r\n\r\nWANDERLUST_TILE_SCORES = {\r\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\r\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\r\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\r\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\r\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\r\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\r\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\r\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\r\n}\r\n\r\nTERRAIN_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-vent.png\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-ocean.png\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-sand.png\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrrain-grass.png\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-mount.png\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-coral.png\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-kelp.png\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-land.png\"] = WANDERLUST_TILE_LAND,\r\n}\nend)\nreturn __bundle_require(\"Setup.f2db58.lua\")",
+      "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Setup.f2db58.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Setup.f2db58.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"setup\")\nend)\n__bundle_register(\"setup\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nrequire(\"common\")\r\nlocal ComponentUtils = require(\"tts-utils.ComponentUtils\")\r\n\r\nSTANDARD_SETUP_TILES = {\r\n    {WANDERLUST_TILE_CORAL, {1.34, 1.16, 5.39}},\r\n    {WANDERLUST_TILE_SEAGRASS, {-1.33, 1.16, 6.83}},\r\n    {WANDERLUST_TILE_SAND, {3.95, 1.16, 3.88}},\r\n    {WANDERLUST_TILE_SEAMOUNT, {-1.30, 1.16, 3.84}},\r\n    {WANDERLUST_TILE_KELP, {3.92, 1.16, 6.85}},\r\n    {WANDERLUST_TILE_LAND, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {WANDERLUST_TILE_OCEAN, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nRANDOM_EARTH_SETUP_TILES = {\r\n    {nil, {1.34, 1.16, 5.39}},\r\n    {nil, {3.92, 1.16, 6.85}},\r\n    {nil, {3.95, 1.16, 3.88}},\r\n    {nil, {-1.30, 1.16, 3.84}},\r\n    {nil, {-1.33, 1.16, 6.83}},\r\n    {nil, {1.31, 1.16, 8.38}},\r\n    {WANDERLUST_TILE_LAND, {1.32, 1.16, 11.33}},\r\n    {WANDERLUST_TILE_LAND, {3.90, 1.16, 12.87}},\r\n    {WANDERLUST_TILE_LAND, {-1.30, 1.16, 12.84}},\r\n    {WANDERLUST_TILE_LAND, {1.36, 1.16, 14.36}},\r\n    {nil, {1.30, 1.16, 2.35}},\r\n    {WANDERLUST_TILE_OCEAN, {1.29, 1.16, -0.71}},\r\n    {WANDERLUST_TILE_OCEAN, {3.90, 1.16, -2.23}},\r\n    {WANDERLUST_TILE_OCEAN, {1.28, 1.16, -3.76}},\r\n    {WANDERLUST_TILE_OCEAN, {-1.29, 1.16, -2.15}},\r\n}\r\n\r\nSTANDARD_SETUP_VENTS = {\r\n    {\"7944c3\", {1.33, 1.26, 14.30}}, -- upper\r\n    {\"00d34d\", {1.22, 1.36, -3.64}}, -- reef\r\n}\r\n\r\nSTANDARD_SETUP_ELEMENTS = {\r\n    algae={2.20, 1.26, 6.87},\r\n    gastropods={3.05, 1.26, 5.35},\r\n    worms={2.21, 1.26, 3.87},\r\n    plankton={0.40, 1.26, 3.85},\r\n    sponges={-0.40, 1.36, 5.36},\r\n    sun={0.40, 1.26, 6.84},\r\n}\r\n\r\nSTANDARD_PLAYER_ELEMENTS = {\r\n    [Player.Brown.color] = {ELEMENT_TYPE_WORMS, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_ALGAE},\r\n    [Player.Blue.color] = {ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_ALGAE},\r\n    [Player.Orange.color] = {ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_GASTROPODS, ELEMENT_TYPE_SPONGES},\r\n    [Player.Purple.color] = {ELEMENT_TYPE_SUN, ELEMENT_TYPE_SUN, ELEMENT_TYPE_SPONGES},\r\n}\r\n\r\ntable_settings = {\r\n    evolution_cards_removed = 10,\r\n    alternate_animals = false,\r\n    animal_elements = STANDARD_PLAYER_ELEMENTS,\r\n    earth_tile_pairs = STANDARD_SETUP_TILES,\r\n    earth_elements = { ELEMENT_TYPE_ALGAE, ELEMENT_TYPE_SUN, ELEMENT_TYPE_WORMS, ELEMENT_TYPE_SPONGES, ELEMENT_TYPE_PLANKTON, ELEMENT_TYPE_GASTROPODS },\r\n    random_earth = false,\r\n    setup_done = false,\r\n}\r\n\r\nfunction onSave()\r\n    if table_settings.setup_done then\r\n        return JSON.encode(table_settings)\r\n    else\r\n        return \"\"\r\n    end\r\nend\r\n\r\nfunction onLoad(save_state)\r\n    self.setLock(true)\r\n    self.setPosition({-23.07, 0, 5.63})\r\n    self.setInvisibleTo(Player.getColors())\r\n    if save_state ~= \"\" then\r\n        self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    else\r\n\r\n    end\r\nend\r\n\r\nfunction onUpdate()\r\nend\r\n\r\nfunction onClickStandard()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    if playerCount < 2 then\r\n        broadcastToAll(\"Please have at least 2 players seated before clicking setup\", {r=1, g=0, b=0})\r\n        return\r\n    end\r\n    self.UI.setAttribute(\"layoutStart\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"boardSetup\")\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Brown|Orange|Blue|Purple\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", true)\r\nend\r\n\r\nfunction onClickConfirmTraits()\r\n    self.UI.setAttribute(\"layoutTrait\", \"visibility\", \"Black\")\r\n    self.UI.setAttribute(\"btnConfirmTraits\", \"interactable\", false)\r\n    self.UI.setAttribute(\"layoutSetup\", \"visibility\", \"Black\")\r\n    startLuaCoroutine(self, \"finishSetup\")\r\nend\r\n\r\nfunction finishSetup()\r\n    local playerList = getValidSeatedPlayers()\r\n    local traitDeck = getObjectFromGUID(TRAIT_DECK)\r\n    for _, player in ipairs(playerList) do\r\n        for _, card in ipairs(player.getHandObjects()) do\r\n            traitDeck.putObject(card)\r\n        end\r\n    end\r\n    traitDeck.shuffle()\r\n    setupEvolutionDeck(table_settings.evolution_cards_removed)\r\n    table_settings.setup_done = true\r\n    return 1\r\nend\r\n\r\nfunction onGameLengthSelected(player, option, id)\r\n    local lookup = {\r\n        [\"Short\"] = 15,\r\n        [\"Standard\"] = 10,\r\n        [\"Long\"] = 5,\r\n        [\"Epic\"] = 0,\r\n    }\r\n    table_settings.evolution_cards_removed = lookup[option]\r\nend\r\n\r\nfunction onAnimalDisplaySelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.alternate_animals = false\r\n    else\r\n        table_settings.alternate_animals = true\r\n    end\r\nend\r\n\r\nfunction onRandomEarthSelected(player, option, id)\r\n    if option == \"Standard\" then\r\n        table_settings.random_earth = false\r\n        table_settings.earth_tile_pairs = STANDARD_SETUP_TILES\r\n    else\r\n        table_settings.random_earth = true\r\n        table_settings.earth_tile_pairs = RANDOM_EARTH_SETUP_TILES\r\n    end\r\nend\r\n\r\nfunction boardSetup()\r\n    print(\"setupAnimalDisplays\")\r\n    setupAnimalDisplays(table_settings.alternate_animals)\r\n    print(\"setupTiles\")\r\n    setupTiles(table_settings.earth_tile_pairs)\r\n    print(\"setupVentTiles\")\r\n    setupVentTiles()\r\n    if table_settings.random_earth then\r\n        print(\"setupElementTokensRandom\")\r\n        setupElementTokensRandom()\r\n    else\r\n        print(\"setupElementTokensStandard\")\r\n        setupElementTokensStandard()\r\n    end\r\n        print(\"emptyWanderlustBagToStacks\")\r\n    emptyWanderlustBagToStacks()\r\n    local reseedButton = getObjectFromGUID(RESEED_BUTTON)\r\n    reseedButton.call(\"reseed\",false)\r\n    if table_settings.random_earth then\r\n        print(\"setupSpeciesCubesRandom\")\r\n        setupSpeciesCubesRandom()\r\n    else\r\n        print(\"setupSpeciesCubes\")\r\n        setupSpeciesCubes()\r\n    end\r\n    print(\"removeExtraActionPawns\")\r\n    removeExtraActionPawns()\r\n    dealTraits()\r\n    broadcastToAll(\"Select trait(s) and click confirm to finish setup.\", {r=1,g=0,b=0})\r\n    return 1\r\nend\r\n\r\nfunction setupAnimalDisplays(isAlternate)\r\n    if isAlternate then\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local players = getValidSeatedPlayers()\r\n        for _, player in ipairs(players) do\r\n            local guid = PLAYER_COMPONENTS[player.color].boards\r\n            local pb = getObjectFromGUID(guid[1])\r\n            if pb ~= nill then pb.setState(2) end\r\n            local pb2 = getObjectFromGUID(guid[2])\r\n            local snaps = pb2.getSnapPoints()\r\n            table.sort(snaps, function(a, b) return a.position.z < b.position.z end)\r\n            while #snaps > 6 do table.remove(snaps) end\r\n            table.sort(snaps, function(a, b) return a.position.x > b.position.x end)\r\n            local animal_elements = {}\r\n            for ii, snap in ipairs(snaps) do\r\n                if ii <= 3 then\r\n                    local newPosition = snap.position\r\n                    newPosition[2] = snap.position[2] + 2\r\n                    local obj = elementBag.takeObject({position=pb2.positionToWorld(newPosition), rotation={0,180,0}})\r\n                    table.insert(animal_elements, getElementType(obj))\r\n                    table_settings.animal_elements[player.color] = animal_elements\r\n                end\r\n            end\r\n        end\r\n    else\r\n        for _, playerComponents in pairs(PLAYER_COMPONENTS) do\r\n            local pb2 = getObjectFromGUID(playerComponents.boards[2])\r\n            if pb2 ~= nill then pb2.setState(1) end\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupTiles(tileTypePositionPairs)\r\n    local tileRotation = {0, 180, 0}\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local wanderlust_tile_cache = {\r\n        [WANDERLUST_TILE_LAND] = {},\r\n        [WANDERLUST_TILE_KELP] = {},\r\n        [WANDERLUST_TILE_SAND] = {},\r\n        [WANDERLUST_TILE_CORAL] = {},\r\n        [WANDERLUST_TILE_OCEAN] = {},\r\n        [WANDERLUST_TILE_SEAGRASS] = {},\r\n        [WANDERLUST_TILE_SEAMOUNT] = {},\r\n        [WANDERLUST_TILE_VENT] = {},\r\n    }\r\n    local randomPairs = {}\r\n    for _, typePosition in ipairs(tileTypePositionPairs) do\r\n        local type = typePosition[1]\r\n        local position = typePosition[2]\r\n        local tile = nil\r\n        if type == nil then\r\n            table.insert(randomPairs, position)\r\n        else\r\n            if #wanderlust_tile_cache[type] > 0 then\r\n                tile = wanderlust_tile_cache[type][1]\r\n                table.remove(wanderlust_tile_cache[type], 1)\r\n            else\r\n                tile = bag.takeObject()\r\n            end\r\n            local foundType = getWanderlustType(tile)\r\n            while type ~= nil and type ~= foundType do\r\n                table.insert(wanderlust_tile_cache[foundType], tile)\r\n                tile = bag.takeObject()\r\n                foundType = getWanderlustType(tile)\r\n                coroutine.yield(0)\r\n            end\r\n            tile.setPosition(position)\r\n            tile.setRotation(tileRotation)\r\n            tile.setLock(true)\r\n        end\r\n    end\r\n    for _, list in pairs(wanderlust_tile_cache) do\r\n        for _, obj in ipairs(list) do\r\n            bag.putObject(obj)\r\n        end\r\n    end\r\n    for _, boardPosition in ipairs(randomPairs) do\r\n        local tile = bag.takeObject()\r\n        tile.setPosition(boardPosition)\r\n        tile.setRotation(tileRotation)\r\n        tile.setLock(true)\r\n    end\r\n    coroutine.yield(0)\r\nend\r\n\r\nfunction setupVentTiles()\r\n    local guid = STANDARD_SETUP_VENTS[1][1]\r\n    local position = STANDARD_SETUP_VENTS[1][2]\r\n    local tile = getObjectFromGUID(guid)\r\n    tile.setPositionSmooth(position, false, true)\r\n    tile.setRotation({0, 180, 0})\r\n    tile.setLock(true)\r\n    guid = STANDARD_SETUP_VENTS[2][1]\r\n    position = STANDARD_SETUP_VENTS[2][2]\r\n    tile = getObjectFromGUID(guid)\r\n    tile.setPosition(position)\r\n    tile.setRotation({0,180, 180})\r\n    tile.setLock(true)\r\nend\r\n\r\nfunction emptyWanderlustBagToStacks()\r\n    local wanderlustStacks = {\r\n        {9.97, 10, -3.33},\r\n        {13.57, 10, -3.31},\r\n        {17.22, 10, -3.28}\r\n    }\r\n    local tileHeight = .4\r\n    local bag = getObjectFromGUID(COMMON_COMPONENTS.wander_lust_bag)\r\n    local stackIndex = 1\r\n    local height = 2\r\n    local stackRotation = {0, 180, 180}\r\n    while #bag.getObjects() > 0 do\r\n        if #bag.getObjects() <= 3 then\r\n            stackRotation = {0, 180, 0}\r\n        end\r\n        local newPosition = wanderlustStacks[stackIndex]\r\n        newPosition[2] = height\r\n        local tile = bag.takeObject({\r\n            rotation = stackRotation,\r\n            position = newPosition\r\n        })\r\n        stackIndex = stackIndex + 1\r\n        if stackIndex > 3 then\r\n            stackIndex = 1\r\n            height = height + tileHeight\r\n        end\r\n    end\r\nend\r\n\r\nfunction setupElementTokensStandard()\r\n        local rotation = {0, 180, 0}\r\n        local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n        local elementCache = {\r\n            [ELEMENT_TYPE_SUN] = {},\r\n            [ELEMENT_TYPE_ALGAE] = {},\r\n            [ELEMENT_TYPE_WORMS] = {},\r\n            [ELEMENT_TYPE_SPONGES] = {},\r\n            [ELEMENT_TYPE_PLANKTON] = {},\r\n            [ELEMENT_TYPE_GASTROPODS] = {},\r\n        }\r\n        for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n            local obj\r\n            if #elementCache[element] > 0 then\r\n                obj = elementCache[element][1]\r\n                table.remove(elementCache[element], 1)\r\n            else\r\n                obj = elementBag.takeObject()\r\n            end\r\n            local foundElement = getElementType(obj)\r\n            while foundElement ~= element do\r\n                table.insert(elementCache[foundElement], obj)\r\n                obj = elementBag.takeObject()\r\n                foundElement = getElementType(obj)\r\n                coroutine.yield(0)\r\n            end\r\n            obj.setPosition(destination)\r\n            obj.setRotation(rotation)\r\n        end\r\n        for _, elementList in pairs(elementCache) do\r\n            for _, obj in ipairs(elementList) do\r\n                elementBag.putObject(obj)\r\n            end\r\n        end\r\nend\r\n\r\nfunction setupElementTokensRandom()\r\n    local valid = true\r\n    local players = getValidSeatedPlayers()\r\n    local rotation = {0, 180, 0}\r\n    local elementBag = getObjectFromGUID(COMMON_COMPONENTS.element_bag)\r\n    local choosenElements = {}\r\n    local elementTypes = {\r\n        [ELEMENT_TYPE_SUN] = false,\r\n        [ELEMENT_TYPE_ALGAE] = false,\r\n        [ELEMENT_TYPE_WORMS] = false,\r\n        [ELEMENT_TYPE_SPONGES] = false,\r\n        [ELEMENT_TYPE_PLANKTON] = false,\r\n        [ELEMENT_TYPE_GASTROPODS] = false,\r\n    }\r\n    for element, destination in pairs(STANDARD_SETUP_ELEMENTS) do\r\n        local wrong = {}\r\n        local obj = elementBag.takeObject()\r\n        table.insert(choosenElements, obj)\r\n        elementTypes[getElementType(obj)] = true\r\n        obj.setPosition(destination)\r\n        obj.setRotation(rotation)\r\n    end\r\n    for _, player in ipairs(players) do\r\n        local hasElement = false\r\n        for _, playerElement in ipairs(table_settings.animal_elements[player.color]) do\r\n            hasElement = hasElement or elementTypes[playerElement]\r\n        end\r\n        valid = valid and hasElement\r\n    end\r\n    if valid == false then\r\n        for _, obj in ipairs(choosenElements) do elementBag.putObject(obj) end\r\n        coroutine.yield(0)\r\n        setupElementTokensRandom()\r\n    else\r\n        local earth_elements = {}\r\n        for _, choosen in ipairs(choosenElements) do\r\n            table.insert(earth_elements, getElementType(choosen))\r\n        end\r\n        table_settings.earth_elements = earth_elements\r\n    end\r\nend\r\n\r\nfunction setupSpeciesCubes()\r\n    local center = vector(1.34, 1.66, 5.39)\r\n    local playerList = getValidSeatedPlayers()\r\n    local cubes = {}\r\n    for _, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        for ii=1,3 do\r\n            table.insert(cubes, bag.takeObject())\r\n        end\r\n    end\r\n    ComponentUtils.arrange({\r\n        items = cubes,\r\n        padding = .1,\r\n        origin = center,\r\n        rows = #playerList,\r\n        cols = 3,\r\n        positionSmooth = true,\r\n    })\r\nend\r\n\r\nfunction setupSpeciesCubesRandom()\r\n    local cubesPlace = {}\r\n    local first = vector(0.5, 1.45, 6.12)\r\n    local shiftRight = vector(.3, 0, 0)\r\n    local shiftDown = vector(0, 0, -.3)\r\n    local shiftUp = vector(0, .4, 0)\r\n    local center = vector(1.30, 1.45, 5.34)\r\n    local playerList = getValidSeatedPlayers()\r\n    local playerCubes = {}\r\n    local cubesPerRow = 3\r\n    for playerIndex, player in ipairs(playerList) do\r\n        local bag = getObjectFromGUID(PLAYER_COMPONENTS[player.color].gene_pool_bag)\r\n        local playerElements = table_settings.animal_elements[player.color]\r\n        local speciesCount = 0\r\n        for _, playerElement in ipairs(playerElements) do\r\n            for _, earthElement in ipairs(table_settings.earth_elements) do\r\n                if playerElement == earthElement then\r\n                    speciesCount = speciesCount + 1\r\n                end\r\n            end\r\n        end\r\n        playerCubes[player.color] = speciesCount\r\n        bag.takeObject({position = PLAYER_COMPONENTS[player.color].food_chain_start_position})\r\n        local totalCount = 0\r\n        local playerFirst = first + (vector(1,0,0) * ((playerIndex - 1) % 2)) + (vector(0, 0, -1) * math.floor((playerIndex - 1)/2))\r\n        for ii=1,speciesCount do\r\n            local current = playerFirst + (shiftRight * (totalCount % cubesPerRow)) + (math.floor(totalCount/cubesPerRow) * shiftDown)\r\n            if ii > 9 then current = current + shiftUp - (3*shiftDown) end\r\n            bag.takeObject({position=current})\r\n            totalCount = totalCount + 1\r\n        end\r\n    end\r\n    -- find center\r\n    local center = Vector(1.34, 1.16, 5.39)\r\n    local centerObjects = getObjectFromGUID(CENTER_SCRIPTING_ZONE).getObjects()\r\n    local centerTile = nil\r\n    for _, obj in ipairs(centerObjects) do\r\n        local wanderlustType = getWanderlustType(obj)\r\n        if wanderlustType ~= nil and center:distance(Vector(obj.getPosition())) < 1 then\r\n            centerTile = wanderlustType\r\n        end\r\n    end\r\n    -- Update scores\r\n    local scores = WANDERLUST_TILE_SCORES[centerTile]\r\n    local sum = 0\r\n    for _, v in ipairs(scores) do sum = sum + v end\r\n    local foodChainOrder = {Player.Purple.color, Player.Orange.color, Player.Blue.color, Player.Brown.color}\r\n    local scoreOrder = getValidSeatedPlayers()\r\n    table.sort(scoreOrder, function(a,b)\r\n        if playerCubes[a.color] == playerCubes[b.color] then\r\n            for _, player in ipairs(foodChainOrder) do\r\n                if player == a.color then\r\n                    return true\r\n                elseif player == b.color then\r\n                    return false\r\n                end\r\n            end\r\n        else\r\n            return playerCubes[a.color] > playerCubes[b.color]\r\n        end\r\n    end)\r\n    local score0 = Vector({19.31, 10, -5.92})\r\n    local scoreOffset = Vector({-.955, 0, 0})\r\n    for ii, score in ipairs(scoreOrder) do\r\n         print(score.color, sum - scores[ii])\r\n         local vpToken = getObjectFromGUID(PLAYER_COMPONENTS[score.color].vp)\r\n         vpToken.setPositionSmooth(score0 + (sum - scores[ii]) * scoreOffset, false, false)\r\n    end\r\nend\r\n\r\nfunction dealTraits()\r\n    local deck = getObjectFromGUID(TRAIT_DECK)\r\n    deck.shuffle()\r\n    deck.deal(3)\r\nend\r\n\r\nfunction setupEvolutionDeck(remove_count)\r\n    local evolutionDeckZone = getObjectFromGUID(EVOLUTION_DECK_ZONE)\r\n    local aboveEvolutionDeck = evolutionDeckZone.getPosition()\r\n    aboveEvolutionDeck[2] = aboveEvolutionDeck[2] + 2\r\n    local deck = getEvolutionReserveDeck()\r\n    deck.shuffle()\r\n    deck.setName(\"Evolution Deck Removed\")\r\n    local asteroid = getObjectFromGUID(ASTEROID_CARD)\r\n    asteroid.setRotation({0, 180, 180})\r\n    asteroid.setPosition(evolutionDeckZone.getPosition())\r\n    for ii=1,4 do\r\n        deck.takeObject({position = aboveEvolutionDeck})\r\n        coroutine.yield(0)\r\n    end\r\n    local newDeck = getEvolutionDeck()\r\n    while newDeck == nil or newDeck.type ~= \"Deck\" or #newDeck.getObjects() ~= 5 do\r\n        coroutine.yield(0)\r\n        newDeck = getEvolutionDeck()\r\n    end\r\n    newDeck.shuffle()\r\n    newDeck.setName(\"Evolution Deck\")\r\n    local cards_to_add = #getEvolutionReserveDeck().getObjects() - remove_count\r\n    for ii=1,cards_to_add do\r\n        local reserveDeck = getEvolutionReserveDeck()\r\n        if deck.type == \"Deck\" then\r\n            local card = deck.takeObject()\r\n            card.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        elseif deck.type == \"Card\" then\r\n            deck.setPositionSmooth(aboveEvolutionDeck, false, false)\r\n        else\r\n            print(\"Error building evolution deck.\")\r\n            break\r\n        end\r\n        coroutine.yield(0)\r\n    end\r\n    while (35 - remove_count) ~= #newDeck.getObjects() do\r\n        -- newDeck = getEvolutionDeck()\r\n        coroutine.yield(0)\r\n    end\r\n    local evoslots = {\r\n        {-14.10, 1.17, -3.21},\r\n        {-14.10, 1.17, 0.89},\r\n        {-14.18, 1.17, 5.13},\r\n        {-14.15, 1.17, 9.13},\r\n        {-14.14, 1.17, 13.24},\r\n    }\r\n    for _, slot in ipairs(evoslots) do\r\n        newDeck.takeObject({position=slot, rotation={0,180,0}})\r\n    end\r\nend\r\n\r\nfunction removeExtraActionPawns()\r\n    local players = getValidSeatedPlayers()\r\n    local playerCount = #players\r\n    local boxBag = getObjectFromGUID(COMMON_COMPONENTS.box_bag)\r\n    local pawns = {7, 7, 5, 4}\r\n    for _, animal in ipairs({CRUSTACEANS_TAG, FISHES_TAG, CEPHALOPODS_TAG, REPTILES_TAG}) do\r\n        local playerPawns = getObjectsWithAllTags({animal, ACTION_PAWN_TAG})\r\n        table.sort(playerPawns, function (a,b)\r\n            local posa = a.getPosition()\r\n            local posb = b.getPosition()\r\n            if posa[1] == posb[1] then\r\n                return posa[3] < posb[3]\r\n            else\r\n                return posa[1] < posb[1]\r\n            end\r\n        end)\r\n        for ii, actionPawn in ipairs(playerPawns) do\r\n            if ii > pawns[playerCount] then\r\n                boxBag.putObject(actionPawn)\r\n            end\r\n        end\r\n    end\r\nend\nend)\n__bundle_register(\"tts-utils.ComponentUtils\", function(require, _LOADED, __bundle_register, __bundle_modules)\nlocal ComponentUtils = {}\r\n\r\nfunction ComponentUtils.arrange(params)\r\n    values = {\r\n        items = {},\r\n        origin = {0, 0, 0},\r\n        alignment = \"center\",\r\n        rotation = {0, 0, 0},\r\n        padding = .1,\r\n        rows = 0,\r\n        cols = 0,\r\n        positionSmooth = false,\r\n        positionFast = false,\r\n        reverseRowDirection = false,\r\n    }\r\n    for k,v in pairs(params) do values[k] = v end\r\n    if #values.items == 0 then return end\r\n    -- if values.cols == 0 and values.rows == 0 then\r\n    --     local sqrtItems = math.ceil(math.sqrt(#values.items))\r\n    --     values.rows = sqrtItems\r\n    --     if values.rows == 0 then values.rows = 1 end\r\n    --     values.cols = math.ceil(#values.items/values.rows)        \r\n    -- end\r\n    if type(values.padding) ~= \"table\" then\r\n        values.padding = {values.padding, values.padding, values.padding}\r\n    end\r\n    local padding = Vector(values.padding)\r\n    local position = Vector(values.origin)\r\n    local max_item_bounds = Vector(0,0,0)\r\n    local rows = values.rows\r\n    local cols = values.cols    \r\n    for _, item in ipairs(values.items) do\r\n        item.setRotation(values.rotation)\r\n        max_item_bounds = Vector.max(max_item_bounds, item.getBounds().size)\r\n    end\r\n    max_item_bounds.y = 0\r\n    local first_position = position\r\n    if values.alignment == \"center\" then\r\n        local originOffset = Vector(\r\n            -max_item_bounds[1]*(cols-1)/2 - padding[1]*(cols-1)/2,\r\n            0,\r\n            max_item_bounds[3]*(rows-1)/2 + padding[3]*(rows-1)/2\r\n        )\r\n        if values.reverseRowDirection then\r\n            originOffset.z = -originOffset.z\r\n        end\r\n        first_position = first_position + originOffset\r\n    elseif values.alignment == \"left\" then\r\n    else\r\n        error(\"Invalid arg alignment:\"..values.alignment)\r\n    end\r\n\r\n    local positionOffsetX = Vector(max_item_bounds[1] + padding[1], 0, 0)\r\n    local positionOffsetZ = -1 * Vector(0, 0, max_item_bounds[3] + padding[3])\r\n    if values.reverseRowDirection then\r\n        positionOffsetZ = -1 * positionOffsetZ\r\n    end\r\n    for i, item in ipairs(values.items) do\r\n        local index = i - 1\r\n        local r = math.floor(index/cols)\r\n        local c = index - (r * cols)\r\n        local current = first_position + positionOffsetX * (c) + positionOffsetZ * (r)\r\n        item.setVelocity({0,0,0})\r\n        item.setAngularVelocity({0,0,0})\r\n        item.setRotation(values.rotation)\r\n        if values.positionSmooth then\r\n            item.setPositionSmooth(current, false, values.positionFast)\r\n        else\r\n            item.setPosition(current)\r\n        end\r\n    end    \r\nend\r\n\r\nreturn ComponentUtils\nend)\n__bundle_register(\"common\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"constants\")\r\nlocal DeckUtils = require(\"tts-utils.DeckUtils\")\r\n\r\nfunction getElementType(obj)\r\n    if obj.hasTag(ELEMENT_TAG) then\r\n        return ELEMENT_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getWanderlustType(obj)\r\n    if obj.hasTag(WANDERLUST_TAG) then\r\n        return WANDERLUST_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getTerrainMarkerType(obj)\r\n    if obj.hasTag(TERRAIN_TAG) then\r\n        return TERRAIN_RESOURCE_TO_NAME_MAP[obj.getCustomObject().image]\r\n    else\r\n        return nil\r\n    end\r\nend\r\n\r\nfunction getValidSeatedPlayers()\r\n    local players = {Player[\"Brown\"], Player[\"Blue\"], Player[\"Orange\"], Player[\"Purple\"]}\r\n    local seatedPlayers = {}\r\n    for _,player in ipairs(players) do\r\n        if player.seated then\r\n            table.insert(seatedPlayers, #seatedPlayers + 1, player)\r\n        end\r\n    end\r\n    return seatedPlayers\r\nend\r\n\r\nfunction getEvolutionDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_DECK_ZONE)\r\nend\r\n\r\nfunction getEvolutionReserveDeck()\r\n    return DeckUtils.getDeckOrCardFromZone(EVOLUTION_RESERVE_ZONE)\r\nend\nend)\n__bundle_register(\"tts-utils.DeckUtils\", function(require, _LOADED, __bundle_register, __bundle_modules)\nlocal DeckUtils = {}\r\n\r\nfunction DeckUtils.getDeckOrCardFromZone(zone_guid)\r\n    local zone = getObjectFromGUID(zone_guid)\r\n    if zone == nil then return nil end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Deck\" then\r\n            return obj\r\n        end\r\n    end\r\n    for _, obj in ipairs(zone.getObjects()) do\r\n        if obj.type == \"Card\" then\r\n            return obj\r\n        end\r\n    end\r\n    return nil\r\nend\r\n\r\nreturn DeckUtils\nend)\n__bundle_register(\"constants\", function(require, _LOADED, __bundle_register, __bundle_modules)\nRESEED_BUTTON = \"15f5b0\"\r\n\r\nEVOLUTION_DECK_ZONE = \"771647\"\r\nEVOLUTION_RESERVE_ZONE = \"22f9c7\"\r\nASTEROID_CARD = \"9fe901\"\r\nTRAIT_DECK = \"c5d0ec\"\r\nCENTER_SCRIPTING_ZONE = \"e4f818\"\r\n\r\nABUNDANCE_ZONE = \"c982e7\"\r\nAUTOTROPHS_ZONE = \"c4e77b\"\r\nDEPLETION_ZONE = \"e23076\"\r\nADAPTION_ZONE = \"b70e29\"\r\nREGRESSION_ZONE = \"91fe74\"\r\nSPECIATION_ZONE = \"075fb0\"\r\nWANDERLUST_ZONE = \"def2ff\"\r\nCOMPETITION_ZONE = \"90e44c\"\r\nEVOLUTION_ZONE = \"91934c\"\r\n\r\nELEMENT_TAG = \"element\"\r\nWANDERLUST_TAG = \"wanderlust\"\r\nTERRAIN_TAG = \"terrain\"\r\nSPECIES_TAG = \"species\"\r\nACTION_PAWN_TAG = \"action_pawn\"\r\n\r\nCRUSTACEANS_TAG = \"crustaceans\"\r\nFISHES_TAG = \"fishes\"\r\nCEPHALOPODS_TAG = \"cephalopods\"\r\nREPTILES_TAG = \"reptiles\"\r\n\r\nCOMMON_COMPONENTS = {\r\n    wander_lust_bag = \"7d9337\",\r\n    element_bag = \"e81219\",\r\n    terrain_bag = \"ed6578\",\r\n    box_bag = \"6d9eef\",\r\n    special_pawn_plankton = \"bd25f7\",\r\n    special_pawn_worms = \"7a63a2\",\r\n    special_pawn_sponges = \"5172a7\",\r\n    special_pawn_gastropods = \"bf11a4\",\r\n    special_pawn_algae = \"c12749\",\r\n    special_pawn_sun = \"c046bd\",\r\n    control_marker_plankton = \"dce92f\",\r\n    control_marker_worms = \"557086\",\r\n    control_marker_sponges = \"e92662\",\r\n    control_marker_gastropods = \"54bb45\",\r\n    control_marker_algae = \"0f9861\",\r\n    control_marker_sun = \"32bf2b\",\r\n    food_chain_start_zone = \"9ba132\",\r\n}\r\n\r\nPLAYER_COMPONENTS = {\r\n    [Player.Brown.color] = {\r\n        tag = CRUSTACEANS_TAG,\r\n        vp = \"17f953\",\r\n        boards = {\"85e368\", \"b5c87e\"},\r\n        food_chain_zone = \"d9b5af\",\r\n        food_chain_start_position = {-11.32, 1.35, 8.67},\r\n        food_chain_end_position = {-9.41, 1.29, 8.68},\r\n        gene_pool_bag = \"cd7b0d\",\r\n        action_pawn_position_first = {-25.21, 1.26, -8.93},\r\n        control_marker_zone = \"fb935b\",\r\n        eliminated_species = \"9ebfda\",\r\n    },\r\n    [Player.Blue.color] = {\r\n        tag = FISHES_TAG,\r\n        vp = \"3f075f\",\r\n        boards = {\"bf4314\", \"578c29\"},\r\n        food_chain_zone = \"01090b\",\r\n        food_chain_start_position = {-11.31, 1.35, 9.74},\r\n        food_chain_end_position = {-9.41, 1.29, 9.74},\r\n        gene_pool_bag = \"ea715b\",\r\n        action_pawn_position_first = {-10.93, 1.26, -9.04},\r\n        control_marker_zone = \"6d7f31\",\r\n        eliminated_species = \"3c5002\",\r\n    },\r\n    [Player.Orange.color] = {\r\n        tag = CEPHALOPODS_TAG,\r\n        vp = \"bbb44d\",\r\n        boards = {\"c01aba\", \"24c905\"},\r\n        food_chain_zone = \"8aaf18\",\r\n        food_chain_start_position = {-11.32, 1.35, 10.74},\r\n        food_chain_end_position = {-9.40, 1.29, 10.74},\r\n        gene_pool_bag = \"93c7b1\",\r\n        action_pawn_position_first = {4.00, 1.26, -8.96},\r\n        control_marker_zone = \"de4c5c\",\r\n        eliminated_species = \"72d935\",\r\n    },\r\n    [Player.Purple.color] = {\r\n        tag = REPTILES_TAG,\r\n        vp = \"e40bf9\",\r\n        boards = {\"76a1b4\", \"7c5462\"},\r\n        food_chain_zone = \"93093b\",\r\n        food_chain_start_position = {-11.30, 1.35, 11.76},\r\n        food_chain_end_position = {-9.39, 1.29, 11.78},\r\n        gene_pool_bag = \"253bcb\",\r\n        action_pawn_position_first = {17.44, 1.26, -8.95},\r\n        control_marker_zone = \"bb6f78\",\r\n        eliminated_species = \"8167d6\",\r\n    },\r\n}\r\n\r\nELEMENT_TYPE_ALGAE = \"algae\"\r\nELEMENT_TYPE_GASTROPODS = \"gastropods\"\r\nELEMENT_TYPE_WORMS = \"worms\"\r\nELEMENT_TYPE_PLANKTON = \"plankton\"\r\nELEMENT_TYPE_SPONGES = \"sponges\"\r\nELEMENT_TYPE_SUN = \"sun\"\r\n\r\nWANDERLUST_TILE_VENT = \"WANDERLUST_TILE_VENT\"\r\nWANDERLUST_TILE_OCEAN = \"WANDERLUST_TILE_OCEAN\"\r\nWANDERLUST_TILE_SAND = \"WANDERLUST_TILE_SAND\"\r\nWANDERLUST_TILE_SEAGRASS = \"WANDERLUST_TILE_SEAGRASS\"\r\nWANDERLUST_TILE_SEAMOUNT = \"WANDERLUST_TILE_SEAMOUNT\"\r\nWANDERLUST_TILE_CORAL = \"WANDERLUST_TILE_CORAL\"\r\nWANDERLUST_TILE_KELP = \"WANDERLUST_TILE_KELP\"\r\nWANDERLUST_TILE_LAND = \"WANDERLUST_TILE_LAND\"\r\n\r\nELEMENT_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-green.png\"] = ELEMENT_TYPE_ALGAE,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-brown.png\"] = ELEMENT_TYPE_GASTROPODS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-blue.png\"] = ELEMENT_TYPE_PLANKTON,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-yellow.png\"] = ELEMENT_TYPE_SPONGES,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-red.png\"] = ELEMENT_TYPE_SUN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-purple.png\"] = ELEMENT_TYPE_WORMS,\r\n}\r\n\r\nWANDERLUST_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/hvent.png\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-open-ocean.png\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-sand.png\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasgrass.png\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-seasmount.png\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-coral.png\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-kelp.png\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/tiles/wanderlust-land.png\"] = WANDERLUST_TILE_LAND,\r\n}\r\n\r\nWANDERLUST_TILE_SCORES = {\r\n    [WANDERLUST_TILE_VENT] = {1,0,0,0},\r\n    [WANDERLUST_TILE_OCEAN] = {2,1,0,0},\r\n    [WANDERLUST_TILE_SAND] = {3,2,0,0},\r\n    [WANDERLUST_TILE_SEAGRASS] = {4,2,0,0},\r\n    [WANDERLUST_TILE_SEAMOUNT] = {5,3,2,0},\r\n    [WANDERLUST_TILE_CORAL] = {6,3,2,0},\r\n    [WANDERLUST_TILE_KELP] = {7,4,2,0},\r\n    [WANDERLUST_TILE_LAND] = {8,4,2,1},\r\n}\r\n\r\nTERRAIN_RESOURCE_TO_NAME_MAP = {\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-vent.png\"] = WANDERLUST_TILE_VENT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-ocean.png\"] = WANDERLUST_TILE_OCEAN,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-sand.png\"] = WANDERLUST_TILE_SAND,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrrain-grass.png\"] = WANDERLUST_TILE_SEAGRASS,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-mount.png\"] = WANDERLUST_TILE_SEAMOUNT,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-coral.png\"] = WANDERLUST_TILE_CORAL,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-kelp.png\"] = WANDERLUST_TILE_KELP,\r\n    [\"https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-land.png\"] = WANDERLUST_TILE_LAND,\r\n}\nend)\nreturn __bundle_require(\"Setup.f2db58.lua\")",
       "LuaScriptState": "",
       "XmlUI": "<Defaults>\r\n    <Option fontSize=\"30\"/>\r\n    <Dropdown\r\n        fontSize=\"30\"\r\n        itemHeight=\"35\"\r\n        minHeight=\"50\"\r\n        minWidth=\"100\"\r\n        preferredWidth=\"200\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"0\"\r\n        />\r\n    <Text\r\n        fontSize=\"30\"\r\n        horizontalOverflow=\"Wrap\"\r\n        verticalOverflow=\"Wrap\"\r\n        color=\"White\"\r\n        minHeight=\"50\"\r\n        minWidth=\"50\"\r\n        preferredWidth=\"50\"\r\n        preferredHeight=\"50\"\r\n        flexibleWidth=\"1\"\r\n        flexibleHeight=\"1\"\r\n        />\r\n    <Button fontSize=\"30\" minHeight=\"50\" minWidth=\"100\"/>\r\n    <HorizontalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <VerticalLayout childForceExpandWidth=\"false\" childForceExpandHeight=\"false\" childAlignment=\"MiddleCenter\"/>\r\n    <Cell outline=\"rgb(1,0,0)\"/>\r\n</Defaults>\r\n\r\n<VerticalLayout id=\"layoutSetup\" height=\"600\" width=\"800\" position=\"0 0 -100\">\r\n    <Text>Step 1: Each player chooses one of the 4 colors.</Text>\r\n    <HorizontalLayout>\r\n        <Text>Step 2: Choose setup options and click setup.</Text>\r\n        <VerticalLayout id=\"layoutStart\" minWidth=\"300\" preferredWidth=\"300\" flexibleWidth=\"1\">\r\n            <Text>Setup Options</Text>\r\n            <HorizontalLayout>\r\n                <Text>Game Length</Text>\r\n                <Dropdown id=\"dropdownGameLength\" onValueChanged=\"onGameLengthSelected\">\r\n                    <Option>Short</Option>\r\n                    <Option selected=\"true\">Standard</Option>\r\n                    <Option>Long</Option>\r\n                    <Option>Epic</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Earth Setup</Text>\r\n                <Dropdown id=\"dropDownRandomEarth\" onValueChanged=\"onRandomEarthSelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <HorizontalLayout>\r\n                <Text>Animal Display</Text>\r\n                <Dropdown id=\"dropDownAnimalDisplay\" onValueChanged=\"onAnimalDisplaySelected\">\r\n                    <Option selected=\"True\">Standard</Option>\r\n                    <Option>Alternate</Option>\r\n                </Dropdown>\r\n            </HorizontalLayout>\r\n            <Button onClick=\"onClickStandard\">Setup</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n    <HorizontalLayout>\r\n        <Text preferredHeight=\"150\">Step 3: Move selected trait to player board. Then click confirm traits.  If playing with superhero variant take two traits instead of one.</Text>\r\n        <VerticalLayout id=\"layoutTrait\" visibility=\"Black\" minWidth=\"200\" preferredWidth=\"200\">\r\n            <Button id=\"btnConfirmTraits\" minWidth=\"200\" preferredWidth=\"200\" interactable=\"false\" onClick=\"onClickConfirmTraits\">Confirm Traits</Button>\r\n        </VerticalLayout>\r\n    </HorizontalLayout>\r\n</VerticalLayout>"
     },
@@ -30093,9 +30097,9 @@
         "posX": -23.5071449,
         "posY": 0.9736048,
         "posZ": 16.2446232,
-        "rotX": 1.84081959E-08,
+        "rotX": 1.19633876E-08,
         "rotY": 180.0,
-        "rotZ": 3.85174665E-08,
+        "rotZ": 5.412049E-08,
         "scaleX": 1.1516844,
         "scaleY": 1.0,
         "scaleZ": 1.1516844
@@ -30149,7 +30153,7 @@
       "Name": "3DText",
       "Transform": {
         "posX": -23.0025921,
-        "posY": 3.62122178,
+        "posY": 3.62122059,
         "posZ": 20.8930321,
         "rotX": 90.0,
         "rotY": 0.405198574,
@@ -30203,8 +30207,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.2584038,
-        "posY": 0.960659146,
-        "posZ": 13.1376562,
+        "posY": 0.9606573,
+        "posZ": 13.1376629,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -30257,8 +30261,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -19.3274155,
-        "posY": 1.044942,
-        "posZ": 17.9936829,
+        "posY": 1.04494023,
+        "posZ": 17.9936867,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -30640,8 +30644,8 @@
       "Name": "3DText",
       "Transform": {
         "posX": -17.98596,
-        "posY": 0.96116966,
-        "posZ": -7.56277227,
+        "posY": 0.961170137,
+        "posZ": -7.562773,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -30739,9 +30743,9 @@
       "GUID": "21e0a5",
       "Name": "3DText",
       "Transform": {
-        "posX": -4.00285339,
-        "posY": 0.961167753,
-        "posZ": -7.70761871,
+        "posX": -4.00284433,
+        "posY": 0.96116817,
+        "posZ": -7.70762,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -30793,9 +30797,9 @@
       "GUID": "2e2049",
       "Name": "3DText",
       "Transform": {
-        "posX": 10.8521338,
-        "posY": 0.961169,
-        "posZ": -7.674227,
+        "posX": 10.8521528,
+        "posY": 0.9611694,
+        "posZ": -7.67422867,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -30847,9 +30851,9 @@
       "GUID": "ea5776",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.4525547,
-        "posY": 0.961167753,
-        "posZ": -7.603162,
+        "posX": 24.4525757,
+        "posY": 0.96116817,
+        "posZ": -7.60316324,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -31229,9 +31233,9 @@
       "GUID": "71e3e9",
       "Name": "3DText",
       "Transform": {
-        "posX": 24.3624668,
-        "posY": 0.961119235,
-        "posZ": 0.413700849,
+        "posX": 24.3624878,
+        "posY": 0.961119,
+        "posZ": 0.413701564,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -31283,9 +31287,9 @@
       "GUID": "309762",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.3924427,
-        "posY": 3.62145352,
-        "posZ": 17.17055,
+        "posX": -30.3924465,
+        "posY": 3.62145257,
+        "posZ": 17.1705532,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -31337,9 +31341,9 @@
       "GUID": "9f614b",
       "Name": "3DText",
       "Transform": {
-        "posX": -30.2375164,
-        "posY": 3.62145686,
-        "posZ": 13.0886564,
+        "posX": -30.23752,
+        "posY": 3.62145567,
+        "posZ": 13.0886593,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,
@@ -32238,9 +32242,9 @@
         "z": 0.0
       },
       "ColorDiffuse": {
-        "r": 0.4429986,
-        "g": 0.230998576,
-        "b": 0.08999886
+        "r": 0.442998528,
+        "g": 0.230998516,
+        "b": 0.08999882
       },
       "LayoutGroupSortIndex": 0,
       "Value": 0,
@@ -32273,7 +32277,8 @@
         "Order": 0
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Eliminated Crustacean Cubes.9ebfda.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Eliminated Crustacean Cubes.9ebfda.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Eliminated Crustacean Cubes.9ebfda.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "3c5002",
@@ -32333,7 +32338,8 @@
         "Order": 0
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Eliminated Fish Cubes.3c5002.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Eliminated Fish Cubes.3c5002.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Eliminated Fish Cubes.3c5002.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "72d935",
@@ -32393,7 +32399,8 @@
         "Order": 0
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Eliminated Cephalopod Cubes.72d935.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Eliminated Cephalopod Cubes.72d935.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Eliminated Cephalopod Cubes.72d935.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "8167d6",
@@ -32419,7 +32426,7 @@
       },
       "ColorDiffuse": {
         "r": 0.6509804,
-        "g": 0.0980232,
+        "g": 0.09802314,
         "b": 0.619607747
       },
       "LayoutGroupSortIndex": 0,
@@ -32453,15 +32460,16 @@
         "Order": 0
       },
       "LuaScript": "-- Bundled by luabundle {\"rootModuleName\":\"Eliminated Reptile Cubes.8167d6.lua\",\"version\":\"1.6.0\"}\nlocal __bundle_require, __bundle_loaded, __bundle_register, __bundle_modules = (function(superRequire)\n\tlocal loadingPlaceholder = {[{}] = true}\n\n\tlocal register\n\tlocal modules = {}\n\n\tlocal require\n\tlocal loaded = {}\n\n\tregister = function(name, body)\n\t\tif not modules[name] then\n\t\t\tmodules[name] = body\n\t\tend\n\tend\n\n\trequire = function(name)\n\t\tlocal loadedModule = loaded[name]\n\n\t\tif loadedModule then\n\t\t\tif loadedModule == loadingPlaceholder then\n\t\t\t\treturn nil\n\t\t\tend\n\t\telse\n\t\t\tif not modules[name] then\n\t\t\t\tif not superRequire then\n\t\t\t\t\tlocal identifier = type(name) == 'string' and '\\\"' .. name .. '\\\"' or tostring(name)\n\t\t\t\t\terror('Tried to require ' .. identifier .. ', but no such module has been registered')\n\t\t\t\telse\n\t\t\t\t\treturn superRequire(name)\n\t\t\t\tend\n\t\t\tend\n\n\t\t\tloaded[name] = loadingPlaceholder\n\t\t\tloadedModule = modules[name](require, loaded, register, modules)\n\t\t\tloaded[name] = loadedModule\n\t\tend\n\n\t\treturn loadedModule\n\tend\n\n\treturn require, loaded, register, modules\nend)(nil)\n__bundle_register(\"Eliminated Reptile Cubes.8167d6.lua\", function(require, _LOADED, __bundle_register, __bundle_modules)\nrequire(\"cubebag\")\nend)\n__bundle_register(\"cubebag\", function(require, _LOADED, __bundle_register, __bundle_modules)\nfunction onLoad()\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectLeaveContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction onObjectEnterContainer(bag, obj)\r\n    if bag~=self then return end\r\n    setDisplay()\r\nend\r\n\r\nfunction setDisplay()\r\n    if self.getButtons() == nil then\r\n        self.createButton({\r\n            click_function = \"asdfasdfq\",\r\n            label          = self.getQuantity(),\r\n            position       = {0, 0.35, -0.04},\r\n            scale          = {2,2,2},\r\n            rotation       = {0, 180, 0},\r\n            width          = 0,\r\n            height         = 0,\r\n            font_size      = 170,\r\n            color          = {0.5, 0.5, 0.5},\r\n            font_color     = {r=1, g=1, b=1},\r\n            tooltip        = \"This text appears on mouseover.\",\r\n        })\r\n    else\r\n        self.editButton({index=0,label = self.getQuantity()})\r\n    end\r\nend\nend)\nreturn __bundle_require(\"Eliminated Reptile Cubes.8167d6.lua\")",
-      "LuaScriptState": ""
+      "LuaScriptState": "",
+      "XmlUI": ""
     },
     {
       "GUID": "d59b18",
       "Name": "3DText",
       "Transform": {
-        "posX": -6.58496666,
-        "posY": 3.62151456,
-        "posZ": 20.25887,
+        "posX": -6.584957,
+        "posY": 3.62151361,
+        "posZ": 20.2588711,
         "rotX": 90.0,
         "rotY": 0.405198574,
         "rotZ": 0.0,

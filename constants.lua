@@ -115,12 +115,12 @@ WANDERLUST_TILE_KELP = "WANDERLUST_TILE_KELP"
 WANDERLUST_TILE_LAND = "WANDERLUST_TILE_LAND"
 
 ELEMENT_RESOURCE_TO_NAME_MAP = {
-    ["https://drive.google.com/u/0/uc?id=1edbTLtxIaUlGrP8P_d0X7dpk01gDeplC&export=download"] = ELEMENT_TYPE_ALGAE,
-    ["https://drive.google.com/u/0/uc?id=1mcuHRxZjB4eU040p43UO69KQ_l8-GsTh&export=download"] = ELEMENT_TYPE_GASTROPODS,
-    ["https://drive.google.com/u/0/uc?id=1pPFksMnB8gaiuaVRCXDcVE_TPqxu6qus&export=download"] = ELEMENT_TYPE_PLANKTON,
-    ["https://drive.google.com/u/0/uc?id=1IUzidKRhXawtVystK65o3zCtYacvVmsj&export=download"] = ELEMENT_TYPE_SPONGES,
-    ["https://drive.google.com/u/0/uc?id=1b5meM5kY2SE21MBBedYH8M8DgAEwRlC0&export=download"] = ELEMENT_TYPE_SUN,
-    ["https://drive.google.com/u/0/uc?id=18G3TJ44EXq3Y4ipGtnBNwkmxZuY78s0b&export=download"] = ELEMENT_TYPE_WORMS,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-green.png"] = ELEMENT_TYPE_ALGAE,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-brown.png"] = ELEMENT_TYPE_GASTROPODS,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-blue.png"] = ELEMENT_TYPE_PLANKTON,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-yellow.png"] = ELEMENT_TYPE_SPONGES,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-red.png"] = ELEMENT_TYPE_SUN,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/element/element-purple.png"] = ELEMENT_TYPE_WORMS,
 }
 
 WANDERLUST_RESOURCE_TO_NAME_MAP = {
@@ -146,12 +146,12 @@ WANDERLUST_TILE_SCORES = {
 }
 
 TERRAIN_RESOURCE_TO_NAME_MAP = {
-    ["https://drive.google.com/u/0/uc?id=1mUyj208x0GyLU9grbPcjwmHEh748LI19&export=download"] = WANDERLUST_TILE_VENT,
-    ["https://drive.google.com/u/0/uc?id=1hRuq1nIRF5Dxm3dCZljB2ZVizVUFVh8h&export=download"] = WANDERLUST_TILE_OCEAN,
-    ["https://drive.google.com/u/0/uc?id=1PcUBBGu2mU8E4gMQcfDIkPWUZg1d9OZ4&export=download"] = WANDERLUST_TILE_SAND,
-    ["https://drive.google.com/u/0/uc?id=1AuUqu9XPcsbLkXbGdZS007V1KlcfuQNi&export=download"] = WANDERLUST_TILE_SEAGRASS,
-    ["https://drive.google.com/u/0/uc?id=1OTWrqhiialprKchzLD5jI6JCS_td9Hon&export=download"] = WANDERLUST_TILE_SEAMOUNT,
-    ["https://drive.google.com/u/0/uc?id=1DmdlavqNvewhWZRGJUP9ybsD1-Rg0eyz&export=download"] = WANDERLUST_TILE_CORAL,
-    ["https://drive.google.com/u/0/uc?id=1tnZdmRPvE6BXwGakPIGKom4cqQtOy_SW&export=download"] = WANDERLUST_TILE_KELP,
-    ["https://drive.google.com/u/0/uc?id=17o3lySKXkTTAd-8TfHgrxnV06jKZ5nJh&export=download"] = WANDERLUST_TILE_LAND,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-vent.png"] = WANDERLUST_TILE_VENT,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-ocean.png"] = WANDERLUST_TILE_OCEAN,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-sand.png"] = WANDERLUST_TILE_SAND,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrrain-grass.png"] = WANDERLUST_TILE_SEAGRASS,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-mount.png"] = WANDERLUST_TILE_SEAMOUNT,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-coral.png"] = WANDERLUST_TILE_CORAL,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-kelp.png"] = WANDERLUST_TILE_KELP,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-land.png"] = WANDERLUST_TILE_LAND,
 }

@@ -151,7 +151,7 @@ TERRAIN_RESOURCE_TO_NAME_MAP = {
     ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-sand.png"] = WANDERLUST_TILE_SAND,
     ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrrain-grass.png"] = WANDERLUST_TILE_SEAGRASS,
     ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-mount.png"] = WANDERLUST_TILE_SEAMOUNT,
-    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-coral.png"] = WANDERLUST_TILE_CORAL,
+    ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrrain-reef.png"] = WANDERLUST_TILE_CORAL,
     ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-kelp.png"] = WANDERLUST_TILE_KELP,
     ["https://dsm-tts-assets.s3.eu-west-2.amazonaws.com/markers/terrain-land.png"] = WANDERLUST_TILE_LAND,
 }
